@@ -38,41 +38,34 @@ flex-direction: column;
     flex-direction: row;
     background-color: #1e1e1e;
     color: white;
-    padding-left: 22.5em;
+    padding-left: 1em;
+    padding-top: 1em;
 }
 
 .item:hover{
 cursor: pointer;
 }
 
-.item-favorito:hover{
+.item-favorito, .item-lupa, .item-usuario, .item-logo:hover{
 cursor: pointer;
 }
 
-.item-lupa:hover{
-cursor: pointer;
-}
-
-.item-usuario:hover{
-cursor: pointer;
+.item-logo img{
+    height: 2.5em;
+    padding-right: 14em;
 }
 
 .item{
-    margin: 1.4em 0.8em 1.4em 0.8em;
+    margin: 0.8em 0.8em 1.4em 0.8em;
     font-size: 1em;
     font: 14px fonte-100;
 }
 
-.item img{
+.item, .item-favorito img{
  margin-right: 0.5em
 }
-
-.item-favorito img{
-    margin-right: 0.5em
-   }
-
 .item-favorito{
-    margin: 1.2em 0.8em 1.2em 0.8em;
+    margin: 0.8em 0.8em 1.2em 0.8em;
     font-size: 1em;
     font: 14px fonte-100;
    }
@@ -80,12 +73,10 @@ cursor: pointer;
 
 .item-lupa img{
     height: 2em;
-    margin-top: 0.8em;
     margin-left: 17em;
 }
 
 .item-usuario{
     height: 1.8em;
-    margin-top: 0.8em;
     margin-left: 2em;
 }
