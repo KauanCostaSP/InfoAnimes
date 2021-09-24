@@ -1,0 +1,91 @@
+@font-face {
+    font-family: fonte-100;
+    src: url('../../assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: fonte-200;
+    src: url('../../assets/fonts/Montserrat-Medium.woff');
+}
+
+@font-face {
+    font-family: fonte-300;
+    src: url('../../assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: fonte-400;
+    src: url('../../assets/fonts/Montserrat-Bold.woff');
+}
+
+
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0d0d0d;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    background-color: #1e1e1e;
+    color: white;
+    padding-left: 22.5em;
+}
+
+.item:hover{
+cursor: pointer;
+}
+
+.item-favorito:hover{
+cursor: pointer;
+}
+
+.item-lupa:hover{
+cursor: pointer;
+}
+
+.item-usuario:hover{
+cursor: pointer;
+}
+
+.item{
+    margin: 1.4em 0.8em 1.4em 0.8em;
+    font-size: 1em;
+    font: 14px fonte-100;
+}
+
+.item img{
+ margin-right: 0.5em
+}
+
+.item-favorito img{
+    margin-right: 0.5em
+   }
+
+.item-favorito{
+    margin: 1.2em 0.8em 1.2em 0.8em;
+    font-size: 1em;
+    font: 14px fonte-100;
+   }
+
+
+.item-lupa img{
+    height: 2em;
+    margin-top: 0.8em;
+    margin-left: 17em;
+}
+
+.item-usuario{
+    height: 1.8em;
+    margin-top: 0.8em;
+    margin-left: 2em;
+}
