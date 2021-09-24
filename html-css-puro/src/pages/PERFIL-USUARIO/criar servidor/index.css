@@ -1,0 +1,73 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../../assets/fonts/Montserrat-Regular.woff');
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('../../assets/fonts/Montserrat-Medium.woff');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #323232;
+}
+
+.criar-servidor{
+    background-color: #0E0E0E;
+    color: #ffffff;
+    width: 400px;
+    height: 390px;
+    border-radius: 11px;
+    box-shadow: 0px 4px 27px #FFFFFF;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: row;
+    
+}
+.inicio img{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.titulo{
+    font: 20px Montserrat-Regular;
+    margin-top: 16px;
+    margin-left: 80px;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    font: 18px fonte-100;
+    margin-right: 20px;
+    margin-top: 10px;
+    
+}
+
+.voltar-e-criar{
+    display: flex;
+    flex-direction: row;
+    font: 18px fonte-300;
+    margin-top: 20px;
+    justify-content: space-between;
+    
+    padding: 0px 30px 0px 10px;
+}
+
+.botao-voltar button{
+    background-color: #0E0E0E;
+    border: none;
+    color: #FFFFFF;
+    font: 18px fonte-100;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
