@@ -1,1 +1,93 @@
+@font-face {
+    font-family: fonte-100;
+    src: url('../../assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: fonte-200;
+    src: url('../../assets/fonts/Montserrat-Medium.woff');
+}
+
+@font-face {
+    font-family: fonte-300;
+    src: url('../../assets/fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: fonte-400;
+    src: url('../../assets/fonts/Montserrat-Bold.woff');
+}
+
+.editar-perfil {
+    text-align: center;
+}
+
+ .item-imagem {
+    height: 65px;
+    margin-top: 90px;
+ }
+
+ .item-nomeperfil {
+   margin-bottom: 40px;
+ }
+
+ .item-botao button {
+   background-color: transparent; 
+   color: #7E00FC;
+   font-size: 14px;
+   border: 0px transparent;
+   margin-bottom: 50px;
+ }
+
+.perfil-editar-box input{
+ color: white;
+background-color: #323232;
+border: 0px transparent;
+border-radius: 5px;
+margin-top: 25px;
+margin-left: 20px;
+text-align: center;
+}
+
+.nome-editar input{
+    width: 474px;
+    height: 31px;
+    left: 486px;
+    top: 479px;
+}
+
+.usuario-editar input {
+    width: 474px;
+    height: 31px;
+    left: 486px;
+    top: 479px;
+}
+
+.biografia-editar input {
+    width: 481px;
+    height: 164px;
+    left: 486px;
+    top: 601px;
+}
+
+.email-editar input{
+    width: 474px;
+    height: 31px;
+    left: 486px;
+    top: 479px;
+}
+
+.telefone-editar input{
+    width: 474px;
+    height: 31px;
+    left: 486px;
+    top: 479px;
+}
+
+.genero-editar input{
+    width: 474px;
+    height: 31px;
+    left: 486px;
+    top: 479px;
+}
 
