@@ -7,9 +7,19 @@ body{
     color: #7e00fc;
 }
 
+.item {
+    color: #ffffff;
+}
+
 .favoritos{
-    padding: 7em 5em 2em 6em;
-    background-image: linear-gradient(to bottom, rgb(126, 0, 252, 0.1), #0d0d0d);
+    paddi: 7em 5em 2em 6em;
+    background-image: linear-gradient(to bottom, rgb(126, 0, 252), #0d0d0d);
+}
+
+.back img{
+    color: transparent;
+    position: fixed;
+    opacity: 0.3;
 }
 
 .user{
