@@ -114,3 +114,7 @@ text-align: left !important;
     justify-content: space;
     align-items: center;
 }
+
+.item:hover{
+    color: #7e00fc;
+}

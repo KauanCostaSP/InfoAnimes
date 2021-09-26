@@ -80,3 +80,7 @@ input::placeholder {
     background: #ffffff;
     border: 0px transparent;
 }
+
+.item:hover{
+    color: #7e00fc;
+}

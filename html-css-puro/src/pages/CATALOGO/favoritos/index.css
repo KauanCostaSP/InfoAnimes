@@ -1,9 +1,15 @@
 body{
+    font-family: Montserrat-Regular;
     margin: 0px !important;
 }
 
+.item-favorito:hover{
+    color: #7e00fc;
+}
+
 .favoritos{
-    margin: 7em 5em 2em 6em;
+    padding: 7em 5em 2em 6em;
+    background-image: linear-gradient(to bottom, rgb(126, 0, 252, 0.1), #0d0d0d);
 }
 
 .user{
@@ -36,6 +42,7 @@ body{
 .titulo{
     color: #ffffff;
     font-size: 20px;
+    font-family: Montserrat-Regular;
     font-weight: bold;
 
     white-space: nowrap;
@@ -46,4 +53,8 @@ body{
 
     max-width: 167px;
     margin-bottom: 2.9em;
+}
+
+.item:hover{
+    color: #7e00fc;
 }
