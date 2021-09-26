@@ -3,18 +3,14 @@ body{
 }
 
 .login{
-    border-radius: 5px;
-    background-color: #271736;
+    background-color: #4300814f;
     text-align: center !important;
     padding: 2em 0em 0em 0em;
     margin: 5em 0em 0em 30em;
     border-radius: 25px;
+    box-shadow: 0 0 2em #A245FF;
     width: 380px;
     height: 380px;
-}
-
-.login:hover{
-    box-shadow: 0 0 2em #A245FF;
 }
 
 .em_sen input{
