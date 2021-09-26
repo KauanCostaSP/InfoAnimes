@@ -1,0 +1,70 @@
+body{
+    font-family: Montserrat-Regular;
+    margin: 0px !important;
+}
+
+.item-favorito:hover{
+    color: #7e00fc;
+}
+
+.item {
+    color: #ffffff;
+}
+
+.favoritos{
+    paddi: 7em 5em 2em 6em;
+    background-image: linear-gradient(to bottom, rgb(126, 0, 252), #0d0d0d);
+}
+
+.back img{
+    color: transparent;
+    position: fixed;
+    opacity: 0.3;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 2em;
+}
+
+.nick{
+    position: relative;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.animes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.anime{
+    margin-right: 2em;
+}
+
+.titulo{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Montserrat-Regular;
+    font-weight: bold;
+
+    white-space: nowrap;
+    text-overflow: hidden;
+    text-overflow: ellipsis;
+
+    text-align: center;
+
+    max-width: 167px;
+    margin-bottom: 2.9em;
+}
+
+.item:hover{
+    color: #7e00fc;
+}
