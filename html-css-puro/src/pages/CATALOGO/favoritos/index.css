@@ -21,7 +21,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #7E00FC;
 }
 
-.item-favorito{
+.item-favorito:hover{
     color: #7e00fc;
 }
 
