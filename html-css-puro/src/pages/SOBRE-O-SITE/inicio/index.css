@@ -164,3 +164,7 @@ span{
     margin-left: 3.5em;
 }
 
+.comunidades{
+    display: flex;
+    flex-direction: row;
+}
