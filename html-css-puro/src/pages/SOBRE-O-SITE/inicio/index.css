@@ -20,7 +20,7 @@
 
 
 body{
-    background-image: linear-gradient(#0E0E0E, #1A1A1A);
+    background-image: linear-gradient(#0E0E0E 66%, #1A1A1A);
 }
 
 
@@ -133,11 +133,16 @@ margin-top: 8em;
     margin-top: 1em;
 }
 
-.b b{
+span{
+    display: flex;
+    flex-wrap: wrap;
     font-family: fonte-100;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 200;
+    font-size: 15px;
     line-height: 22px;
+    width: 29em;
+    margin-left: 9em;
+    margin-top: 1em;
 }
 
 .barra2{
