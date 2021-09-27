@@ -133,6 +133,13 @@ margin-top: 8em;
     margin-top: 1em;
 }
 
+.b b{
+    font-family: fonte-100;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
 .barra2{
     border-top:  4px solid white;
     background-color: #7E00FC;
@@ -152,6 +159,3 @@ margin-top: 8em;
     margin-left: 3.5em;
 }
 
-.trecho{
-    top: 10em;
-}
