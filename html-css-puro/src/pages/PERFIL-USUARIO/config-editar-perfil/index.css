@@ -22,6 +22,7 @@
     text-align: center;
     box-shadow:0px 4px 36px #A245FF;
     border-radius: 10px;
+    background-image: url(../../../assets/images/);
     width: 1000px;
     height: 1000px;
     margin-left: 355px;
@@ -103,6 +104,7 @@
 Display: flex;
 Flex-direction: row;
 align-items: center;
+justify-content: space-between;
 }
 
 .voltar-botao button{
@@ -110,7 +112,7 @@ align-items: center;
    border-radius: 15px;
    width: 95px;
    Height:28px;
-   margin-left: 190px;
+   margin-left: 150px;
    margin-top: 200px;
 }
 
@@ -122,6 +124,7 @@ align-items: center;
     display: flex;
     width: 300px;
     height: 10px;
+    
     margin-left: 299px;
     margin-top: 200px;
 }
