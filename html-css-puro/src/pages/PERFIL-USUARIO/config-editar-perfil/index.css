@@ -26,8 +26,16 @@
     height: 1000px;
     margin-left: 355px;
     margin-top: 40px;  
+    background-attachment: fixed;
 }
 
+.editar-perfil-imagem {
+    background-image: url(../../../assets/images/fundo-confg.jpeg);
+    height: 1000px;
+    background-size: 95% 100%;
+    background-repeat: no-repeat;
+    margin-left: 45px;
+}
  .item-imagem img{
     height: 150px;
     margin-top: 25px;
@@ -62,13 +70,14 @@
     height: 31px;
     left: 486px;
     top: 479px;
+    padding-left: 5%;
 }
 
 .usuario-editar input {
     width: 474px;
     height: 31px;
-    left: 486px;
     top: 100px;
+    padding-left: 30%;
 }
 
 .biografia-editar input {
@@ -103,6 +112,7 @@
 Display: flex;
 Flex-direction: row;
 align-items: center;
+justify-content: space-between;
 }
 
 .voltar-botao button{
@@ -110,7 +120,7 @@ align-items: center;
    border-radius: 15px;
    width: 95px;
    Height:28px;
-   margin-left: 190px;
+   margin-left: 150px;
    margin-top: 200px;
 }
 
@@ -122,6 +132,7 @@ align-items: center;
     display: flex;
     width: 300px;
     height: 10px;
+    
     margin-left: 299px;
     margin-top: 200px;
 }
