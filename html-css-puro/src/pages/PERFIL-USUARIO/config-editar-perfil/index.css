@@ -20,21 +20,29 @@
 
 .editar-perfil {
     text-align: center;
+    box-shadow:0px 4px 36px #A245FF;
+    border-radius: 10px;
+    width: 1000px;
+    height: 1000px;
+    margin-left: 355px;
+    margin-top: 40px;  
 }
 
- .item-imagem {
-    height: 65px;
-    margin-top: 90px;
+ .item-imagem img{
+    height: 150px;
+    margin-top: 25px;
+    width: 152px;
  }
 
  .item-nomeperfil {
    margin-bottom: 40px;
+   font-size: 35px;
  }
 
  .item-botao button {
    background-color: transparent; 
    color: #7E00FC;
-   font-size: 14px;
+   font-size: 20px;
    border: 0px transparent;
    margin-bottom: 50px;
  }
@@ -44,7 +52,7 @@
     background-color: #323232;
     border: 0px transparent;
     border-radius: 5px;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-left: 20px;
    text-align: center;
 }
@@ -60,7 +68,7 @@
     width: 474px;
     height: 31px;
     left: 486px;
-    top: 479px;
+    top: 100px;
 }
 
 .biografia-editar input {
@@ -102,17 +110,19 @@ align-items: center;
    border-radius: 15px;
    width: 95px;
    Height:28px;
-   margin-left: 300px;
+   margin-left: 190px;
    margin-top: 200px;
 }
 
 .desativar-botao button{
-border: none;
-background-color: transparent;
-Color: #7E00FC;
-text-decoration: underline;
-display: flex;
-margin-left: 500px;
-margin-top: 200px;
+    border: none;
+    background-color: transparent;
+    Color: #7E00FC;
+    text-decoration: underline;
+    display: flex;
+    width: 300px;
+    height: 10px;
+    margin-left: 299px;
+    margin-top: 200px;
 }
 
