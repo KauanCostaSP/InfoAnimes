@@ -1,0 +1,15 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0d0d;
+    font-size: 26px;
+    
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
