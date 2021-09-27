@@ -1,3 +1,18 @@
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../assets/fonts/Montserrat-Bold.woff');
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../assets/fonts/Montserrat-Regular.woff');
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('../assets/fonts/Montserrat-Medium.woff');
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -12,6 +27,8 @@ body{
 a{
     color: white;
     text-decoration: none;
+    padding-top: 20px;
+    font-family: Montserrat-Medium;
 }
 
 a:hover{
