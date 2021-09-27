@@ -144,12 +144,13 @@ body{
 .cabecalho-corpo{
     display: flex;
     flex-direction: row;
-    margin-left: 5.5em;
+    margin-left: 4em;
     margin-top: 5em;
+    margin-bottom: 2em;
 }
 
 .icone button{
-    margin-left: 73.5em;
+    margin-left: 78em;
     background: none;
     border: none;
 }
@@ -197,6 +198,12 @@ flex-direction: column;
 
 .descricao{
     color: white;
+}
+
+.imagem:hover{
+    box-shadow: 0 0 1.2em white;
+    border: none;
+    border-radius: 10px;
 }
 
 
