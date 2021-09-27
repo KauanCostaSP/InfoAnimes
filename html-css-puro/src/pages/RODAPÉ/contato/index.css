@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('../../assets/fonts/Montserrat-Medium.woff');
+}
+
+.rodape{
+    background-color: black;
+}
+
+.info-email{
+    font-family: Montserrat-Medium;
+    font-size: 15px;
+    top: 386px;
+}
+
+.copyright{
+    margin-top: 20px;
+}
