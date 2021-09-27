@@ -40,13 +40,13 @@
  }
 
 .perfil-editar-box input{
- color: white;
-background-color: #323232;
-border: 0px transparent;
-border-radius: 5px;
-margin-top: 25px;
-margin-left: 20px;
-text-align: center;
+    color: white;
+    background-color: #323232;
+    border: 0px transparent;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 20px;
+   text-align: center;
 }
 
 .nome-editar input{
@@ -89,5 +89,30 @@ text-align: center;
     height: 31px;
     left: 486px;
     top: 479px;
+}
+
+.botao-box{
+Display: flex;
+Flex-direction: row;
+align-items: center;
+}
+
+.voltar-botao button{
+   Background-color:#7E00FC ;
+   border-radius: 15px;
+   width: 95px;
+   Height:28px;
+   margin-left: 300px;
+   margin-top: 200px;
+}
+
+.desativar-botao button{
+border: none;
+background-color: transparent;
+Color: #7E00FC;
+text-decoration: underline;
+display: flex;
+margin-left: 500px;
+margin-top: 200px;
 }
 
