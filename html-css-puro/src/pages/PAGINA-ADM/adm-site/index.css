@@ -179,6 +179,10 @@ cursor: pointer;
     text-align: center;
 }
 
+.item-6 img{
+height: 18em;
+}
+
 .item-1 img, .item-2 img, .item-3 img, .item-4 img, .item-5 img, .item-6 img{
 padding-bottom: 1em;
 }
