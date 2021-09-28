@@ -10,7 +10,10 @@
 .info-email{
     font-family: Montserrat-Medium;
     font-size: 15px;
+
     top: 386px;
+    padding-top: 100px;
+    margin-top: 70px;
 }
 
 .copyright{
