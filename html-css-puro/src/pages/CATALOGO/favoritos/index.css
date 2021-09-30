@@ -31,10 +31,12 @@ body::-webkit-scrollbar-thumb {
 
 .favoritos{
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .back{
     background-image: linear-gradient(to bottom, #5201949c, #0d0d0d);
+    background-repeat: no-repeat;
 }
 
 .user{
@@ -86,4 +88,9 @@ body::-webkit-scrollbar-thumb {
 
 .item:hover{
     color: #7e00fc;
+}
+
+.adicionar textarea::placeholder {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
