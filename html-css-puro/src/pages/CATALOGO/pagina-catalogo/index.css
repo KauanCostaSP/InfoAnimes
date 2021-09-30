@@ -338,19 +338,11 @@ hr{
     margin-left: 4em;
 }
 
-.ver_respostas:hover{
-    color: #d9b3ff;
-}
-
 .ver_respostas svg{
     transform: rotate(270deg);
 
     margin-top: 2px;
     margin-left: 10px;
-}
-
-.ver_respostas svg:hover{
-    color: #d9b3ff;
 }
 
 .ler_mais{
