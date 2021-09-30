@@ -23,6 +23,7 @@ body{
 
 .item:hover{
 cursor: pointer;
+color: #7e00fc;
 }
 
 .item-favorito, .item-lupa, .item-usuario, .item-logo:hover{
