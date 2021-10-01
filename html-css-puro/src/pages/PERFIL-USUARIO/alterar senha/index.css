@@ -71,7 +71,7 @@ body {
 }
 
 input::placeholder {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .campo button {
