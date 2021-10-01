@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     color: #fff;
+    font-family: Montserrat-Regular;
 }
 
 body::-webkit-scrollbar-track {
@@ -21,8 +22,13 @@ body::-webkit-scrollbar-thumb {
     background-color: #7E00FC;
 }
 
-.item-favorito:hover{
-    color: #7e00fc;
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7E00FC;
 }
 
 .item_usuario img{
@@ -38,7 +44,19 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     position: absolute;
     margin-right: 20px;
-    margin-top: 30px;
+    margin-top: 30px;    
+    
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #aa8ed6;
+    padding: 1em;
+    padding-bottom: 0.5em;
+}
+
+.adi_fav img{
+
+    width: 24px;
+    height: 24px;
 }
 
 .info_basica{
@@ -314,17 +332,34 @@ hr{
     margin-left: 4.5em;
 }
 
-.rodape_comentario img{
-    margin-right: 10px;
+.curtidas{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 1em;
+}
+
+.like {
+    margin-right: 1em;
+}
+
+.like img{
+    margin-right: 1em;
 }
 
 .deslike{
-    margin-left: 20px;
-    margin-bottom: 7px;
+    display: flex;
+    flex-direction: row;
 }
 
 .deslike img{
-    padding-top: 6px;
+    margin-right: 1em;
+    padding-top: 5px;
+}
+
+.cont_deslike{
+    padding: 0px !important;
+    margin-top: 3px;
 }
 
 .ver_respostas{

@@ -27,6 +27,8 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
     
     background-image: url(../../../assets/images/back_adicionar_post.png);
+    margin: auto;
+    margin-left: 7.5em;
     background-repeat: no-repeat;
     width: 1300px;
 

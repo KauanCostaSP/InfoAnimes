@@ -21,12 +21,18 @@ body::-webkit-scrollbar-thumb {
     background-color: #7E00FC;
 }
 
-.item-favorito:hover{
-    color: #7e00fc;
+.item-favorito a{
+    color: #7E00FC;
+    text-decoration: none;
 }
 
 .item {
     color: #ffffff;
+}
+
+.item a{
+    color: #ffffff; 
+    text-decoration: none;
 }
 
 .favoritos{
@@ -50,11 +56,24 @@ body::-webkit-scrollbar-thumb {
 
 .nick{
     position: relative;
-    color: white;
+    color: #ffffff;
     font-size: 16px;
     font-weight: bold;
     padding-top: 20px;
     padding-left: 10px;
+}
+
+.pontos{
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 700;
+    transform: rotate(90deg);
+    cursor: pointer;
+
+    text-align: right; 
+
+    margin-left: 24em;
+    margin-right: 10px;
 }
 
 .animes{
@@ -70,6 +89,11 @@ body::-webkit-scrollbar-thumb {
     margin-right: 2em;
 }
 
+.anime img:hover{
+    box-shadow: 0 0 1.2em white;
+    border-radius: 10px;
+}
+
 .titulo{
     color: #ffffff;
     font-size: 20px;
@@ -81,6 +105,7 @@ body::-webkit-scrollbar-thumb {
     text-overflow: ellipsis;
 
     text-align: center;
+    align-items: center;
 
     max-width: 167px;
     margin-bottom: 2.9em;

@@ -51,8 +51,7 @@ cursor: pointer;
     font: 14px Montserrat-Regular;
 }
 
-.item-lupa img{
-    height: 2em;
+.item-lupa svg{
     margin-left: 17em;
 }
 
