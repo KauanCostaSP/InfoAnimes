@@ -67,7 +67,7 @@ input::placeholder {
     outline: none;
     background: #ffffff;
     border: 0px transparent;
-    padding-top: px;
+    padding-left: 0px;
     width: 250px;
     margin: 0em 1em 0em 1em;
 }
