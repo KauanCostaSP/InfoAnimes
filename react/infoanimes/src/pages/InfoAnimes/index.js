@@ -1,5 +1,13 @@
-export default function InfoAnimes() {
+import Cabecalho from '../../components/cabecalho'
+import Rodape from '../../components/rodapé'
+
+export default function inicio() {
     return (
-        <h1> oi</h1>
+        <div className="container">
+            <Cabecalho />
+        
+
+            <Rodape />
+        </div>
     )
 }
