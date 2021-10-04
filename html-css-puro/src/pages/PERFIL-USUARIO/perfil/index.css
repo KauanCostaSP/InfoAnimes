@@ -8,92 +8,53 @@
     src: url('../../../assets/fonts/Montserrat-Medium.woff');
 }
 
-*{
-    margin: 0px;
-    box-sizing: border-box;
-}
-
 body{
-    background-color: #0d0d0d;
+    color:#ffffff;
+    font-family: Montserrat-Regular;
 }
 
-.cabecalho{
-    display: flex;
-    flex-direction: row;
-    background-color: #1e1e1e;
-    color: white;
-    padding-left: 1em;
-    padding-top: 1em;
-    justify-content: center;
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #323232;
+}
+  
+body::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+    background-color: #323232;
+}
+  
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #7E00FC;
 }
 
-.item:hover{
-cursor: pointer;
+a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
-.item-favorito, .item-lupa, .item-usuario, .item-logo:hover{
-cursor: pointer;
+a:hover{
+    color: #7E00FC;
 }
-
-.box-itens{
-   
-}
-
-.item-logo img{
-    height: 2.5em;
-    padding-right: 14em;
-}
-
-.item{
-    margin: 0.8em 0.8em 1.4em 0.8em;
-    font-size: 1em;
-    font: 14px Montserrat-Regular;
-}
-
-.item, .item-favorito img{
- margin-right: 0.5em
-}
-.item-favorito{
-    margin: 0.6em 0.8em 1.2em 0.8em;
-    font-size: 1em;
-    font: 14px Montserrat-Medium;
-   }
-   
-
-.item-lupa img{
-    height: 2em;
-    margin-left: 12em;
-}
-
-.item-usuario{
-    height: 1.8em;
-    margin-left: 2em;
-}
-
-
-
-
-
-
-
-
-
-
 
 .conteudo-criar-servidor{
     padding: 3em 0em 3em 0em;
 }
 
-.box-1 {
-    display: flex;
-    flex-direction: row;
-    background-image: url(../../../assets/images/fundo-criar-servidor.png);
+.box-1{
+     background-image: url(../../../assets/images/fundo-criar-servidor.png);
     max-width: 58em;
     min-height: 26em;
     margin-left: 13em;
-
 }
 
+.cabecalho_box-1 {
+    display: flex;
+    flex-direction: row;
+}
 
 .criar img, .perfil img{
     display: flex;
@@ -102,7 +63,7 @@ cursor: pointer;
     padding: 10px 0px 0px 10px;
 }
 
-.menu img{
+.menu_box-1 img{
     display: flex;
     flex-direction: row;
     height: 3.5em;
@@ -111,6 +72,74 @@ cursor: pointer;
 
 .criar{
     margin-left: 50em;
+}
+
+.usuario_box-1{
+    text-align: center;
+}
+
+.perfil_box-1 img{
+    text-align: center;
+
+    height: 140px;
+    width: 150px;
+}
+
+.nick_box-1{
+    color: #ffffff;
+    font-size: 21px;
+    font-family: Montserrat-Regular;
+    font-weight: bold;
+
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.info_1, .info_2{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.botoes_box-1{
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+    
+    margin-left: 18em;
+    margin-top: 2em;
+}
+
+.botao_editar button{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Montserrat-Regular;
+    font-weight: bold;
+    background-color: #7E00FC;
+
+    border-radius: 30px;
+    border: 1px solid #7E00FC;
+
+    padding: 5px 30px 5px 30px;
+    margin-right: 3em;
+}
+
+.botao_chat img{
+    padding-top: px;
+    margin-right: 5px;
+}
+
+.botao_chat button{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: Montserrat-Regular;
+    font-weight: bold;
+    background-color: #7E00FC3D;
+
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+
+    padding: 0px 35px 5px 35px;
 }
 
 .box-2{
@@ -134,7 +163,6 @@ cursor: pointer;
     flex-direction: row;
 }
 
-
 .retangulo-branco{
     border: 5px solid #FFFFFF;
     width: 1px;
@@ -147,101 +175,96 @@ cursor: pointer;
     flex-direction: column;
     color: white;
     font: 18px Montserrat-Medium;
+
+    height: 35px;
     padding-left: 5px;
     padding-top: 4px;
 }
 
 
 .descricao{
-   padding-left: 1.5em;
-   padding-top: 1.5em;
+   padding-top: 3em;
 }
 
 .descricao textarea{
+    color: #ffffff;
+    font: 16px Montserrat-Regular;
+    background: transparent;
+
+    outline: none;
     resize: none;
-   border-radius: 5px;
-   background-color: #530194;
-   
-    
+    border-radius: 5px;
+    border: 0px transparent;
+
+    width: 600px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.rodape{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    padding-top: 4em;
-    align-items: center;
-    text-align: center;
-}
-
-.copyright{
-    font: 14px Montserrat-Regular; 
-}
-
-.box-itens{
+.chats{
     display: flex;
     flex-direction: row;
-    padding-top: 1em;
+
+    margin-left: 4.7em;
+    margin-top: 1em;
 }
 
-.box-itens:nth-child(4){
-
+.online button{
+    position: absolute;
+    background-color: #5efc02 !important;
+    border: 0px transparent;
+    border-radius: 10px;
+    padding: 8px;
+  
+    width: 8px;
+    height: 8px;
 }
 
-.redes-sociais{
+.img_chats img{
+    margin-right: 0.7em;
+    position: relative;
+}
+
+.publi{
+    margin: 5em 0em 0em 0em;
+}
+
+.tit_publi{
+    color: #7E00FC;
+    font: 17px Montserrat-Regular;
+    font-weight: bold;
+}
+
+.perfil_box-2{
     display: flex;
-    flex-direction: row; 
-    padding-top: 2em;
+    flex-direction: row;
 }
 
-.item{
-    padding-right: 0.8em;
-    font: 14px Montserrat-Medium;
+.usu img{
+    height: 50px;
+    width: 60px;
+
+    margin: 5px 8px 2px 0px;
 }
 
-.redes-sociais img{
-    padding-right: 1em;
-    padding-bottom: 1em;
-    height: 2.4em;
+.name{
+    color: #ffffff;
+    font: 16px Montserrat-Regular;
+    font-weight: bold;
+    margin: 8px 3px 2px 0px;
 }
 
-.retangulo-1{
-    border: 1.5px solid #7E00FC;
-    background-color: #7E00FC;
-    width: 100%;
-
+.online{
+    color: #ffffff;
+    font: 14px Montserrat-Regular;
 }
 
-.retangulo-2{
-    margin-top: 2em;
-    padding-top: 3em;
-    background-color: #7E00FC;
-    width: 100%;
+.menu{
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 700;
+    transform: rotate(90deg);
+    cursor: pointer;
+
+    text-align: right;
+    
+    margin-left: 4.3em;
 }

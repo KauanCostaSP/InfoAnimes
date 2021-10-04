@@ -281,6 +281,10 @@ hr{
     margin-left: 1em;
 }
 
+hr:hover{
+    border-color: #ffffff;
+}
+
 .usuario_postado{
     display: flex;
     flex-direction: row;
