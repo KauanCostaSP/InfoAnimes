@@ -33,7 +33,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 80%;
     margin-left: 7.6em;
     margin-bottom: 3em;
 }
@@ -68,7 +68,7 @@ body{
     border: none;
     width: 189px;
     height: 46px;
-    margin-left: 42.5em;
+    margin-left: 38em;
     margin-bottom: 2.7em;
 }
 
@@ -243,7 +243,7 @@ span{
     border: none;
     width: 189px;
     height: 46px;
-    margin-left: 30.5em;
+    margin-left: 39em;
 }
 
 .cadastrar button::before{
@@ -334,9 +334,8 @@ span{
 .comunidades{
     display: flex;
     width: 90%;
-    max-width: 100%;
+    max-width: 90%;
     justify-content: space-around;
-
 }
 
 .card{
@@ -354,13 +353,14 @@ span{
 .card:hover{
     transform: translateY(20px);
     transform: scale(1.1);
-    z-index: 1;
+    z-index: 3;
 }
 
 .card::before{
     display: block;
-    width: 155%;
+    width: 156%;
     height: 100%;
+    max-width: 155%;
     content: "";
     position: absolute;
     background: rgba(0, 0, 0, 0.63);
@@ -368,7 +368,7 @@ span{
     box-shadow: 0 0 5em rgba(255, 255, 255, 0.726);
     top: 0px;
     left: 0px;
-    z-index: 2;
+    z-index: 3;
     transition: 0.5s all;
     opacity: 0;
 }
