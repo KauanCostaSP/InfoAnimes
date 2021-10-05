@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 
-const Cabecalho = styled.div`
+const CabecalhoComp = styled.div`
     display: flex;
     flex-direction: row;
     background-color: #1e1e1e;
     color: white;
-    padding-left: 1em;
-    padding-top: 1em;
-    
+    padding-left: 1rem;
+    padding-top: 1rem;
+    justify-content: space-between;
+   
 
 
 
@@ -16,10 +17,11 @@ cursor: pointer;
 color: #7e00fc;
 }
 
-*{
-    margin: 0px;
-    box-sizing: border-box;
+.itens{
+    display: flex;
+    flex-direction: row;
 }
+
 
 .item-favorito, .item-lupa, .item-usuario, .item-logo:hover{
 cursor: pointer;
@@ -37,7 +39,7 @@ cursor: pointer;
 }
 
 .item, .item-favorito img{
- margin-right: 0.5em
+ margin-right: 8px;
 }
 
 .item-favorito{
@@ -48,12 +50,21 @@ cursor: pointer;
 
 .item-lupa svg{
     margin-left: 17em;
+    fill: #ffffff;
+    width: 31px;
+    height: 31px;
 }
 
 .item-usuario{
     height: 1.8em;
     margin-left: 2em;
 }
+
+.itens-end{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
 `
 
-export {Cabecalho}
+export {CabecalhoComp}
