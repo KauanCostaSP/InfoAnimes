@@ -1,9 +1,9 @@
 import { CentralAjudaComp } from "./styled";
-
+import Cabecalho from '../../../components/cabecalho'
 export default function Index() {
     return(
         <CentralAjudaComp> 
-            <CabecalhoComp/>
+            <Cabecalho/>
 
             <div class="conteudo_central">
             <div class="seta"><img src="../../../assets/images/Arrow 1.svg" alt=""/></div>
