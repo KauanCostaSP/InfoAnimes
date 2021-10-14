@@ -13,9 +13,9 @@ export default function Index() {
                 <div class="item"> Termos de Uso </div>
             </div>
             <div class="redes-sociais">
-                <div class="facebook"> <img src="../../assets/images/Facebook.png"/> </div>
-                <div class="Instagram"> <img src="../../assets/images/instagram.png"/> </div>
-                <div class="Twitter"> <img src="../../assets/images/Twitter.png"/> </div>
+                <div class="facebook"> <img src="/assets/images/Facebook.png" alt="" /> </div>
+                <div class="Instagram"> <img src="/assets/images/instagram.png" alt="" /> </div>
+                <div class="Twitter"> <img src="/assets/images/Twitter.png" alt="" /> </div>
             </div>
             <div class="retangulo-1"></div>
             <div class="retangulo-2"></div>

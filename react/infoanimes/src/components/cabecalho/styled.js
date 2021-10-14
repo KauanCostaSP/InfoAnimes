@@ -13,9 +13,14 @@ const CabecalhoComp = styled.div`
 
 
     .item:hover{
-cursor: pointer;
-color: #7e00fc;
-}
+    cursor: pointer;
+    color: #7e00fc;
+    }
+
+    .item-favorito :hover{
+        cursor: pointer;
+    color: #7e00fc;
+    }
 
 .itens{
     display: flex;
@@ -30,6 +35,12 @@ cursor: pointer;
 .item-logo img{
     height: 2.5em;
     padding-right: 14em;
+}
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .item{
@@ -58,6 +69,11 @@ cursor: pointer;
 .item-usuario{
     height: 1.8em;
     margin-left: 2em;
+}
+
+.item{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .itens-end{

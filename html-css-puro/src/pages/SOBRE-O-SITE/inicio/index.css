@@ -145,9 +145,11 @@ body{
 }
 
 .capa :hover{
-    box-shadow: 0 0 .8em white;
+    
     border: none;
     border-radius: 10px;
+    transform: translateY(20px);
+    transform: scale(1.1);
 }
 
 
@@ -197,7 +199,7 @@ span{
 .barra2{
     border-top:  4px solid white;
     background-color: #7E00FC;
-    width: 245px;
+    width: 249px;
     height: 80px;  
     margin-top: 4.7em;
 }
@@ -406,7 +408,7 @@ span{
     text-decoration: none;
     border: none;
     background: #530194;
-    box-shadow: 0px 4px 10px #A64FFD;
+    
     border-radius: 20px;
     position: absolute;
     width: 100px;
@@ -414,6 +416,12 @@ span{
     text-align: center;
     margin-top: 2em;
     padding: 4.8px;
+}
+
+.card .info .btn:hover{
+    background: #FFFF;
+    color: #561DFA;
+    box-shadow: 0 0 50px #561DFA;
 }
 
 a .bt{
