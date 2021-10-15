@@ -33,7 +33,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 80%;
     margin-left: 7.6em;
     margin-bottom: 3em;
 }
@@ -68,7 +68,7 @@ body{
     border: none;
     width: 189px;
     height: 46px;
-    margin-left: 42.5em;
+    margin-left: 38em;
     margin-bottom: 2.7em;
 }
 
@@ -145,9 +145,11 @@ body{
 }
 
 .capa :hover{
-    box-shadow: 0 0 .8em white;
+    
     border: none;
     border-radius: 10px;
+    transform: translateY(20px);
+    transform: scale(1.1);
 }
 
 
@@ -197,7 +199,7 @@ span{
 .barra2{
     border-top:  4px solid white;
     background-color: #7E00FC;
-    width: 245px;
+    width: 249px;
     height: 80px;  
     margin-top: 4.7em;
 }
@@ -243,7 +245,7 @@ span{
     border: none;
     width: 189px;
     height: 46px;
-    margin-left: 30.5em;
+    margin-left: 39em;
 }
 
 .cadastrar button::before{
@@ -334,9 +336,8 @@ span{
 .comunidades{
     display: flex;
     width: 90%;
-    max-width: 100%;
+    max-width: 90%;
     justify-content: space-around;
-
 }
 
 .card{
@@ -354,13 +355,14 @@ span{
 .card:hover{
     transform: translateY(20px);
     transform: scale(1.1);
-    z-index: 1;
+    z-index: 3;
 }
 
 .card::before{
     display: block;
-    width: 155%;
+    width: 156%;
     height: 100%;
+    max-width: 155%;
     content: "";
     position: absolute;
     background: rgba(0, 0, 0, 0.63);
@@ -368,7 +370,7 @@ span{
     box-shadow: 0 0 5em rgba(255, 255, 255, 0.726);
     top: 0px;
     left: 0px;
-    z-index: 2;
+    z-index: 3;
     transition: 0.5s all;
     opacity: 0;
 }
@@ -406,7 +408,7 @@ span{
     text-decoration: none;
     border: none;
     background: #530194;
-    box-shadow: 0px 4px 10px #A64FFD;
+    
     border-radius: 20px;
     position: absolute;
     width: 100px;
@@ -414,6 +416,12 @@ span{
     text-align: center;
     margin-top: 2em;
     padding: 4.8px;
+}
+
+.card .info .btn:hover{
+    background: #FFFF;
+    color: #561DFA;
+    box-shadow: 0 0 50px #561DFA;
 }
 
 a .bt{
@@ -446,7 +454,7 @@ a .bt{
 
 
 body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     background-color: #323232;
   }
@@ -459,7 +467,7 @@ body::-webkit-scrollbar {
   
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #7E00FC;
   }
 

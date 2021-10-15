@@ -18,3 +18,54 @@
     src: url('../../../assets/fonts/Montserrat-Bold.woff');
 }
 
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0d0d0d;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+}
+
+.texto{
+    margin: 45px 75px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+p{
+    margin: 15px 0px;
+    font: 24px fonte-100;
+}
+
+.titulo-terms{
+    background-color: #7E00FC;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    font: 36px fonte-300;
+}
+
+.titulo-compromisso{
+    color: #7E00FC;
+    text-shadow: 3px 0px 1px white;
+    font: 36px fonte-300;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.titulo-informacoes{
+    display: flex;
+    justify-content: center;
+    font: 36px fonte-300;
+    color: #7E00FC;
+}
