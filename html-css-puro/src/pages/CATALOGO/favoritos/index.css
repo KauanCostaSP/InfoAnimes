@@ -21,19 +21,19 @@ body::-webkit-scrollbar-thumb {
     background-color: #7E00FC;
 }
 
-.item-favorito a{
-    color: #7E00FC;
-    text-decoration: none;
-}
-
-.item {
+a{
     color: #ffffff;
-}
-
-.item a{
-    color: #ffffff; 
     text-decoration: none;
 }
+
+a:hover{
+    color: #7E00FC;
+}
+
+.item_usuario img{
+    margin-right: 40px;
+}
+
 
 .favoritos{
     background-attachment: fixed;
