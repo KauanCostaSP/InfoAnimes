@@ -1,0 +1,63 @@
+body {
+    padding: 2em;
+    background-color: #323232;
+}
+
+.container_menu{
+    background-color: #0d0d0d;
+    border-radius: 10px;
+    font-family: Montserrat-Regular !important;
+    width: 200px;
+}
+
+.superior{
+    border-radius: 10px 10px 0px 0px;
+    background-color: #7E00FC;
+    padding-top: 0.5em;
+}
+
+hr{
+    border: 1px solid #d1d1d1;
+    width: 2.7em;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+
+    background: linear-gradient(to bottom, #7E00FC 31.77%, #0d0d0d 100%);
+}
+
+.avatar img{
+    width: 3.2em;
+    height: 3em;
+}
+
+.menu{
+    padding: em 1em 2em 0em;
+}
+
+.menu_item{
+    background-color: #0d0d0d;
+    display: flex;
+    flex-direction: row;
+}
+
+.linha_roxa{
+    height: 1.7em;
+    width: 0em;
+    border: 3px solid teal;
+
+    margin-right: 1em;
+}
+
+.item button{
+    color: #ffffff;
+    background-color: #0d0d0d;
+    font-size: 16px;
+    font-weight: bold;
+
+    border: 0px transparent;
+
+    padding: 0em 0em 1em 0em;
+}

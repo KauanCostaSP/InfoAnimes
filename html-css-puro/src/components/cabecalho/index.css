@@ -22,12 +22,12 @@ body{
 }
 
 .item:hover{
-cursor: pointer;
-color: #7e00fc;
+    cursor: pointer;
+    color: #7e00fc;
 }
 
 .item-favorito, .item-lupa, .item-usuario, .item-logo:hover{
-cursor: pointer;
+    cursor: pointer;
 }
 
 .item-logo img{
@@ -37,18 +37,13 @@ cursor: pointer;
 
 .item{
     margin: 0.8em 0.8em 1.4em 0.8em;
-    font-size: 1em;
-    font: 14px Montserrat-Regular;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Montserrat-Regular;
 }
 
-.item, .item-favorito img{
- margin-right: 0.5em
-}
-
-.item-favorito{
-    margin: 0.6em 0.8em 1.2em 0.8em;
-    font-size: 1em;
-    font: 14px Montserrat-Regular;
+.item, .item-favorito{
+    margin-right: 0.5em
 }
 
 .item-lupa svg{
