@@ -35,7 +35,7 @@ body{
 .SALAS{
     margin-left: .5em;
     margin-top: 1em;
-    margin-right: 1.2em;
+    margin-right: .5em;
 }
 
 .sala{
@@ -59,12 +59,6 @@ body{
     margin-top: 1em;
 }
 
-.comunidade-destaque .comunidade{
-    border-radius: 10px;
-    background: rgba(126, 0, 252, 0.28);
-    box-shadow: 0px 4px 10px 3px #7e00fc;
-
-}
 
 .comunidade-destaque .comunidade .acao{
     background: #323232;
@@ -121,7 +115,7 @@ body{
 
 
 .comunidade{
-    margin-left: 2em;
+    margin-left: 1em;
     margin-top: 1em;
 }
 
