@@ -83,6 +83,7 @@ a:hover{
 
 .comunidade-destaque{
     margin-top: 1em;
+    margin-right: 1em;
 }
 
 
@@ -141,9 +142,11 @@ a:hover{
 
 
 .comunidade{
-    margin-left: 1em;
+    margin-left: 2em;
     margin-top: 1em;
 }
+
+
 
 .destaque{
     display: flex;
