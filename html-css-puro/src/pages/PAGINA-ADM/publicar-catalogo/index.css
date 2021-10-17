@@ -16,6 +16,7 @@
 body{
     margin: 0px;
     color: #fff;
+    font-family: Montserrat-Regular;
 }
 
 body::-webkit-scrollbar-track {
@@ -36,8 +37,13 @@ body::-webkit-scrollbar-thumb {
     background-color: #7E00FC;
 }
 
-.item-favorito:hover{
-    color: #7e00fc;
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7E00FC;
 }
 
 .item_usuario img{
@@ -53,49 +59,93 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     position: absolute;
     margin-right: 20px;
+    margin-top: 30px;    
+    
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #aa8ed6;
+    padding: 1em;
+    padding-bottom: 0.5em;
+}
+
+.adi_fav img{
+
+    width: 24px;
+    height: 24px;
 }
 
 .info_basica{
-    background-image: url(../../../assets/images/back_catologo.png);
     background-position: absolute;
     background-attachment: fixed;
     background-repeat: no-repeat;
+   
     padding-left: 2em;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
 }
 
-.alterar-fundo {
+.alt_fundo button{
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.21);
+    position: relative;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    border-radius: 6px;
+    border: 0px transparent;
+
+    padding: 1em 2em 1em 2em;
+    margin: 15em 0em 0em 33em;
+}
+
+.alt_fundo button::before{
+    content: '';
     position: absolute;
-    font: 16px Montserrat-Medium;
-    margin-left: 34em;
-    margin-top: 13em;
-    color: white;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    transition: 0.5s;
 }
 
-.fundo-transparente{
-    opacity: 0.3;
-    padding-top: 15em;
-     position: relative ;
-    background-color: white;
-    max-width: 13em;
-    top: 12em;
-    padding-top: 3em;
-    margin: 0em 0em 0em 33em;
+.alt_fundo button:hover::before{
+    width: 100%;
+    height: 100%;
 }
 
-.fundo-transparente:hover{
-cursor: pointer;
-}
-
-.tres-pontinhos{
-    font: 1em Montserrat-Bold ;
+.alt_fundo button::after{
+    content: '';
     position: absolute;
-    margin-left: 75em;
-    margin-top: 20em;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transition: 0.5s;
 }
 
-.tres-pontinhos:hover{
-    cursor: pointer;
+.alt_fundo button:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+.alt_fundo button:hover{
+    box-shadow: 0 0 1em #ffffff8c;
+}
+
+.alt_fundo button:hover{
+    background: #ffffff;
+    color: #111;
+    box-shadow: 0 0 50px #f5f5f5;
+    transition-delay: 0.5s;
 }
 
 .situacao{
@@ -103,19 +153,23 @@ cursor: pointer;
     font-size: 16px;
     font-family:  Montserrat-Medium;
     
-    padding-top: 25em;
+    padding-top: 10em;
 }
 
 .info_b{
     display: flex;
     flex-direction: row;
     color: #ffffff;
+
     font-size: 18px;
     width: 70em;
+    height: 3em;
+    margin-top: 15px;
 }
 
 .classificacao{
     background-color: #ff0000;
+    height: 1.5em;
     border-radius: 3px;
     padding: 4px 10px;
     margin: 0px 8px;
@@ -123,6 +177,10 @@ cursor: pointer;
 
 .produtora{
     margin-left: 6px;
+}
+
+.menu{
+    margin-left: 38em;
 }
 
 .info_gerais{
@@ -257,20 +315,66 @@ cursor: pointer;
     margin-right: 3em;
 }
 
-.botao-publicar{
-    text-align: center;
+.publicar button{
+    font-family: Montserrat-Regular;
+    font-size: 15px;
+    color: #7E00FC;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 6px;
     border: none;
-    margin: 10em;
-    background: rgba(126, 0, 252, 0.72);
-    box-shadow: 0px 4px 23px #A64FFD;
-    border-radius: 20px;
+    width: 189px;
+    height: 46px;
+    margin-left: 38em;
+    margin-bottom: 4em;
 }
 
-.botao-publicar div{
-    padding: 1em 0em 1em 0em;
-    font: 1em Montserrat-Medium;
+.publicar button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    border-top: 2px solid #7E00FC;
+    border-left: 2px solid #7E00FC;
+    transition: 0.5s;
 }
 
-.botao-publicar:hover{
-cursor: pointer;
+.publicar button:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+.publicar button::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+    border-bottom: 2px solid #7E00FC;
+    border-right: 2px solid #7E00FC;
+    transition: 0.5s;
+}
+
+.publicar button:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+.publicar button:hover{
+    box-shadow: 0 0 1em #A245FF;
+}
+
+.publicar button:hover{
+    background: #7E00FC;
+    color: #111;
+    box-shadow: 0 0 50px #561DFA;
+    transition-delay: 0.5s;
 }
