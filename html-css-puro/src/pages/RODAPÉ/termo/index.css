@@ -27,6 +27,19 @@ body{
     background-color: #0d0d0d;
 }
 
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7E00FC;
+}
+
+.item_usuario img{
+    margin-right: 40px;
+}
+
 .container{
 display: flex;
 flex-direction: column;
@@ -68,4 +81,18 @@ p{
     justify-content: center;
     font: 36px fonte-300;
     color: #7E00FC;
+}
+
+
+.item-termo{
+    margin: 0.8em 0.8em 1.4em 0.8em;
+    color: #7E00FC !important;
+    font-size: 15px;
+    font-family: Montserrat-Regular !important;
+    font-weight: bold;
+}
+
+.item-termo a{
+    color: #7E00FC;
+    font-size: 15px;
 }
