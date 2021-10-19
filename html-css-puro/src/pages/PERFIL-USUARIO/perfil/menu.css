@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../../../assets/fonts/Montserrat-Regular.woff');
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url('../../../assets/fonts/Montserrat-Medium.woff');
+}
+
+body{
+    margin: 0px !important;
+    color: #ffffff;
+    font-family: Montserrat-Regular;
+    background-color: #3f3f3f;
+}
+
+hr{
+    border: 1px solid #ffffff;
+
+    width: 2.7em;
+}
+
+.menu {
+    background: linear-gradient(to bottom, #530194, #0d0d0d 100%);
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+
+    padding-top: 5px;
+    margin: 3em;
+}
+
+.item button{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Montserrat-Regular;
+    text-align: center;
+    border: 0px transparent;
+    border-bottom: 2px solid #ffffff;
+    width: 200px;
+
+    padding: 15px 40px 20px 40px;
+}
+
+.item:hover{
+    transform: translateY(20px);
+    transform: scale(1.1);
+    z-index: 3;
+}
+.item::before{
+    display: block;
+    content: "";
+    position: absolute;
+    box-shadow: 0 0 5em rgba(255, 255, 255, 0.726);
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+
+.sair button{
+    background-color: transparent;
+    color: #7E00FC;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Montserrat-Regular;
+    text-align: center;
+    border: 0px transparent;
+
+    padding: 15px 20px 20px 20px;
+}

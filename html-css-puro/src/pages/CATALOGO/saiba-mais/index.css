@@ -1,21 +1,21 @@
 @font-face {
-    font-family: Montserrat-Regular;
+    font-family: fonte-100;
     src: url('../../../assets/fonts/Montserrat-Regular.woff');
 }
 
 @font-face {
-    font-family: Montserrat-Regular;
-    src: url('../../../assets/fonts/Montserrat-Regular.woff');
-}
-
-@font-face {
-    font-family: Montserrat-Medium;
+    font-family: fonte-200;
     src: url('../../../assets/fonts/Montserrat-Medium.woff');
 }
 
 @font-face {
     font-family: fonte-300;
-    src: url('../../../assets/fonts/Montserrat-SemiBold.ttf');
+    src: url('../../../assets/fonts/Montserrat-SemiBold.woff');
+}
+
+@font-face {
+    font-family: fonte-400;
+    src: url('../../../assets/fonts/Montserrat-Bold.woff');
 }
 
 *{
@@ -77,6 +77,32 @@ cursor: pointer;
 .item-usuario{
     height: 1.8em;
     margin-left: 2em;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7E00FC;
+}
+
+.item_usuario img{
+    margin-right: 40px;
+}
+
+.item-catalogos{
+    margin: 0.8em 0.8em 1.4em 0.8em;
+    color: #7E00FC !important;
+    font-size: 14px;
+    font-family: Montserrat-Regular !important;
+    font-weight: bold;
+}
+
+.item-catalogos a{
+    color: #7E00FC;
+    font-size: 14px;
 }
 
 
@@ -177,7 +203,8 @@ body{
 }
 
 .descricao{
-    font-family: fonte-300;
+    font-family: fonte-200;
+    color: white;
     text-align: center;
     margin-top: .5em;
 }
@@ -195,16 +222,6 @@ display: flex;
 flex-direction: column;
 }
 
-
-.descricao{
-    color: white;
-}
-
-.imagem:hover{
-    box-shadow: 0 0 1.2em white;
-    border: none;
-    border-radius: 10px;
-}
 
 
 body::-webkit-scrollbar-track {
