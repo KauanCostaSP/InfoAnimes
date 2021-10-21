@@ -23,6 +23,33 @@ body{
     background-image: linear-gradient(#0E0E0E 70%, #1A1A1A);
 }
 
+a{
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7E00FC;
+}
+
+.item_usuario img{
+    margin-right: 40px;
+}
+
+.item-home{
+    margin: 0.8em 0.8em 1.4em 0.8em;
+    color: #7E00FC !important;
+    font-size: 15px;
+    font-family: Montserrat-Regular !important;
+    font-weight: bold;
+}
+
+.item-home a{
+    color: #7E00FC;
+    font-size: 15px;
+}
+
 
 .apresentacao{
     margin-top: 10em;

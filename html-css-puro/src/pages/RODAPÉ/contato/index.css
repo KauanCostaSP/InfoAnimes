@@ -20,3 +20,29 @@
 .copyright{
     margin-top: 20px;
 }
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7E00FC;
+}
+
+.item_usuario img{
+    margin-right: 40px;
+}
+
+.item-contato{
+    margin: 0.8em 0.8em 1.4em 0.8em;
+    color: #7E00FC !important;
+    font-size: 15px;
+    font-family: Montserrat-Regular !important;
+    font-weight: bold;
+}
+
+.item-contato a{
+    color: #7E00FC;
+    font-size: 15px;
+}

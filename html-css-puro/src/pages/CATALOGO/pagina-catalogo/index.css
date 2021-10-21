@@ -270,8 +270,8 @@ a:hover{
     border-color: #ffffff;
 }
 
-#adi{
-    color: #909090;
+.adicionar textarea{
+    color: #ffffff;
     background-color: transparent;
     font-size: 14px;
     font-family: Montserrat-Medium;
