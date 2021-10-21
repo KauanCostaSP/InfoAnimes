@@ -22,20 +22,36 @@ body::-webkit-scrollbar-thumb {
     background-color: #7E00FC;
 }
 
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7E00FC;
+}
+
+.item_usuario img{
+    margin-right: 40px;
+}
+
 .conteudo{
     display: flex;
     flex-direction: row;
     
-    background-image: url(../../../assets/images/back_adicionar_post.png);
     margin: auto;
     margin-left: 7.5em;
-    background-repeat: no-repeat;
     width: 1300px;
 
     border-radius: 8px;
 
     padding-top: 1.5em;
     padding-bottom: 1.5em;
+}
+
+.back img{
+    z-index: 3;
 }
 
 .publicar_comunidade{
