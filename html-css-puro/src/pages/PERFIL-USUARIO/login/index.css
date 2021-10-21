@@ -32,22 +32,15 @@ input::placeholder {
 }
 
 .or{
+
     margin-top: 25px;
     color: #ffffff;
     font-size: 16px;
 }
 
-.linha{
-    width: 30px;
-    border: 1px solid #fff;
-}
-
-.linha_direita{
-    text-align: right;
-    width: 30px;
-    border: 1px solid #fff;
-    margin: 0em 0em 0em 15em;
-    top: 1em;
+hr{
+    border: 1px solid #ffffff;
+    width: 2em  ;
 }
 
 .login_por{
@@ -79,4 +72,21 @@ input::placeholder {
 
 .item:hover{
     color: #7e00fc;
+}
+
+.botao_login button{
+    color: #ffffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #7E00FC;
+
+    border-radius: 6px;
+    border: 0px transparent;
+
+    padding: 8px 8px 8px 8px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left: 3rem;
+
+    width: 11em;
 }

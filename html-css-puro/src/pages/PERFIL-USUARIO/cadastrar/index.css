@@ -1,0 +1,51 @@
+body{
+    margin: 0px !important;
+    font-family: Montserrat-Regular;
+    color: #ffffff;
+    background-color: #0E0E0E;
+}
+
+.container{
+    background-color: #4300814f;
+    box-shadow: 0 0 2em #A245FF;
+    border-radius: 2em;
+
+    margin: 3em 0em 0em 3em;
+    padding: 2em 1em 1em 1em;
+    width: 18em;
+}
+
+.form_preenchimento input{
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+    border-radius: 3px;
+    border: 0px transparent;
+    height: 25px;
+    width: 240px;
+
+    margin-top: 8px;
+    margin: 0.5em 1em 0em 1em;
+    padding-left: 12px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.botao_cadastrar button{
+    color: #ffffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #7E00FC;
+
+    border-radius: 6px;
+    border: 0px transparent;
+
+    padding: 8px 8px 8px 8px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    margin-left: 3rem;
+
+    width: 11em;
+}
