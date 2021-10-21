@@ -23,6 +23,32 @@
     box-sizing: border-box;
 }
 
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7E00FC;
+}
+
+.item_usuario img{
+    margin-right: 40px;
+}
+
+.item-sobre{
+    margin: 0.8em 0.8em 1.4em 0.8em;
+    color: #7E00FC !important;
+    font-size: 15px;
+    font-family: Montserrat-Regular !important;
+    font-weight: bold;
+}
+
+.item-sobre a{
+    color: #7E00FC;
+    font-size: 15px;
+}
+
 .conteudo{
     background: linear-gradient(180deg, rgba(126, 0, 252, 0.03) 55.07%, rgba(126, 0, 252, 0.03) 100%);
     box-shadow: 0px 4px 20px 5px #A64FFD;
