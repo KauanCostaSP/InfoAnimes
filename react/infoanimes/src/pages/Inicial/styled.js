@@ -438,6 +438,118 @@ a .bt{
     margin-top: 1em;
 }
 
+.card{
+    display: flex;
+    align-items: flex-start;
+    width: 380px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(20px);
+    transform: scale(1.1);
+    z-index: 3;
+}
+
+.card::before{
+    display: block;
+    width: 156%;
+    height: 100%;
+    max-width: 155%;
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.63);
+    border-radius: 5px;
+    box-shadow: 0 0 5em rgba(255, 255, 255, 0.726);
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover::before{
+    opacity: 1;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card .info .btn{
+    color: white;
+    text-decoration: none;
+    border: none;
+    background: #530194;
+    
+    border-radius: 20px;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-top: 2em;
+    padding: 4.8px;
+}
+
+.card .info .btn:hover{
+    background: #FFFF;
+    color: #561DFA;
+    box-shadow: 0 0 50px #561DFA;
+}
+
+a .bt{
+   display: flex;
+   flex-direction: row;
+   position: absolute;
+}
+
+.card .info .bt{
+    width: 110px;
+    height: 40px;
+    margin-left: .5em;
+    padding: 3px;
+    
+    text-decoration: none;
+    color: white;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background:transparent
+}
+
+.card .info h1{
+    margin-top: 1em;
+}
+
+.card .info p{
+    margin-top: 1em;
+}
+
 
 body::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

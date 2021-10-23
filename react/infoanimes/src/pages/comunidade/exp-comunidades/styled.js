@@ -94,6 +94,10 @@ const Container = styled.div`
     margin-left: .5em;
 }
 
+.capa{
+    width: 120px;
+}
+
 
 .info{
     font-family: fonte-100;

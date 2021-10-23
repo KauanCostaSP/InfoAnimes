@@ -12,7 +12,7 @@ export default function index() {
             <Link className="item" to="/" >Home</Link>
             <Link className="item" to="/sobre" >Sobre</Link>
             <Link className="item" to="/comunidades">Comunidade</Link>
-            <Link className="item" >Contato</Link>
+            <Link className="item" to="/contato" >Contato</Link>
             <Link className="item">Favoritos</Link>
             <Link className="item">Catalogos</Link>
             </div>
