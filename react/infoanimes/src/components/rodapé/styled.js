@@ -30,6 +30,8 @@ const Container = styled.div`
     .item{
         padding-right: 0.8em;
         font: 14px Montserrat-Medium;
+        text-decoration: none;
+        color: #ffffff;
     }
 
     .redes-sociais img{
@@ -50,6 +52,12 @@ const Container = styled.div`
         padding-top: 3em;
         background-color: #7E00FC;
         width: 100%;
+    }
+
+
+    Link{
+        text-decoration: none;
+        color: #ffffff;
     }
 `
 

@@ -1,6 +1,8 @@
 import { Container } from './styled'
 import Cabecalho from '../../components/cabecalho'
 import Rodape from '../../components/rodapé'
+import CardComunidade from '../../components/inicial/card-comunidade'
+import CardCatalogo from '../../components/inicial/card-catalogo'
 
 export default function inicio() {
     return (
@@ -15,8 +17,9 @@ export default function inicio() {
                     <div class="t2-texto">Crie a sua própria comunidade ou faça parte de uma Compartilhe seu conhecimento </div>
                 </div>
                 <div class="comunidades">
-                    <div class="card">
-                        <img src="../../../assets/images/Nf-Naruto.jpeg" alt="" />
+                    
+                <div class="card">
+                        <img src="../../../assets/images/Darlin.jpeg" alt="" />
                         <div class="info">
                             <a href="#" class="bt">Mangás</a>
                             <a href="#" class="bt">Tradução</a>
@@ -26,19 +29,6 @@ export default function inicio() {
                             <a href="#" class="btn">Entrar</a>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <img src="../../../assets/images/lol.jpeg" alt="" />
-                        <div class="info">
-                            <a href="#" class="bt">Mangás</a>
-                            <a href="#" class="bt">Tradução</a>
-                            <a href="#" class="bt">Comunidade</a>
-                            <h1>Mangá</h1>
-                            <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                            <a href="#" class="btn">Entrar</a>
-                        </div>
-                    </div>
-
 
                     <div class="card">
                         <img src="../../../assets/images/Darlin.jpeg" alt="" />
@@ -51,6 +41,8 @@ export default function inicio() {
                             <a href="#" class="btn">Entrar</a>
                         </div>
                     </div>
+
+                    
 
 
                     <div class="card">
@@ -100,62 +92,76 @@ export default function inicio() {
                 </div>
             </div>
                 <div class="catalogos">
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Nanatsu.png" alt="" /></div>
-                        <div class="desc">Nanatsu</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Naruto.png" alt="" /></div>
-                        <div class="desc">Naruto</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Violet.png" alt="" /></div>
-                        <div class="desc">Violet...</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Thundercats.png" alt="" /></div>
-                        <div class="desc">Thundercats</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Sawamu.png" alt="" /></div>
-                        <div class="desc">Sawamu o...</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Kakegurui.png" alt="" /></div>
-                        <div class="desc">Kakegurui</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Speed.png" alt="" /></div>
-                        <div class="desc">SpeedRacer</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/He man.png" alt="" /></div>
-                        <div class="desc">He man</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Dragon Ball.png" alt="" /></div>
-                        <div class="desc">Dragon Ball</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Pokemon.png" alt="" /></div>
-                        <div class="desc">Pokemon</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Sailor_Moon.png" alt="" /></div>
-                        <div class="desc">Sailor Moon</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Outlaw Star.png" alt="" /></div>
-                        <div class="desc">Outlaw</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Gundam 08TH.png" alt="" /></div>
-                        <div class="desc">Gundam</div>
-                    </div>
-                    <div class="catalogo">
-                        <div class="capa"><img src="../../../assets/images/Cowboy Bebop.png" alt="" /></div>
-                        <div class="desc">Cowboy</div>
-                    </div>
+                    
+                    <CardCatalogo
+                        img="/assets/images/Darlin.jpeg"
+                        desc="comp "
+                    />
+
+                    <CardCatalogo
+                        img="/assets/images/Darlin.jpeg"
+                        desc="comp "
+                    />
+
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+                    
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+                    
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+                    
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+                    
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+                    
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+                    
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+                    
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+                    
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+
+                
+                    <CardCatalogo img="/assets/images/Darlin.jpeg" desc="comp" />
+                    
+                
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+                    
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp "
+                    />
+                
                 </div>
 
                 <div class="botao"><button>Saiba Mais</button></div>
