@@ -29,6 +29,16 @@ const Container = styled.div`
     flex-direction: row;
 }
 
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    margin-right: 2em;
+    margin-left: 0.5em;
+
+}
+
 .SALAS{
     margin-left: .5em;
     margin-top: 1em;
@@ -49,18 +59,23 @@ const Container = styled.div`
 }
 
 .COMUNIDADES{
-    margin-left: -10px;
+    margin-left: -30px;
+    
+    padding-left: -10;
 }
 
 .cabecalho-comunidade{
     display: flex;
     flex-direction: row;
-    margin-left: 1em;
+    
+    margin-right: 1.6em;
     margin-top: 1.5em;
 }
 
 .comunidade-destaque{
     margin-top: 1em;
+    margin-right: 11px;
+    
     
     
 }
@@ -131,7 +146,7 @@ const Container = styled.div`
 
 
 .comunidade{
-    margin-left: 2em;
+    
     margin-top: 1em;
 }
 

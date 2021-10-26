@@ -1,6 +1,9 @@
 import Cabecalho from '../../../components/cabecalho/index'
 import Rodape from '../../../components/rodapé'
 import { Container } from './styled'
+import BarraLateral from '../../../components/comunidade1/comunidade/barra-lateral'
+import BoxComunidade from '../../../components/comunidade1/comunidade/box-comunidade'
+
 
 export default function Index() {
     return (
@@ -9,15 +12,7 @@ export default function Index() {
 
 
         <div class="conteudo">
-            <div class="SALAS">
-                <div class="sala"><img src="../../../assets/images/capa_com_5.png" /></div>
-                <div class="sala"><img src="../../../assets/images/capa_com_6.png" /></div>
-                <div class="sala"><img src="../../../assets/images/capa_com_3.png" /></div>
-                <div class="sala"><img src="../../../assets/images/perfil.jpeg" /></div>
-                <div class="sala"><img src="../../../assets/images/capa_com_2.png" /></div>
-                <div class="sala"><img src="../../../assets/images/capa_com_4.png" /></div>
-                <div class="sala"><img src="../../../assets/images/capa_com_1.png" /></div>
-            </div>
+            <BarraLateral />
 
             <div class="GIF">
                 <iframe src="https://assets.pinterest.com/ext/embed.html?id=243475923595810649" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
@@ -41,37 +36,30 @@ export default function Index() {
 
                 <div class="conteudo-comunidade">
                     <div class="box1">
-                    <div class="comunidade">
-                   <div class="titulo">Comunidade lgbtqia+</div>
-                   <div class="descricao">
-                       <a href="#" class="bt">lgbtqia+</a>
-                       <a href="#" class="bt">Comunidade</a>
-                       <a href="#" class="bt">Chat</a>
-                       <a href="#" class="bt">Encontros</a>
-                   </div>
-                   <div class="imagem"><img src="../../../assets/images/comunilgbt.jpeg" /></div>
-                   <div class="acao">
-                       <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                       <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                       <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
-                   </div>
-                    </div>
+                    
+                            
+                        <BoxComunidade
+                                titulo="Darling"
+                                dtq1="anime"
+                                dtq2="mmangá"
+                                dtq3="romance"
+                                dtq4="sla"
 
-                    <div class="comunidade">
-                        <div class="titulo">Comunidade lgbtqia+</div>
-                        <div class="descricao">
-                            <a href="#" class="bt">lgbtqia+</a>
-                            <a href="#" class="bt">Comunidade</a>
-                            <a href="#" class="bt">Chat</a>
-                            <a href="#" class="bt">Encontros</a>
-                        </div>
-                        <div class="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
-                        <div class="acao">
-                            <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                            <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                            <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
-                        </div>
-                        </div>
+                                img="/assets/images/Darlin.jpeg"
+                            />
+
+
+
+
+                            <BoxComunidade
+                                titulo="darling"
+                                dtq1="anime"
+                                dtq2="mmangá"
+                                dtq3="romance"
+                                dtq4="sla"
+
+                                img="/assets/images/Darlin.jpeg"
+                            />
 
                     <div class="comunidade">
                     <div class="titulo">Comunidade lgbtqia+</div>
@@ -136,7 +124,7 @@ export default function Index() {
                         <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
                     </div>
                     </div>
-                    </div>
+                 </div>
 
     
                     <div class="box2">

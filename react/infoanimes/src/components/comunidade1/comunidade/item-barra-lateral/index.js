@@ -1,4 +1,4 @@
-import Sala from './styled'
+import {Sala} from './styled'
 
 export default function ItemBarra(props) {
     return (
