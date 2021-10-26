@@ -5,9 +5,8 @@ const Catalogo = styled.div`
     margin-left: 2em;
     margin-bottom: 1.5em;
     border-radius: 20px;
-
-    
-        border-radius: 10px;
+        
+   
     
 
     .desc{
@@ -17,9 +16,17 @@ const Catalogo = styled.div`
         margin: .2em;
     }
 
+    img{
+        width:120px;
+    }
+
     .capa :hover{
         box-shadow: 0 0 .8em white;
         border: none;
+       
+    }
+
+    .capa img{
         border-radius: 10px;
     }
 

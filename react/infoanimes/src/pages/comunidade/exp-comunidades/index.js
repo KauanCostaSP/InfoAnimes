@@ -9,150 +9,289 @@ export default function Index() {
 
 
         <div class="conteudo">
-            <div class="texto">
-                <div class="t1-titulo">Conecte-se com pessoas</div>
-                <div class="t2-texto">Crie a sua própria comunidade ou faça parte de uma Compartilhe seu conhecimento </div>
+            <div class="SALAS">
+                <div class="sala"><img src="../../../assets/images/capa_com_5.png" /></div>
+                <div class="sala"><img src="../../../assets/images/capa_com_6.png" /></div>
+                <div class="sala"><img src="../../../assets/images/capa_com_3.png" /></div>
+                <div class="sala"><img src="../../../assets/images/perfil.jpeg" /></div>
+                <div class="sala"><img src="../../../assets/images/capa_com_2.png" /></div>
+                <div class="sala"><img src="../../../assets/images/capa_com_4.png" /></div>
+                <div class="sala"><img src="../../../assets/images/capa_com_1.png" /></div>
             </div>
-            <div class="comunidades">
-                <div class="card">
-                    <img src="/assets/images/Nf-Naruto.jpeg" style=" width: 380px; height: 360px;"/>
-                    <div class="info">
-                        <a href="#" class="bt">Mangás</a>
-                        <a href="#" class="bt">Tradução</a>
-                        <h1>Mangá</h1>
-                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a href="#" class="btn">Entrar</a>
+
+            <div class="GIF">
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=243475923595810649" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=142707881933112493" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
+                <iframe src="https://assets.pinterest.com/ext/embed.html?id=71072500362247964" height="606" width="345" frameborder="0" scrolling="no" ></iframe>
+                <div class="servidor"><button>Criar Servidor</button></div>
+            </div>
+
+            <div class="COMUNIDADES">
+                <dv class="cabecalho-comunidade">
+                    <a href="#" class="info">Destaques</a>
+                    <a href="#" class="info">Informaçôes</a>
+                    <div class="perfis">
+                         <div class="online"><img src="../../../assets/images/perfil_membro_2.png" /></div>
+                         <div class="online"><img src="../../../assets/images/perfil_membro_4.png" /></div>
+                         <div class="online"><img src="../../../assets/images/perfil_membro_1.png" /></div>
+                         <a href="#" class="inf">+122</a>
                     </div>
-                </div>
+                    <a href="#" class="info">Conversas</a>
+                </dv>
 
-                <div class="card">
-                    <img src="../../../assets/images/lol.jpeg" style=" width: 380px; height: 360px;"/>
-                    <div class="info">
-                        <a href="#" class="bt">Mangás</a>
-                        <a href="#" class="bt">Tradução</a>
-                        <h1>Mangá</h1>
-                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a href="#" class="btn">Entrar</a>
+                <div class="conteudo-comunidade">
+                    <div class="box1">
+                    <div class="comunidade">
+                   <div class="titulo">Comunidade lgbtqia+</div>
+                   <div class="descricao">
+                       <a href="#" class="bt">lgbtqia+</a>
+                       <a href="#" class="bt">Comunidade</a>
+                       <a href="#" class="bt">Chat</a>
+                       <a href="#" class="bt">Encontros</a>
+                   </div>
+                   <div class="imagem"><img src="../../../assets/images/comunilgbt.jpeg" /></div>
+                   <div class="acao">
+                       <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                       <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                       <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                   </div>
                     </div>
-                </div>
 
+                    <div class="comunidade">
+                        <div class="titulo">Comunidade lgbtqia+</div>
+                        <div class="descricao">
+                            <a href="#" class="bt">lgbtqia+</a>
+                            <a href="#" class="bt">Comunidade</a>
+                            <a href="#" class="bt">Chat</a>
+                            <a href="#" class="bt">Encontros</a>
+                        </div>
+                        <div class="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                        <div class="acao">
+                            <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                            <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                            <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                        </div>
+                        </div>
 
-                <div class="card">
-                    <img src="../../../assets/images/Darlin.jpeg" style="width: 380px; height: 360px; z-index: 2;"/>
-                    <div class="info">
-                        <a href="#" class="bt">Mangás</a>
-                        <a href="#" class="bt">Tradução</a>
-                        <h1>Mangá</h1>
-                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a href="#" class="btn">Entrar</a>
+                    <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
                     </div>
-                </div>
-
-
-                <div class="card">
-                    <img src="../../../assets/images/Nf-Kakegurui.jpeg" style="width: 380px; height: 360px; z-index: 1;"/>
-                    <div class="info">
-                        <a href="#" class="bt">Mangás</a>
-                        <a href="#" class="bt">Traduçaõ</a>
-                        <h1>Mangá</h1>
-                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a href="#" class="btn">Entrar</a>
+                    <div class="imagem"><img src="../../../assets/images/manga.jpg" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
                     </div>
-                </div>
-
-                <div class="card">
-                    <img src="../../../assets/images/OnePeace.jpeg" style="width: 380px;"/>
-                    <div class="info">
-                        <a href="#" class="bt">Mangás</a>
-                        <a href="#" class="bt">Traduçaõ</a>
-                        <h1>Mangá</h1>
-                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a href="#" class="btn">Entrar</a>
                     </div>
+
+                    <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/images/lol.jpg" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                    </div>
+
+                    <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/videos/Boku No Hero Academia GIF .gif" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                    </div>
+
+                    <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/images/aa.jpg" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                    </div>
+                    </div>
+
+    
+                    <div class="box2">
+                    <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/images/desenho.jpg" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                    </div>
+
+                    <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/images/nanatsuu.jpg" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                    </div>
+
+                    <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/images/jogos rpg.jpg" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                    </div>
+
+
+                   <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/images/vex.jpg" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                   </div>
+                   </div>
                 </div>
             </div>
-            <div class="cadastrar"><button>cadastrar</button></div>
+
+            <div class="comunidade-destaque">
+                <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/videos/𝐀𝐃𝐀𝐌𝐀𝐒 𝗄𝗇𝗒..gif" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                </div>
+
+                <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/images/OnePeace.jpeg" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                </div>
+
+                <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/images/Darlin.jpeg" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                </div>
+
+                <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/videos/boku no hero.gif" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                </div>
+
+                <div class="comunidade">
+                    <div class="titulo">Comunidade lgbtqia+</div>
+                    <div class="descricao">
+                        <a href="#" class="bt">lgbtqia+</a>
+                        <a href="#" class="bt">Comunidade</a>
+                        <a href="#" class="bt">Chat</a>
+                        <a href="#" class="bt">Encontros</a>
+                    </div>
+                    <div class="imagem"><img src="../../../assets/images/he man.jpg" /></div>
+                    <div class="acao">
+                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
+                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
+                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="informacao">
-            <div class="t1">Busque Diversidade</div>
-            <div class="img-completa">
-               <div class="barra">Tudo que você mais gosta <b>EM UM SÓ LUGAR</b> <span>ESTANDO ÀTOA, OU APENAS A PROCURA DE NOVAS IDÉIAS , NOVIDADES OU ATÉ MESMO NOVAS AMIZADES</span> </div>
-               <div class="imagem"><img src="../../../assets/images/Imagem.png" style="width: 400px;"/></div>
-               <div class="barra2"></div>
-            </div>
-        </div>
-
-        <div class="apresentacao">
-            <div class="descricao">
-                <div class="titulo">Use a sua criatividade ... Recursos personalizados</div>
-                <div class="subtitulo">Conheça nossos catalogos</div>
-                <div class="textos">
-                  <div class="texto1">InfoAnimes permite que qualquer um possa navegar de forma divertida e segura</div>
-                  <div class="texto2">Veja animes que estão em alta, fique por dentro das novidades</div>
-                </div>
-            </div>
-        </div>
-            <div class="catalogos">
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Nanatsu.png" /></div>
-                    <div class="desc">Nanatsu</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Naruto.png" /></div>
-                    <div class="desc">Naruto</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Violet.png" /></div>
-                    <div class="desc">Violet...</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Thundercats.png" /></div>
-                    <div class="desc">Thundercats</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Sawamu.png" /></div>
-                    <div class="desc">Sawamu o...</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Kakegurui.png" /></div>
-                    <div class="desc">Kakegurui</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Speed.png" /></div>
-                    <div class="desc">SpeedRacer</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/He man.png" /></div>
-                    <div class="desc">He man</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Dragon Ball.png" /></div>
-                    <div class="desc">Dragon Ball</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Pokemon.png" /></div>
-                    <div class="desc">Pokemon</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Sailor_Moon.png" /></div>
-                    <div class="desc">Sailor Moon</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Outlaw Star.png" /></div>
-                    <div class="desc">Outlaw</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Gundam 08TH.png" /></div>
-                    <div class="desc">Gundam</div>
-                </div>
-                <div class="catalogo">
-                    <div class="capa"><img src="../../../assets/images/Cowboy Bebop.png" /></div>
-                    <div class="desc">Cowboy</div>
-                </div>
-            </div>
-
-            <div class="botao"><a href="../../CATALOGO/saiba-mais/index.html"><button>Saiba Mais</button></a></div>
         
 
 
