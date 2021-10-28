@@ -11,7 +11,6 @@ export default function Routes() {
             <Switch>
                 <Route path="/" exact={true} component={Inicial} />
                 <Route path="/comunidades" exact={true} component={Comunidades} />
-       
                 <Route path="/contato" exact={true} component={Contato} />
             </Switch>
         </BrowserRouter>
