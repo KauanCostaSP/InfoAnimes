@@ -4,7 +4,35 @@ import styled from "styled-components";
 const Container = styled.div`
     background-image: linear-gradient(#0E0E0E 70%, #1A1A1A);
 
-    .apresentacao{
+    a{
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #7E00FC;
+}
+
+.item_usuario img{
+    margin-right: 40px;
+}
+
+.item-home{
+    margin: 0.8em 0.8em 1.4em 0.8em;
+    color: #7E00FC !important;
+    font-size: 15px;
+    font-family: Montserrat-Regular !important;
+    font-weight: bold;
+}
+
+.item-home a{
+    color: #7E00FC;
+    font-size: 15px;
+}
+
+
+.apresentacao{
     margin-top: 10em;
 }
 
@@ -13,15 +41,12 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 90%;
+    max-width: 80%;
     margin-left: 7.6em;
     margin-bottom: 3em;
 }
 
-.catalogo{
-    margin-left: 2em;
-    margin-bottom: 1.5em;
-}
+
 
 .desc{
     font-family: fonte-100;
@@ -48,7 +73,7 @@ const Container = styled.div`
     border: none;
     width: 189px;
     height: 46px;
-    
+    margin-left: 38em;
     margin-bottom: 2.7em;
 }
 
@@ -125,9 +150,11 @@ const Container = styled.div`
 }
 
 .capa :hover{
-    box-shadow: 0 0 .8em white;
+    
     border: none;
     border-radius: 10px;
+    transform: translateY(20px);
+    transform: scale(1.1);
 }
 
 
@@ -177,7 +204,7 @@ span{
 .barra2{
     border-top:  4px solid white;
     background-color: #7E00FC;
-    width: 245px;
+    width: 249px;
     height: 80px;  
     margin-top: 4.7em;
 }
@@ -223,12 +250,7 @@ span{
     border: none;
     width: 189px;
     height: 46px;
-    
-}
-
-.cadastrar{
-    display: flex;
-    justify-content: center;
+    margin-left: 39em;
 }
 
 .cadastrar button::before{
@@ -319,123 +341,8 @@ span{
 .comunidades{
     display: flex;
     width: 90%;
-    max-width: 100%;
+    max-width: 90%;
     justify-content: space-around;
-
-}
-
-.imagem img{
-    width: 400px;
-}
-
-.card img{
-    width: 380px;
-    height: 360px;
-}
-
-.card{
-    display: flex;
-    align-items: flex-start;
-    width: 380px;
-    height: 360px;
-    padding: 2rem 1rem;
-    background: white;
-    border-radius: 5px;
-    position: relative;
-    transition: 0.5s ease-in-out;
-}
-
-.card:hover{
-    transform: translateY(20px);
-    transform: scale(1.1);
-    z-index: 1;
-}
-
-.card::before{
-    display: block;
-    width: 155%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    background: rgba(0, 0, 0, 0.63);
-    border-radius: 5px;
-    box-shadow: 0 0 5em rgba(255, 255, 255, 0.726);
-    top: 0px;
-    left: 0px;
-    z-index: 2;
-    transition: 0.5s all;
-    opacity: 0;
-}
-
-.card:hover::before{
-    opacity: 1;
-}
-
-.card img{
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    border-radius: 5px;
-    position: absolute;
-    object-fit: cover;
-}
-
-.card .info{
-    position: relative;
-    z-index: 3;
-    color: white;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.5s all;
-}
-
-.card:hover .info{
-    opacity: 1;
-    transform: translateY(0px);
-}
-
-.card .info .btn{
-    color: white;
-    text-decoration: none;
-    border: none;
-    background: #530194;
-    box-shadow: 0px 4px 10px #A64FFD;
-    border-radius: 20px;
-    position: absolute;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    margin-top: 2em;
-    padding: 4.8px;
-}
-
-a .bt{
-   display: flex;
-   flex-direction: row;
-   position: absolute;
-}
-
-.card .info .bt{
-    width: 110px;
-    height: 40px;
-    margin-left: .5em;
-    padding: 3px;
-    
-    text-decoration: none;
-    color: white;
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 20px;
-    background:transparent
-}
-
-.card .info h1{
-    margin-top: 1em;
-}
-
-.card .info p{
-    margin-top: 1em;
 }
 
 .card{
@@ -478,7 +385,7 @@ a .bt{
 }
 
 .card img{
-    width: 100%;
+    width: 377px;
     height: 100%;
     top: 0px;
     left: 0px;
@@ -499,6 +406,7 @@ a .bt{
 .card:hover .info{
     opacity: 1;
     transform: translateY(0px);
+    
 }
 
 .card .info .btn{
@@ -573,15 +481,11 @@ body::-webkit-scrollbar-thumb {
     display: inline-block;
 }
 
-.capa img{
-    width: 120px;
-    height: 178px;
-}
 
-.botao{
-    display: flex;
-    justify-content: center;
-}
+
+
+
+
 `
 
 export {Container}

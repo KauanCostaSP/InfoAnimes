@@ -29,14 +29,27 @@ const Container = styled.div`
     flex-direction: row;
 }
 
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    margin-right: 2em;
+    margin-left: 0.5em;
+
+}
+
 .SALAS{
     margin-left: .5em;
     margin-top: 1em;
-    margin-right: 1.2em;
+    margin-right: 1em;
 }
 
 .sala{
     margin-top: .5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
 }
 
 .conteudo-comunidade{
@@ -45,21 +58,32 @@ const Container = styled.div`
      margin-left: 1em;
 }
 
+.COMUNIDADES{
+    margin-left: -30px;
+    
+    padding-left: -10;
+}
+
 .cabecalho-comunidade{
     display: flex;
     flex-direction: row;
-    margin-left: 1em;
+    
+    margin-right: 1.6em;
     margin-top: 1.5em;
 }
 
 .comunidade-destaque{
     margin-top: 1em;
+    margin-right: 11px;
+    
+    
+    
 }
 
 .comunidade-destaque .comunidade{
     border-radius: 10px;
-    background: rgba(126, 0, 252, 0.28);
-    box-shadow: 0px 4px 10px 3px #7e00fc;
+    
+   
 
 }
 
@@ -122,7 +146,7 @@ const Container = styled.div`
 
 
 .comunidade{
-    margin-left: 2em;
+    
     margin-top: 1em;
 }
 
@@ -252,6 +276,7 @@ const Container = styled.div`
   }
 
   .online img{
+    width: 50px;
     width: 50px;
   }
 

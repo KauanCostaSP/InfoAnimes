@@ -12,65 +12,70 @@ export default function inicio() {
             
 
             <div class="conteudo">
-                <div class="texto">
-                    <div class="t1-titulo">Conecte-se com pessoas</div>
-                    <div class="t2-texto">Crie a sua própria comunidade ou faça parte de uma Compartilhe seu conhecimento </div>
-                </div>
-                <div class="comunidades">
-                    
-                <div class="card">
-                        <img src="../../../assets/images/Darlin.jpeg" alt="" />
-                        <div class="info">
-                            <a href="#" class="bt">Mangás</a>
-                            <a href="#" class="bt">Tradução</a>
-                            <a href="#" class="bt">Comunidade</a>
-                            <h1>Mangá</h1>
-                            <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                            <a href="#" class="btn">Entrar</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="../../../assets/images/Darlin.jpeg" alt="" />
-                        <div class="info">
-                            <a href="#" class="bt">Mangás</a>
-                            <a href="#" class="bt">Tradução</a>
-                            <a href="#" class="bt">Comunidade</a>
-                            <h1>Mangá</h1>
-                            <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                            <a href="#" class="btn">Entrar</a>
-                        </div>
-                    </div>
-
-                    
-
-
-                    <div class="card">
-                        <img src="../../../assets/images/Nf-Kakegurui.jpeg" alt="" />
-                        <div class="info">
-                            <a href="#" class="bt">Mangás</a>
-                            <a href="#" class="bt">Traduçaõ</a>
-                            <a href="#" class="bt">Comunidade</a>
-                            <h1>Mangá</h1>
-                            <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                            <a href="#" class="btn">Entrar</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="../../../assets/images/OnePeace.jpeg" alt="" />
-                        <div class="info">
-                            <a href="#" class="bt">Mangás</a>
-                            <a href="#" class="bt">Traduçaõ</a>
-                            <a href="#" class="bt">Comunidade</a>
-                            <h1>Mangá</h1>
-                            <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                            <a href="#" class="btn">Entrar</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="cadastrar"><button>cadastrar</button></div>
+            <div class="texto">
+                <div class="t1-titulo">Conecte-se com pessoas</div>
+                <div class="t2-texto">Crie a sua própria comunidade ou faça parte de uma Compartilhe seu conhecimento </div>
             </div>
+            <div class="comunidades">
+                <div class="card">
+                    <img className="img-card" src="../../../assets/images/Nf-Naruto.jpeg" />
+                    <div class="info">
+                        <a href="#" class="bt">Mangás</a>
+                        <a href="#" class="bt">Tradução</a>
+                        <h1>Mangá</h1>
+                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
+                        <a href="#" class="btn">Entrar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img className="img-card" src="../../../assets/images/lol.jpeg" />
+                    <div class="info">
+                        <a href="#" class="bt">Mangás</a>
+                        <a href="#" class="bt">Tradução</a>
+                        <h1>Mangá</h1>
+                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
+                        <a href="#" class="btn">Entrar</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img className="img-card" src="../../../assets/images/Darlin.jpeg"  style={{zIndex: 2}} />
+                    <div class="info">
+                        <a href="#" class="bt">Mangás</a>
+                        <a href="#" class="bt">Tradução</a>
+                        <h1>Mangá</h1>
+                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
+                        <a href="#" class="btn">Entrar</a>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img className="img-card" src="../../../assets/images/Nf-Kakegurui.jpeg" style={{zIndex: 1}} />
+                    <div class="info">
+                        <a href="#" class="bt">Mangás</a>
+                        <a href="#" class="bt">Traduçaõ</a>
+                        <h1>Mangá</h1>
+                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
+                        <a href="#" class="btn">Entrar</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img className="img-card" src="../../../assets/images/OnePeace.jpeg" />
+                    <div class="info">
+                        <a href="#" class="bt">Mangás</a>
+                        <a href="#" class="bt">Traduçaõ</a>
+                        <h1>Mangá</h1>
+                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
+                        <a href="#" class="btn">Entrar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cadastrar"><button>cadastrar</button></div>
+        </div>
 
             <div class="informacao">
                 <div class="t1">Busque Diversidade</div>
