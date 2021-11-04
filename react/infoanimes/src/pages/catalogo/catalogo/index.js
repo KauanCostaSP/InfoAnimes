@@ -6,10 +6,10 @@ export default function Catalogo() {
     return (
         <Container>
             <Cabecalho />
-            <div class="catalogo">
+            <div class="catalogo" >
             <div class="adi_fav"><img src="/assets/images/icon (1).svg" alt="adicionar a favoritos" /></div>
 
-            <div class="info_basica" >
+            <div class="info_basica">
                 <div class="situacao">Novo</div>
 
                 <div class="info_b">
@@ -123,12 +123,8 @@ export default function Catalogo() {
                               aria-hidden="false"
                               aria-label="Fotografia do anúncio em destaque anterior"
                               focusable="false"
-                              style="
-                                height: 16px;
-                                width: 16px;
-                                display: block;
-                                fill: #7E00FC;
-                              "
+                              style={{height: '16px', width: '16px', display: 'block', fill: '#7E00FC'}}
+                              
                             >
                               <path
                                 d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z"

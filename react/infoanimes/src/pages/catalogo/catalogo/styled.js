@@ -66,7 +66,7 @@ a:hover{
     background-position: absolute;
     background-attachment: fixed;
     background-repeat: no-repeat;
-
+    background-image: url('/assets/images/back_kakegurui.png');
     padding-left: 2em;
     padding-bottom: 3em;
 }
