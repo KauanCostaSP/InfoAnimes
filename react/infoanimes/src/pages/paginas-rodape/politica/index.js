@@ -1,8 +1,13 @@
 import { Container } from "./styled"
+import Cabecalho from "../../../components/cabecalho"
+import Rodape from "../../../components/rodapé"
 export default function Politica() {
     return(
 
         <Container>
+
+            <Cabecalho/>
+            <div class="containerzinho">
             <div class="titulo-politica">Politica de privacidade</div>
             <div class="texto">
                 <p>A sua privacidade é importante para nós. É política do INFOAnimes respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <span>INFOAnimes</span>, e outros sites que possuímos e operamos.</p>
@@ -18,26 +23,8 @@ export default function Politica() {
             <div class="texto">
                 <p>Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos que você usa em nosso site.</p>
             </div>
-        
-
-        <div class="rodape">
-            <div class="copyright"> © Copyright Info Animes 2021 - Todos os direitos reservados </div>
-            <div class="box-itens">
-                <div class="item"><a href="../../SOBRE-O-SITE/inicio/index.html"> Home </a></div> 
-                <div class="item"><a href="../../SOBRE-O-SITE/sobre/index.html"> Sobre </a></div>
-                <div class="item"><a href="../../RODAPÉ/central-de-ajudo/index.html"> Central de Ajuda </a></div>
-                <div class="item-politica"><a href="../../RODAPÉ/política/index.html"> Política de Privacidade </a></div>
-                <div class="item"><a href="../../RODAPÉ/contato/index.html"> Contato </a></div>
-                <div class="item"><a href="../../RODAPÉ/termo/index.html"> Termos de Uso </a></div>
             </div>
-            <div class="redes-sociais">
-                <div class="facebook"> <img src="../../../assets/images/Facebook.png"/> </div>
-                <div class="Instagram"> <img src="../../../assets/images/instagram.png"/> </div>
-                <div class="Twitter"> <img src="../../../assets/images/Twitter.png"/> </div>
-            </div>
-            <div class="retangulo-1"></div>
-            <div class="retangulo-2"></div>
-        </div>
+       <Rodape/>
       </ Container>
     )
 }

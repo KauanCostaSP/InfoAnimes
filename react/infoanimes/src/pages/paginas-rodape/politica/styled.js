@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const Container=styled.div`
-color: #ffffff;
+.containerzinho {
+    color: #ffffff;
     border: solid 1px #7E00FC;
     box-shadow: 0px 4px 20px 5px #A64FFD;
     margin: 30px 70px;
@@ -9,7 +10,7 @@ color: #ffffff;
     border-radius: 7px;
     padding: 20px 0px;
 
-
+}
     *{
     margin: 0px;
     box-sizing: border-box;
