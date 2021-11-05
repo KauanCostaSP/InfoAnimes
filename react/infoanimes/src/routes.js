@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Inicial from './pages/Inicial'
 import Comunidades from './pages/comunidade/exp-comunidades'
 import Contato from './pages/paginas-rodape/contato'
@@ -10,7 +10,6 @@ import Favoritos from "./pages/catalogo/favoritos";
 import Politica from "./pages/paginas-rodape/politica"
 import Termo from "./pages/paginas-rodape/termos"
 import Sobre from "./pages/sobre"
-import Login from "./pages/perfil-usuario/login";
 import Cadastrar from "./pages/perfil-usuario/cadastrar"
 import EditarSenha from "./pages/perfil-usuario/editar-senha"
 import Perfil from "./pages/perfil-usuario/pagina-perfil"
