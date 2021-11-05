@@ -11,7 +11,7 @@ export default function Index() {
                 <Link class="item" to="/"> Home </Link>
                 <Link class="item" to="/sobre"> Sobre </Link>
                 <div class="item"> Central de Ajuda </div>
-                <div class="item"> Política de Privacidade </div>
+                <Link class="item" to="/politica"> Política de Privacidade </Link>
                 <Link class="item" to="/contato"> Contato </Link>
                 <Link class="item" to="/termos"> Termos de Uso </Link>
             </div>

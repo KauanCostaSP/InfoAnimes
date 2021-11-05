@@ -430,7 +430,7 @@ span{
     box-shadow: 0 0 50px #561DFA;
 }
 
-a .bt{
+ .destaques .bt{
    display: flex;
    flex-direction: row;
    position: absolute;
