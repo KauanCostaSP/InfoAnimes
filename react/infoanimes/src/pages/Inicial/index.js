@@ -1,5 +1,6 @@
 import { Container } from './styled'
 import Cabecalho from '../../components/cabecalho'
+import { Link } from 'react-router-dom'
 import Rodape from '../../components/rodapé'
 import CardComunidade from '../../components/inicial/card-comunidade'
 import CardCatalogo from '../../components/inicial/card-catalogo'
@@ -74,7 +75,7 @@ export default function inicio() {
                     </div>
                 </div>
             </div>
-            <div class="cadastrar"><button>cadastrar</button></div>
+            <Link className="cadastrar" to="/comunidades"><button>cadastrar</button></Link>
         </div>
 
             <div class="informacao">
@@ -154,7 +155,10 @@ export default function inicio() {
                     />
 
                 
-                    <CardCatalogo img="/assets/images/Darlin.jpeg" desc="comp" />
+                    <CardCatalogo
+                            img="/assets/images/Darlin.jpeg"
+                            desc="comp"
+                    />
                     
                 
                     <CardCatalogo
@@ -169,7 +173,7 @@ export default function inicio() {
                 
                 </div>
 
-                <div class="botao"><button>Saiba Mais</button></div>
+                <Link class="botao" to="catalogos"><button>Saiba Mais</button></Link>
             <Rodape />
         </Container>
     )

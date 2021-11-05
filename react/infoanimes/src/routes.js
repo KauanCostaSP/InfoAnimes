@@ -6,7 +6,9 @@ import Contato from './pages/paginas-rodape/contato'
 import Sala from "./pages/comunidade/salas";
 import ComunPost from "./pages/comunidade/comunidade-posts"
 import Catalogo from "./pages/catalogo/catalogo";
+import Catalogos from "./pages/catalogo/saiba mais"
 import Favoritos from "./pages/catalogo/favoritos";
+import Politica from "./pages/paginas-rodape/politica"
 
 
 export default function Routes() {
@@ -20,6 +22,8 @@ export default function Routes() {
                 <Route path="/comunidade" exact={true} component={ComunPost} />
                 <Route path="/catalogo" exact={true} component={Catalogo} />
                 <Route path="/favoritos" exact={true} component={Favoritos} />
+                <Route path="/Catalogos" exact={true} component={Catalogos} />
+                <Route path="/politica" exact={true} component={Politica} />
             </Switch>
         </BrowserRouter>
     )
