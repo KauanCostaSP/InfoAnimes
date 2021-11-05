@@ -165,3 +165,8 @@
   foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE,
   foreign key (id_comentario_post) references infoD_tif_comentario_post(id_comentario_post) ON DELETE CASCADE ON UPDATE CASCADE
   );
+
+
+
+  
+DROP TABLE infod_tif_acessos;

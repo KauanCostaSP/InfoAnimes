@@ -37,7 +37,7 @@ input::placeholder {
     color: #ffffffff;
     font-size: 16px;
     font-weight: bold;
-    background-color: #7E00FC;
+    background-color: #530194;
 
     border-radius: 6px;
     border: 0px transparent;
@@ -48,4 +48,10 @@ input::placeholder {
     margin-left: 3rem;
 
     width: 11em;
+}
+
+.botao_cadastrar button:hover{
+    background: #FFFF;
+    color: #561DFA;
+    box-shadow: 0 0 50px #561DFA;
 }

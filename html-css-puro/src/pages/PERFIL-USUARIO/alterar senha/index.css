@@ -89,7 +89,7 @@ input::placeholder {
     color: #ffffffff;
     font-size: 14px;
     font-weight: bold;
-    background-color: #7E00FC;
+    background-color: #530194;
 
     border-radius: 6px;
     border: 0px transparent;
@@ -100,7 +100,9 @@ input::placeholder {
 }
 
 .botao_alt-se button:hover{
-    background-color: #4d0099;
+    background: #FFFF;
+    color: #561DFA;
+    box-shadow: 0 0 50px #561DFA;
 }
 
 .rodape{
