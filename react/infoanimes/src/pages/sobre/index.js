@@ -1,8 +1,11 @@
 import {Container} from "./styled"
+import Cabecalho from "../../components/cabecalho"
+import Rodape from "../../components/rodapé"
 
 export default function Sobre() {
     return(
         <Container>
+            <Cabecalho/>
             <div class="conteudo">
              <div class="infoanimes">INFOANIMES</div>
 
@@ -31,7 +34,7 @@ export default function Sobre() {
        </div>
 
 
-        
+        <Rodape/>
     
         </Container>
 
