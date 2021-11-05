@@ -10,7 +10,6 @@ export default function Index() {
             <div className="box-itens">
                 <Link className="item" to="/"> Home </Link>
                 <Link className="item" to="/sobre"> Sobre </Link>
-                <div className="item"> Central de Ajuda </div>
                 <Link className="item" to="/politica"> Política de Privacidade </Link>
                 <Link className="item" to="/contato"> Contato </Link>
                 <Link className="item" to="/termos"> Termos de Uso </Link>
