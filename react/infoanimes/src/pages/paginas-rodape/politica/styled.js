@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-const Container=styled.div`
+const Container = styled.div`
+
+background-color: #0d0d0d;
+
 .containerzinho {
     color: #ffffff;
     border: solid 1px #7E00FC;

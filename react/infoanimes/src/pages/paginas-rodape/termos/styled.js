@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-const Container=styled.div`
+const Container = styled.div`
+
+background-color: #0d0d0d;
+
 *{
     margin: 0px;
     box-sizing: border-box;
