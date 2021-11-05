@@ -9,6 +9,7 @@ import Catalogos from "./pages/catalogo/saiba mais"
 import Favoritos from "./pages/catalogo/favoritos";
 import Politica from "./pages/paginas-rodape/politica"
 import Termo from "./pages/paginas-rodape/termos"
+import Sobre from "./pages/sobre"
 
 export default function Routes() {
     return (
@@ -24,6 +25,7 @@ export default function Routes() {
                 <Route path="/Catalogos" exact={true} component={Catalogos} />
                 <Route path="/politica" exact={true} component={Politica} />
                 <Route path="/termos" exact={true} component={Termo} />
+                <Route path="/sobre" exact={true} component={Sobre} />
             </Switch>
         </BrowserRouter>
     )
