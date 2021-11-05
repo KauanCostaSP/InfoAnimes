@@ -36,7 +36,7 @@ const Container = styled.div`
     width: 320px;
 
     margin-top: 8px;
-    margin: 0.5em 1em 0em 1em;
+    margin: 0.5em 1em 1em 1em;
     padding-left: 12px;
 }
 
@@ -101,9 +101,6 @@ hr{
     height: 30px;
     margin-top: 3em;
     margin-bottom: 2em;
-    
-
-    
 }
 
 .botao_login button:hover{
