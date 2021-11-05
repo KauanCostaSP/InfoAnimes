@@ -1,6 +1,6 @@
 import Cabecalho from "../../../components/cabecalho"
 import Rodape from "../../../components/rodapé"
-import { Container } from "../../../components/rodapé/styled"
+import { Container } from "./styled"
 export default function Termos() {
     return(
 
