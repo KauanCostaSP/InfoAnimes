@@ -5,7 +5,7 @@ export default function BoxMsg() {
     return (
         <Container>
                 <div className="mensagens">
-                    <div class="mensagem">
+                    <div className="mensagem">
                         <Mensagem
                         usuMsg="Davi"
                         Msg="Oi OI Oi Oi Oi Oi Oi Oi Oi Oi Oi Oi OI Oi Oi Oi Oi Oi Oi Oi Oi Oi Oi OI Oi Oi Oi Oi Oi Oi Oi Oi Oi "
@@ -43,7 +43,7 @@ export default function BoxMsg() {
                     </div>
                 </div>
                 
-                <div class="digite-mensagem"><input type="text" placeholder=" Digite uma mensagem" />  </div>
+                <div className="digite-mensagem"><input type="text" placeholder=" Digite uma mensagem" />  </div>
         </Container>
     )
 }

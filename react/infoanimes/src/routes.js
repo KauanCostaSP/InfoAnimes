@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Inicial from './pages/Inicial'
 import Comunidades from './pages/comunidade/exp-comunidades'
 import Contato from './pages/paginas-rodape/contato'

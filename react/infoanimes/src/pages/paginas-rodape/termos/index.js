@@ -7,9 +7,9 @@ export default function Termos() {
          <Container>
              <Cabecalho/>
             
-        <div class="conteudo">
-            <div class="titulo-terms">Termos de Uso</div>
-            <div class="texto">
+        <div className="conteudo">
+            <div className="titulo-terms">Termos de Uso</div>
+            <div className="texto">
                 <p>Bem-vindo ao INFOAnimes. Continue lendo para aprender as regras e restrições que regem o uso de nossos serviços. Se você tiver quaisquer dúvidas 
                 ou comentários sobre estes termos de uso entre em contato conosco, através do nosso email infoanimes123@gmail…</p>
                 <p>Os termos de uso são um contrato entre os criadores e os usuários caso você não concorde ou não queira 
@@ -25,8 +25,8 @@ export default function Termos() {
                 </p>
             </div>
 
-            <div class="titulo-compromisso">Compromisso do usuário</div>
-            <div class="texto">
+            <div className="titulo-compromisso">Compromisso do usuário</div>
+            <div className="texto">
                 <p>O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o INFOAnimes oferece no site e com caráter enunciativo, mas não limitativo:</p>
                 <br/>
                 <p>A) Não se envolver em atividades que sejam ilegais ou contrárias à boa fé e a ordem da pública;</p>
@@ -38,8 +38,8 @@ export default function Termos() {
                 <br/>
             </div>
               
-            <div class="titulo-informacoes"> Mais informações</div>
-            <div class="texto">
+            <div className="titulo-informacoes"> Mais informações</div>
+            <div className="texto">
                 <p>Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos que você usa em nosso site.</p>
             </div>
         </div>

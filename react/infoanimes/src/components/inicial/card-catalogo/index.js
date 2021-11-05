@@ -4,8 +4,8 @@ export default function CardCatalogo(props) {
     return (
         <Catalogo>
             
-                <div class="capa"><img src={props.img} alt="" /></div>  
-                <div class="desc">{props.desc}</div>
+                <div className="capa"><img src={props.img} alt="" /></div>  
+                <div className="desc">{props.desc}</div>
             
         </Catalogo>
     )
