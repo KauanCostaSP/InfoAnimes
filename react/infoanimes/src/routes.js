@@ -1,5 +1,4 @@
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
-
 import Inicial from './pages/Inicial'
 import Comunidades from './pages/comunidade/exp-comunidades'
 import Contato from './pages/paginas-rodape/contato'
@@ -9,7 +8,7 @@ import Catalogo from "./pages/catalogo/catalogo";
 import Catalogos from "./pages/catalogo/saiba mais"
 import Favoritos from "./pages/catalogo/favoritos";
 import Politica from "./pages/paginas-rodape/politica"
-
+import Termo from "./pages/paginas-rodape/termos"
 
 export default function Routes() {
     return (
@@ -24,6 +23,7 @@ export default function Routes() {
                 <Route path="/favoritos" exact={true} component={Favoritos} />
                 <Route path="/Catalogos" exact={true} component={Catalogos} />
                 <Route path="/politica" exact={true} component={Politica} />
+                <Route path="/termos" exact={true} component={Termo} />
             </Switch>
         </BrowserRouter>
     )
