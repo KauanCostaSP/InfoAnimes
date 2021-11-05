@@ -6,10 +6,10 @@ export default function BoxComunidade(props) {
         <Comunidade>
             <div className="titulo">{props.titulo}</div>
             <div className="descricao">
-                <a className="bt">{props.dtq1}</a>
-                <a className="bt">{props.dtq2}</a>
-                <a className="bt">{props.dtq3}</a>
-                <a className="bt">{props.dtq4}</a>
+                <a href="/home" className="bt">{props.dtq1}</a>
+                <a href="/home" className="bt">{props.dtq2}</a>
+                <a href="/home" className="bt">{props.dtq3}</a>
+                <a href="/home" className="bt">{props.dtq4}</a>
             </div>
             <Link className="imagem" to="/comunidade"><img src={props.img} alt=""/></Link>
             <div className="acao">

@@ -21,22 +21,22 @@ export default function inicio() {
                 <div className="card">
                     <img classNameName="img-card" src="../../../assets/images/Nf-Naruto.jpeg" alt=""/>
                     <div className="info">
-                        <a className="bt">Mangás</a>
-                        <a className="bt">Tradução</a>
+                        <a href="/home" className="bt">Mangás</a>
+                        <a href="/home" className="bt">Tradução</a>
                         <h1>Mangá</h1>
                         <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a className="btn">Entrar</a>
+                        <a href="/home" className="btn">Entrar</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img classNameName="img-card" src="../../../assets/images/lol.jpeg" alt=""/>
                     <div className="info">
-                        <a className="bt">Mangás</a>
-                        <a className="bt">Tradução</a>
+                        <a href="/home" className="bt">Mangás</a>
+                        <a href="/home" className="bt">Tradução</a>
                         <h1>Mangá</h1>
                         <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a className="btn">Entrar</a>
+                        <a href="/home" className="btn">Entrar</a>
                     </div>
                 </div>
 
@@ -44,11 +44,11 @@ export default function inicio() {
                 <div className="card">
                     <img classNameName="img-card" src="../../../assets/images/Darlin.jpeg" alt="" style={{zIndex: 2}} />
                     <div className="info">
-                        <a className="bt">Mangás</a>
-                        <a className="bt">Tradução</a>
+                        <a href="/home" className="bt">Mangás</a>
+                        <a href="/home" className="bt">Tradução</a>
                         <h1>Mangá</h1>
                         <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a className="btn">Entrar</a>
+                        <a href="/home" className="btn">Entrar</a>
                     </div>
                 </div>
 
@@ -56,22 +56,22 @@ export default function inicio() {
                 <div className="card">
                     <img classNameName="img-card" src="../../../assets/images/Nf-Kakegurui.jpeg" alt="" style={{zIndex: 1}} />
                     <div className="info">
-                        <a className="bt">Mangás</a>
-                        <a className="bt">Traduçaõ</a>
+                        <a href="/home" className="bt">Mangás</a>
+                        <a href="/home" className="bt">Traduçaõ</a>
                         <h1>Mangá</h1>
                         <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a className="btn">Entrar</a>
+                        <a href="/home" className="btn">Entrar</a>
                     </div>
                 </div>
 
                 <div className="card">
                     <img classNameName="img-card" src="../../../assets/images/OnePeace.jpeg" alt=""/>
                     <div className="info">
-                        <a className="bt">Mangás</a>
-                        <a className="bt">Traduçaõ</a>
+                        <a href="/home" className="bt">Mangás</a>
+                        <a href="/home" className="bt">Traduçaõ</a>
                         <h1>Mangá</h1>
                         <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a className="btn">Entrar</a>
+                        <a href="/home" className="btn">Entrar</a>
                     </div>
                 </div>
             </div>
