@@ -9,34 +9,34 @@ export default function UsersOn() {
                     nome="@comp sala"
                 />
 
-                <div class="blocos-usu">
-                    <div class="foto-usu"><img src="../../../assets/images/imagem akali.jpg" alt="" /></div>
-                    <div class="dados">
-                        <div class="nome">@akali</div>
+                <div className="blocos-usu">
+                    <div className="foto-usu"><img src="../../../assets/images/imagem akali.jpg" alt="" /></div>
+                    <div className="dados">
+                        <div className="nome">@akali</div>
                         
                     </div>
                 </div>
 
-                <div class="blocos-usu">
-                    <div class="foto-usu"><img src="../../../assets/images/imagem akali.jpg" alt="" /></div>
-                    <div class="dados">
-                        <div class="nome">@Akali</div>
+                <div className="blocos-usu">
+                    <div className="foto-usu"><img src="../../../assets/images/imagem akali.jpg" alt="" /></div>
+                    <div className="dados">
+                        <div className="nome">@Akali</div>
                         
                     </div>
                 </div>
 
-                <div class="blocos-usu">
-                    <div class="foto-usu"><img src="../../../assets/images/imagem akali.jpg" alt="" /></div>
-                    <div class="dados">
-                        <div class="nome">@akali</div>
+                <div className="blocos-usu">
+                    <div className="foto-usu"><img src="../../../assets/images/imagem akali.jpg" alt="" /></div>
+                    <div className="dados">
+                        <div className="nome">@akali</div>
                         
                     </div>
                 </div>
 
-                <div class="blocos-usu">
-                    <div class="foto-usu"><img src="../../../assets/images/imagem akali.jpg" alt="" /></div>
-                    <div class="dados">
-                        <div class="nome">@akali</div>
+                <div className="blocos-usu">
+                    <div className="foto-usu"><img src="../../../assets/images/imagem akali.jpg" alt="" /></div>
+                    <div className="dados">
+                        <div className="nome">@akali</div>
                         
                     </div>
                 </div>

@@ -1,15 +1,24 @@
 import styled from "styled-components";
 
 const Container=styled.div`
+background-color: #0E0E0E;
+
+
 .container_alterar{
     text-align: center !important;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .alterar_senha{
     text-align: center !important;
     padding: 2em 0em 0em 0em;
-    margin: 5em 0em 0em 28em;
+    margin-top: 5em;
+    margin-bottom: 5em;
     border-radius: 20px;
     width: 500px;
 }

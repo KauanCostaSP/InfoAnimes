@@ -7,9 +7,9 @@ export default function Politica() {
         <Container>
 
             <Cabecalho/>
-            <div class="containerzinho">
-            <div class="titulo-politica">Politica de privacidade</div>
-            <div class="texto">
+            <div className="containerzinho">
+            <div className="titulo-politica">Politica de privacidade</div>
+            <div className="texto">
                 <p>A sua privacidade é importante para nós. É política do INFOAnimes respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <span>INFOAnimes</span>, e outros sites que possuímos e operamos.</p>
                 <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</p>
                 <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
@@ -19,8 +19,8 @@ export default function Politica() {
                 <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.</p>
             </div>
             
-            <div class="titulo-informacoes"> Mais informações</div>
-            <div class="texto">
+            <div className="titulo-informacoes"> Mais informações</div>
+            <div className="texto">
                 <p>Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos que você usa em nosso site.</p>
             </div>
             </div>

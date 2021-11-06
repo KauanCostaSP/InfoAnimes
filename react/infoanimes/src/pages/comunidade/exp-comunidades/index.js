@@ -11,31 +11,31 @@ export default function Index() {
         <Cabecalho />
 
 
-        <div class="conteudo">
+        <div className="conteudo">
             <BarraLateral />
 
-            <div class="GIF">
-                <iframe src="https://assets.pinterest.com/ext/embed.html?id=243475923595810649" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
-                <iframe src="https://assets.pinterest.com/ext/embed.html?id=142707881933112493" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
-                <iframe src="https://assets.pinterest.com/ext/embed.html?id=71072500362247964" height="606" width="345" frameborder="0" scrolling="no" ></iframe>
-                <div class="servidor"><button>Criar Servidor</button></div>
+            <div className="GIF">
+                <iframe title="gif" src="https://assets.pinterest.com/ext/embed.html?id=243475923595810649" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
+                <iframe title="gif" src="https://assets.pinterest.com/ext/embed.html?id=142707881933112493" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
+                <iframe title="gif" src="https://assets.pinterest.com/ext/embed.html?id=71072500362247964" height="606" width="345" frameborder="0" scrolling="no" ></iframe>
+                <div className="servidor"><button>Criar Servidor</button></div>
             </div>
 
-            <div class="COMUNIDADES">
-                <dv class="cabecalho-comunidade">
-                    <a href="#" class="info">Destaques</a>
-                    <a href="#" class="info">Informaçôes</a>
-                    <div class="perfis">
-                         <div class="online"><img src="../../../assets/images/perfil_membro_2.png" /></div>
-                         <div class="online"><img src="../../../assets/images/perfil_membro_4.png" /></div>
-                         <div class="online"><img src="../../../assets/images/perfil_membro_1.png" /></div>
-                         <a href="#" class="inf">+122</a>
+            <div className="COMUNIDADES">
+                <dv className="cabecalho-comunidade">
+                    <a href="/home" className="info">Destaques</a>
+                    <a href="/home" className="info">Informaçôes</a>
+                    <div className="perfis">
+                         <div className="online"><img src="../../../assets/images/perfil_membro_2.png" alt=""/></div>
+                         <div className="online"><img src="../../../assets/images/perfil_membro_4.png" alt=""/></div>
+                         <div className="online"><img src="../../../assets/images/perfil_membro_1.png" alt=""/></div>
+                         <a href="/home" className="inf">+122</a>
                     </div>
-                    <a href="#" class="info">Conversas</a>
+                    <a href="/home" className="info">Conversas</a>
                 </dv>
 
-                <div class="conteudo-comunidade">
-                    <div class="box1">
+                <div className="conteudo-comunidade">
+                    <div className="box1">
                     
                             
                         <BoxComunidade
@@ -61,219 +61,219 @@ export default function Index() {
                                 img="/assets/images/Darlin.jpeg"
                             />
 
-                    <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
+                    <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
                     </div>
-                    <div class="imagem"><img src="../../../assets/images/manga.jpg" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
-                    </div>
-                    </div>
-
-                    <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
-                    </div>
-                    <div class="imagem"><img src="../../../assets/images/lol.jpg" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    <div className="imagem"><img src="../../../assets/images/manga.jpg" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
                     </div>
                     </div>
 
-                    <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
+                    <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
                     </div>
-                    <div class="imagem"><img src="../../../assets/videos/Boku No Hero Academia GIF .gif" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    <div className="imagem"><img src="../../../assets/images/lol.jpg" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
                     </div>
                     </div>
 
-                    <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
+                    <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
                     </div>
-                    <div class="imagem"><img src="../../../assets/images/aa.jpg" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    <div className="imagem"><img src="../../../assets/videos/Boku No Hero Academia GIF .gif" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
+                    </div>
+                    </div>
+
+                    <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
+                    </div>
+                    <div className="imagem"><img src="../../../assets/images/aa.jpg" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
                     </div>
                     </div>
                  </div>
 
     
-                    <div class="box2">
-                    <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
+                    <div className="box2">
+                    <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
                     </div>
-                    <div class="imagem"><img src="../../../assets/images/desenho.jpg" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
-                    </div>
-                    </div>
-
-                    <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
-                    </div>
-                    <div class="imagem"><img src="../../../assets/images/nanatsuu.jpg" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    <div className="imagem"><img src="../../../assets/images/desenho.jpg" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
                     </div>
                     </div>
 
-                    <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
+                    <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
                     </div>
-                    <div class="imagem"><img src="../../../assets/images/jogos rpg.jpg" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    <div className="imagem"><img src="../../../assets/images/nanatsuu.jpg" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
+                    </div>
+                    </div>
+
+                    <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
+                    </div>
+                    <div className="imagem"><img src="../../../assets/images/jogos rpg.jpg" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt="" /></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
                     </div>
                     </div>
 
 
-                   <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
+                   <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
                     </div>
-                    <div class="imagem"><img src="../../../assets/images/vex.jpg" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    <div className="imagem"><img src="../../../assets/images/vex.jpg" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
                     </div>
                    </div>
                    </div>
                 </div>
             </div>
 
-            <div class="comunidade-destaque">
-                <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
+            <div className="comunidade-destaque">
+                <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
                     </div>
-                    <div class="imagem"><img src="../../../assets/videos/𝐀𝐃𝐀𝐌𝐀𝐒 𝗄𝗇𝗒..gif" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
-                    </div>
-                </div>
-
-                <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
-                    </div>
-                    <div class="imagem"><img src="../../../assets/images/OnePeace.jpeg" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    <div className="imagem"><img src="../../../assets/videos/𝐀𝐃𝐀𝐌𝐀𝐒 𝗄𝗇𝗒..gif" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
                     </div>
                 </div>
 
-                <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
+                <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
                     </div>
-                    <div class="imagem"><img src="../../../assets/images/Darlin.jpeg" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
-                    </div>
-                </div>
-
-                <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
-                    </div>
-                    <div class="imagem"><img src="../../../assets/videos/boku no hero.gif" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    <div className="imagem"><img src="../../../assets/images/OnePeace.jpeg" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
                     </div>
                 </div>
 
-                <div class="comunidade">
-                    <div class="titulo">Comunidade lgbtqia+</div>
-                    <div class="descricao">
-                        <a href="#" class="bt">lgbtqia+</a>
-                        <a href="#" class="bt">Comunidade</a>
-                        <a href="#" class="bt">Chat</a>
-                        <a href="#" class="bt">Encontros</a>
+                <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
                     </div>
-                    <div class="imagem"><img src="../../../assets/images/he man.jpg" /></div>
-                    <div class="acao">
-                        <div class="like"><img src="../../../assets/images/heart.ico" /></div>
-                        <div class="compartilhar"><img src="../../../assets/images/paper_plane.ico" /></div>
-                        <div class="chat"><img src="../../../assets/images/chat.ico" /></div>
+                    <div className="imagem"><img src="../../../assets/images/Darlin.jpeg" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
+                    </div>
+                </div>
+
+                <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a href="/home" className="bt">Chat</a>
+                        <a href="/home" className="bt">Encontros</a>
+                    </div>
+                    <div className="imagem"><img src="../../../assets/videos/boku no hero.gif" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
+                    </div>
+                </div>
+
+                <div className="comunidade">
+                    <div className="titulo">Comunidade lgbtqia+</div>
+                    <div className="descricao">
+                        <a href="/home" className="bt">lgbtqia+</a>
+                        <a href="/home" className="bt">Comunidade</a>
+                        <a  href="/home"className="bt">Chat</a>
+                        <a  href="/home"className="bt">Encontros</a>
+                    </div>
+                    <div className="imagem"><img src="../../../assets/images/he man.jpg" alt=""/></div>
+                    <div className="acao">
+                        <div className="like"><img src="../../../assets/images/heart.ico" alt=""/></div>
+                        <div className="compartilhar"><img src="../../../assets/images/paper_plane.ico" alt=""/></div>
+                        <div className="chat"><img src="../../../assets/images/chat.ico" alt=""/></div>
                     </div>
                 </div>
 
