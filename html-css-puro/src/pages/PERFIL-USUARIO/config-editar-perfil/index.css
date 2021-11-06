@@ -1,145 +1,123 @@
-@font-face {
-    font-family: fonte-100;
-    src: url('../../assets/fonts/Montserrat-Regular.ttf');
+body{
+    margin: 0px;
+    color: #fff;
+    font-family: Montserrat-Regular;
 }
 
-@font-face {
-    font-family: fonte-200;
-    src: url('../../assets/fonts/Montserrat-Medium.woff');
-}
-
-@font-face {
-    font-family: fonte-300;
-    src: url('../../assets/fonts/Montserrat-SemiBold.ttf');
-}
-
-@font-face {
-    font-family: fonte-400;
-    src: url('../../assets/fonts/Montserrat-Bold.woff');
-}
-
-.item-usuario{
-    margin-top: 0%;
-}
-
-.editar-perfil {
-    text-align: center;
-    box-shadow:0px 4px 36px #A245FF;
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    width: 1000px;
-    height: 1000px;
-    margin-left: 10em;
-    margin-top: 40px;  
-    background-attachment: fixed;
-}
-
-.editar-perfil-imagem {
-    background-image: url(../../../assets/images/fundo-confg.jpeg);
-    height: 1000px;
-    background-size: 95% 100%;
-    background-repeat: no-repeat;
-    margin-left: 45px;
-}
-
- .item-imagem img{
-    height: 150px;
-    margin-top: 25px;
-    width: 152px;
- }
-
- .item-nomeperfil {
-   margin-bottom: 40px;
-   font-size: 35px;
- }
-
- .item-botao button {
-   background-color: transparent; 
-   color: #7E00FC;
-   font-size: 20px;
-   border: 0px transparent;
-   margin-bottom: 50px;
- }
-
-.perfil-editar-box input{
-    color: white;
     background-color: #323232;
-    border: 0px transparent;
-    border-radius: 5px;
-    margin-top: 15px;
-    margin-left: 20px;
-   text-align: center;
+}
+  
+body::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 10px;
+    background-color: #323232;
+}
+  
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #7E00FC;
 }
 
-.nome-editar input{
-    width: 474px;
-    height: 31px;
-    left: 486px;
-    top: 479px;
-    padding-left: 5%;
+a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
-.usuario-editar input {
-    width: 474px;
-    height: 31px;
-    left: 486px;
-    top: 100px;
-    padding-left: 30%;
+a:hover {
+    color: #7E00FC;
 }
 
-.biografia-editar input {
-    width: 481px;
-    height: 164px;
-    left: 486px;
-    top: 601px;      
+.conteudo_edit {
+    box-shadow: 0 0 1.2em #A245FF;
 }
 
-.email-editar input{
-    width: 474px;
-    height: 31px;
-    left: 486px;
-    top: 479px;
+.back {
+    background-image: url(../../../assets/images/Fundo_editperfil.png);
+    background-repeat: no-repeat;
+
+    margin-left: 16em;
 }
 
-.telefone-editar input{
-    width: 474px;
-    height: 31px;
-    left: 486px;
-    top: 479px;
+.nick {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Montserrat-Regular;
+
+    padding-top: 1em;
 }
 
-.genero-editar input{
-    width: 474px;
-    height: 31px;
-    left: 486px;
-    top: 479px;
-}
-
-.botao-box{
-Display: flex;
-Flex-direction: row;
-align-items: center;
-justify-content: space-between;
-}
-
-.voltar-botao button{
-   Background-color:#7E00FC ;
-   border-radius: 15px;
-   width: 95px;
-   Height:28px;
-   margin-left: 150px;
-   margin-top: 200px;
-}
-
-.desativar-botao button{
-    border: none;
+.alt_fundo button{
     background-color: transparent;
-    Color: #7E00FC;
-    text-decoration: underline;
-    display: flex;
-    width: 300px;
-    height: 10px;
-    
-    margin-left: 299px;
-    margin-top: 200px;
+    color: #7E00FC;
+    border: none;
 }
 
+.nome_campo .usuario_campo .biografia_campo .email_campo .telefone_campo .genero_campo{
+    color: #ffffff;
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input{
+    color: #ffffff;
+    font-family: Montserrat-Regular;
+
+    border-radius: 5px;
+    border: 0px transparent;
+    background-color: #323232;
+
+    outline: none;
+
+    margin-left: 2em;
+    width: 11em;
+    height: 2em;
+}
+
+.biografia_campo input{
+    color: #ffffff;
+    font-family: Montserrat-Regular;
+
+    background-color: #323232;
+
+    width: 11em;
+    height: 9em;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.voltar_botao button {
+    color: #ffffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #530194;
+
+    border-radius: 20px;
+    border: 0px transparent;
+
+    padding: 3px 25px 3px 25px;
+}
+
+.voltar_botao button:hover{
+    background: #FFFF;
+    color: #561DFA;
+    box-shadow: 0 0 50px #561DFA;
+}
+
+.desativar_botao button {
+    color: #530194;
+    background-color: transparent;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+    font-weight: bold;
+
+    border: none;
+}
