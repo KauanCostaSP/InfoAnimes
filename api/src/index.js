@@ -29,4 +29,4 @@ app.post('/login', async (req, resp) => {
 
 
 app.listen(process.env.PORT,
-    x => console.log(`>> Server up at port ${process.env.PORT}`))
+    x => console.log(`>> Subiu esse caralho na porta ${process.env.PORT}`))
