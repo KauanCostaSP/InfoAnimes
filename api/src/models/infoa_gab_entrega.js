@@ -4,23 +4,35 @@ const { Model, Sequelize } = _sequelize;
 export default class infoa_gab_entrega extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_entregas: {
+    id_entrega: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    id_produtos: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
     id_endereco: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: false,
+      references: {
+        model: 'infoa_gab_endereco',
+        key: 'id_endereco'
+      }
     },
     ds_situacao: {
       type: DataTypes.STRING(255),
-      allowNull: false
+      allowNull: true
+    },
+    dt_situacao: {
+      type: DataTypes.DATE,
+      allowNull: true
+    },
+    id_venda: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'infoa_gab_venda',
+        key: 'id_venda'
+      }
     },
     dt_saida: {
       type: DataTypes.DATE,
@@ -40,21 +52,21 @@ export default class infoa_gab_entrega extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_entregas" },
+          { name: "id_entrega" },
         ]
       },
       {
-        name: "infoa_gab_entrega_fk0",
-        using: "BTREE",
-        fields: [
-          { name: "id_produtos" },
-        ]
-      },
-      {
-        name: "infoa_gab_entrega_fk1",
+        name: "id_endereco",
         using: "BTREE",
         fields: [
           { name: "id_endereco" },
+        ]
+      },
+      {
+        name: "id_venda",
+        using: "BTREE",
+        fields: [
+          { name: "id_venda" },
         ]
       },
     ]
