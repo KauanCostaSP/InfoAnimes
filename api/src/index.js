@@ -10,7 +10,18 @@ app.use(express.json());
 
 
 
+
+
+
+
+
 //Endpoints /usuario 
+
+
+
+
+
+
 
 
 app.get('/usuario', async (req, resp) => {
@@ -81,9 +92,6 @@ app.put('/usuario', async (req, resp) => {
 
 
 
-
-
-
 app.delete('/usuario/:id', async (req, resp) => {
     try {
 
@@ -105,6 +113,10 @@ app.delete('/usuario/:id', async (req, resp) => {
 
 
 //endpoints /catalogo
+
+
+
+
 
 
 
@@ -185,10 +197,6 @@ app.put('/catalogo/:id', async (req, resp) => {
         resp.send({erro: b.toString() })
     }
 })
-
-
-
-
 
 
 
