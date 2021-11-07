@@ -397,7 +397,24 @@ app.post('/comunidade', async (req, resp) => {
 
 
 
+app.post('/chat', async (req, resp) => {
+    try {
+        let { id_comuni, id_usu, mensagem} = req.body;
 
+        let r =  await db.infod_tif_chat.create(
+            {
+                id_comunidade: id_comuni,
+                id_usuario: id_usu,
+                ds_mensagem:  mensagem,
+                dt_mensagem: new Date()
+            }
+        )
+        resp.send(r)
+
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+})
 
 
 

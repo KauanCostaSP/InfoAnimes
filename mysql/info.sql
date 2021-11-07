@@ -1,12 +1,4 @@
 
-  CREATE TABLE infoD_tif_chat_mensagem (
-  id_chat_mensagem         int primary key auto_increment,
-  ds_mensagem              varchar(255) NOT NULL,
-  dt_mensagem              datetime NOT NULL
-  );
-
-
-
   CREATE TABLE infoD_tif_usuario_comunidade (
     id_usuario_comunidade  int primary key auto_increment,
     id_usuario             int,
@@ -86,23 +78,14 @@
   );
   
   
-  
-  
-  CREATE TABLE infoD_tif_chat_usuario (
-  id_chat_usuario          int primary key auto_increment,
-  id_usuario               int NOT NULL,
-  foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE
-  );
-  
-  
-  
-  
   CREATE TABLE infoD_tif_chat (
   id_chat                  int primary key auto_increment,
-  id_chat_usuario          int NOT NULL,
-  id_chat_mensagem         int NOT NULL,
-  foreign key (id_chat_usuario) references infoD_tif_chat_usuario(id_chat_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key (id_chat_mensagem) references infoD_tif_chat_mensagem(id_chat_mensagem) ON DELETE CASCADE ON UPDATE CASCADE
+  id_usuario               int NULL,
+  id_comunidade            int NULL,
+  ds_mensagem              varchar(255) NULL,
+  dt_mensagem              datetime NULL,
+  foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
+  foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE
   );
   
   
@@ -123,11 +106,5 @@
   bt_promover_adm          boolean NOT NULL,
   bt_permitir_entrada      boolean NOT NULL,
   foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE);
-  
-  
-  
-  
-  
-  
-  
+  foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE
+  );
