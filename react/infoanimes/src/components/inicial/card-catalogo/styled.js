@@ -5,6 +5,8 @@ const Catalogo = styled.div`
     margin-left: 2em;
     margin-bottom: 1.5em;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
         
    
     

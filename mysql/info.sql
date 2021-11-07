@@ -4,6 +4,28 @@
   ds_mensagem              varchar(255) NOT NULL,
   dt_mensagem              datetime NOT NULL
   );
+
+
+
+  CREATE TABLE infoD_tif_usuario_comunidade (
+    id_usuario_comunidade  int primary key auto_increment,
+    id_usuario             int,
+    id_comunidade          int,
+    foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE
+    );
+
+
+
+
+  CREATE TABLE infoD_tif_favoritos (
+    id_favoritos           int primary key auto_increment,
+    id_usuario             int,
+    id_anime               int,
+    foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
+    foreign key (id_anime) references infoD_tif_animes(id_anime) ON DELETE CASCADE ON UPDATE CASCADE
+    );
+  
   
 
   
@@ -101,11 +123,7 @@
   bt_promover_adm          boolean NOT NULL,
   bt_permitir_entrada      boolean NOT NULL,
   foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE
-  tb_usuario.belongsTo(tb_codigo, { as: "tb_codigo_usuario", foreignKey: "id_codigo"});
-tb_codigo.hasOne(tb_usuario, { as: "tb_usuario_codigo", foreignKey: "id_codigo"});
-
-  );
+  foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE);
   
   
   
