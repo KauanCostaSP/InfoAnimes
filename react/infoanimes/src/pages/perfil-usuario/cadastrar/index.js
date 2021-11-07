@@ -2,6 +2,7 @@ import { Container } from "./styled"
 import { Link } from "react-router-dom"
 import SetaVoltar from '../../../components/seta-voltar'
 
+
 export default function Registrar() {
     return (
         <Container>

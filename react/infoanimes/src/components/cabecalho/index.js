@@ -5,11 +5,11 @@ export default function index() {
     return(
         <CabecalhoComp>
             <div className="itens-start">
-            <Link className="item-logo"to="/"> <img src="/assets/images/logo.PNG" alt="" /> </Link>
+            <Link className="item-logo"to="/home"> <img src="/assets/images/logo.PNG" alt="" /> </Link>
             </div>
 
             <div className="itens">
-            <Link className="item" to="/" >Home</Link>
+            <Link className="item" to="/home" >Home</Link>
             <Link className="item" to="/sobre" >Sobre</Link>
             <Link className="item" to="/comunidades">Comunidade</Link>
             <Link className="item" to="/contato" >Contato</Link>

@@ -12,7 +12,7 @@ import Sobre from "./pages/sobre";
 import Login from "./pages/perfil-usuario/login";
 import Cadastrar from "./pages/perfil-usuario/cadastrar";
 import EditarSenha from "./pages/perfil-usuario/editar-senha";
-import Perfil from "./pages/perfil-usuario/pagina-perfil";
+import PerfilLogado from "./pages/perfil-usuario/pagina-perfil-logado";
 import EsqueciSenha from "./pages/perfil-usuario/esqueci-minha-senha"
 
 export default function Routes() {
@@ -34,7 +34,7 @@ export default function Routes() {
                 <Route path="/sobre" exact={true} component={Sobre} />
                 <Route path="/cadastrar" exact={true} component={Cadastrar} />
                 <Route path="/editarsenha" exact={true} component={EditarSenha} />
-                <Route path="/perfil" exact={true} component={Perfil} />
+                <Route path="/perfil-logado" exact={true} component={PerfilLogado} />
             </Switch>
         </BrowserRouter>
     )
