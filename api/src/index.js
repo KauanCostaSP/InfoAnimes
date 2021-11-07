@@ -15,6 +15,42 @@ app.use(express.json());
 
 
 
+//Endpoints /login
+
+
+
+
+
+
+
+app.post('/login', async (req, resp) => {
+    try {
+        let { email, senha } = req.body;
+    
+    let i = await db.infod_tif_usuario.finfOne({
+        where: {
+            ds_email: email,
+            ds_senha: senha
+        },
+        raw : true
+    })
+
+    if (i == null) {
+        return resp.send({ erro: 'preenche direito abestalhado' });
+    }
+    resp.send(i);
+    } catch (e) {
+        resp.send({ erro : e.toString() })
+    }
+})
+
+
+
+
+
+
+
+
 //Endpoints /usuario 
 
 

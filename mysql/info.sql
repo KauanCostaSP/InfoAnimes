@@ -1,25 +1,11 @@
-  CREATE TABLE infoD_tif_like (
-  id_like                  int primary key auto_increment,
-  nm_like                  int NOT NULL,
-  nm_deslike               int NOT NULL
-  );  
-  
-  
+
   CREATE TABLE infoD_tif_chat_mensagem (
   id_chat_mensagem         int primary key auto_increment,
   ds_mensagem              varchar(255) NOT NULL,
   dt_mensagem              datetime NOT NULL
   );
   
-  
-  
-  CREATE TABLE infoD_tif_acessos (
-  id_acesso                int primary key auto_increment,
-  nm_tela                  varchar(255) NOT NULL,
-  qtd_acessos              int NOT NULL
-  );
-  
-  
+
   
   CREATE TABLE infoD_tif_usuario (
   id_usuario               int primary key auto_increment,
@@ -84,15 +70,6 @@
   
   
   
-  CREATE TABLE infoD_tif_amigos (
-  id_amigo                 int primary key auto_increment,
-  id_usuario_solicitou     int NOT NULL,
-  id_usuario_aceitou       int NOT NULL,
-  foreign key (id_usuario_solicitou) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key (id_usuario_aceitou) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE
-  );
-  
-  
   CREATE TABLE infoD_tif_chat_usuario (
   id_chat_usuario          int primary key auto_increment,
   id_usuario               int NOT NULL,
@@ -151,22 +128,3 @@
   
   
   
-  CREATE TABLE infoD_tif_post (
-  id_post                  int primary key auto_increment,
-  id_usuario               int NOT NULL,
-  id_comunidade            int NOT NULL,
-  id_comentario_post       int NOT NULL,
-  ds_titulo                varchar(255) NOT NULL,
-  ds_descricao             varchar(255) NOT NULL,
-  ds_imagem                varchar(255) NOT NULL,
-  dt_data_postagem         datetime NOT NULL,
-  id_like                  int NOT NULL,
-  foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key (id_comentario_post) references infoD_tif_comentario_post(id_comentario_post) ON DELETE CASCADE ON UPDATE CASCADE
-  );
-
-
-
-  
-DROP TABLE infod_tif_acessos;
