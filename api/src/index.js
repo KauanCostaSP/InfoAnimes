@@ -44,6 +44,40 @@ app.post('/login', async (req, resp) => {
 
 
 
+//Endpoints /cadastrar
+
+
+
+
+
+
+app.post('/cadastrar', async (req, resp) => {
+    try {
+        let { nome, email, senha} = req.body;
+
+        let h = await db.infod_tif_usuario.findOne({
+            where: {
+                nm_nome: nome,
+                ds_email: email,
+                ds_senha: senha
+            },
+            raw : true
+        })
+
+        if (h == null) {
+            return resp.send({ erro: 'ah vai pa bosta amigo, preenche de novo' });
+        }
+        resp.send(h);
+    } catch (e) {
+        resp.send({ erro : e.toString() })
+    }
+})
+
+
+
+
+
+
 
 //Endpoints /usuario 
 
