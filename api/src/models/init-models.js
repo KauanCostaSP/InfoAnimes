@@ -138,8 +138,6 @@ import _infod_ssc_venda from  "./infod_ssc_venda.js";
 import _infod_tif_animes from  "./infod_tif_animes.js";
 import _infod_tif_autorizados from  "./infod_tif_autorizados.js";
 import _infod_tif_chat from  "./infod_tif_chat.js";
-import _infod_tif_chat_mensagem from  "./infod_tif_chat_mensagem.js";
-import _infod_tif_chat_usuario from  "./infod_tif_chat_usuario.js";
 import _infod_tif_comentario from  "./infod_tif_comentario.js";
 import _infod_tif_comunidade from  "./infod_tif_comunidade.js";
 import _infod_tif_favoritos from  "./infod_tif_favoritos.js";
@@ -291,8 +289,6 @@ export default function initModels(sequelize) {
   const infod_tif_animes = _infod_tif_animes.init(sequelize, DataTypes);
   const infod_tif_autorizados = _infod_tif_autorizados.init(sequelize, DataTypes);
   const infod_tif_chat = _infod_tif_chat.init(sequelize, DataTypes);
-  const infod_tif_chat_mensagem = _infod_tif_chat_mensagem.init(sequelize, DataTypes);
-  const infod_tif_chat_usuario = _infod_tif_chat_usuario.init(sequelize, DataTypes);
   const infod_tif_comentario = _infod_tif_comentario.init(sequelize, DataTypes);
   const infod_tif_comunidade = _infod_tif_comunidade.init(sequelize, DataTypes);
   const infod_tif_favoritos = _infod_tif_favoritos.init(sequelize, DataTypes);
@@ -625,8 +621,6 @@ export default function initModels(sequelize) {
     infod_tif_animes,
     infod_tif_autorizados,
     infod_tif_chat,
-    infod_tif_chat_mensagem,
-    infod_tif_chat_usuario,
     infod_tif_comentario,
     infod_tif_comunidade,
     infod_tif_favoritos,

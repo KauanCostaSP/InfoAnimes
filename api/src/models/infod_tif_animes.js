@@ -31,15 +31,15 @@ export default class infod_tif_animes extends Model {
       allowNull: false
     },
     ds_sinopse: {
-      type: DataTypes.STRING(5555),
+      type: DataTypes.STRING(5000),
       allowNull: false
     },
     ds_sobre: {
-      type: DataTypes.STRING(5555),
+      type: DataTypes.STRING(5000),
       allowNull: false
     },
     ds_enredo: {
-      type: DataTypes.STRING(5555),
+      type: DataTypes.STRING(5000),
       allowNull: false
     },
     ds_capa: {
@@ -61,6 +61,10 @@ export default class infod_tif_animes extends Model {
     ds_video2: {
       type: DataTypes.STRING(1555),
       allowNull: false
+    },
+    ds_imagem: {
+      type: DataTypes.STRING(1555),
+      allowNull: true
     }
   }, {
     sequelize,
