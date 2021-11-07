@@ -75,7 +75,7 @@ export default function inicio() {
                     </div>
                 </div>
             </div>
-            <Link className="cadastrar" to="/cadastrar"><button>cadastrar</button></Link>
+            <Link className="cadastrar" to="/cadastrar"><button>cadastrar-se</button></Link>
         </div>
 
             <div className="informacao">
