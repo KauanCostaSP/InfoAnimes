@@ -12,14 +12,6 @@ export default function Index() {
 
 
         <div className="conteudo">
-            <BarraLateral />
-
-            <div className="GIF">
-                <iframe title="gif" src="https://assets.pinterest.com/ext/embed.html?id=243475923595810649" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
-                <iframe title="gif" src="https://assets.pinterest.com/ext/embed.html?id=142707881933112493" height="714" width="345" frameborder="0" scrolling="no" ></iframe>
-                <iframe title="gif" src="https://assets.pinterest.com/ext/embed.html?id=71072500362247964" height="606" width="345" frameborder="0" scrolling="no" ></iframe>
-                <div className="servidor"><button>Criar Servidor</button></div>
-            </div>
 
             <div className="COMUNIDADES">
                 <dv className="cabecalho-comunidade">
