@@ -377,9 +377,9 @@ app.post('/comunidade', async (req, resp) => {
                 dt_criacao: new Date()
             }
         )
-        
+
         resp.send(r)
-        
+
     } catch (e) {
         resp.send({error: e.toString()})
     }
