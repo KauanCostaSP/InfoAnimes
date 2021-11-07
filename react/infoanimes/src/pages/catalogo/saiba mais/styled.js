@@ -85,6 +85,18 @@ body{
     background-color: #0d0d0d;
 }
 
+.corpo{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/back_favoritos.png);
+    background-size: 1359px;
+}
+
+.back{
+    background-image: linear-gradient(to bottom, #5201949c, #0d0d0d);
+    background-repeat: no-repeat;
+}
+
 .rodape{
     display: flex;
     flex-direction: column;

@@ -34,7 +34,7 @@ a:hover{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-image: url(../../../assets/images/back_favoritos.png);
-     background-size: 1359px;
+    background-size: 1359px;
 }
 
 .back{

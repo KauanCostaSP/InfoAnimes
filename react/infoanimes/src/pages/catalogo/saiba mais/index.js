@@ -8,9 +8,10 @@ export default function saibaMais() {
         <Container>
             <Cabecalho />
             <div className="corpo" >
+            <div className="back">
             <div className="cabecalho-corpo">
                 <div className="barrinha"></div>
-                <div className="titulo">Clássicos</div>
+                <div className="titulo"> Clássicos </div>
                 <div className="icone"> <button><img src="../../../assets/images/Menu.ico" alt="" /></button> </div>
             </div>
 
@@ -74,7 +75,8 @@ export default function saibaMais() {
                     <div className="descricao">Hokuto no Ken</div>
                 </div>
             </div>
-        </div>
+            </div>
+            </div>
             <Rodape />
         </Container>
     )

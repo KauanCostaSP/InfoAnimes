@@ -32,7 +32,7 @@ export default function Favoritos() {
                 <div className="anime"><img src="../../../assets/images/Sawamu.png" alt="Sawamu"/><div className="titulo">Sawamu, o ...</div></div>
             </div>
             </div>
-        </div>
+            </div>
 
        <Rodape />
         </Container>
