@@ -14,9 +14,6 @@ app.use(express.json());
 
 
 
-
-
-
 app.post('/login', async (req, resp) => {
     try {
         let { email, senha } = req.body;
@@ -343,6 +340,38 @@ app.post('/comentarios', async (req, resp) => {
         resp.send({error: e.toString()})
     }
 })
+
+
+
+
+//endpoints / comunidade
+
+
+
+
+app.get('/comunidade', async (req, resp) => {
+    try {
+        
+        let comunidades = await db.infod_tif_comunidade.findAll()
+
+        resp.send(comunidades)
+
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+})
+
+
+
+
+app.post('/comunidade', async (req, resp) => {
+    
+    let param = req.body;
+
+    let comunidades = await db.infod_tif_comunidade.findAll()
+
+})
+
 
 
 

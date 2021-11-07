@@ -1,10 +1,10 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoc_tct_compra extends Model {
+export default class infoc_tct_pedido extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_compra: {
+    id_pedido: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -26,17 +26,21 @@ export default class infoc_tct_compra extends Model {
         key: 'id_endereco'
       }
     },
-    ds_nota_fiscal: {
-      type: DataTypes.STRING(50),
-      allowNull: true
+    id_compra: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'infoc_tct_compra',
+        key: 'id_compra'
+      }
     },
-    ds_forma_pagamento: {
-      type: DataTypes.STRING(40),
+    bt_status: {
+      type: DataTypes.BOOLEAN,
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoc_tct_compra',
+    tableName: 'infoc_tct_pedido',
     timestamps: false,
     indexes: [
       {
@@ -44,7 +48,7 @@ export default class infoc_tct_compra extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_compra" },
+          { name: "id_pedido" },
         ]
       },
       {
@@ -61,8 +65,15 @@ export default class infoc_tct_compra extends Model {
           { name: "id_endereco" },
         ]
       },
+      {
+        name: "id_compra",
+        using: "BTREE",
+        fields: [
+          { name: "id_compra" },
+        ]
+      },
     ]
   });
-  return infoc_tct_compra;
+  return infoc_tct_pedido;
   }
 }
