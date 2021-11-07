@@ -40,7 +40,7 @@ export default function Login() {
     return (
         <Container>
             <ToastContainer />
-            <LoadingBar color="red" ref={loading} />
+            <LoadingBar color="#A245FF" ref={loading} />
     <div className="Container">
         <Link className="voltar-home" to="/cadastrar"> <img className="img-voltar" src="../../../assets/images/seta-esquerda (1).png" alt="" /> </Link> 
         <div className="conteudo-login">

@@ -20,7 +20,7 @@ export default function Salas() {
             <UsersOn />
            
            
-                <BoxMsg />
+            <BoxMsg />
             
         </div>
     </Container>
