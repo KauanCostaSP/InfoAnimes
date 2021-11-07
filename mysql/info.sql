@@ -48,7 +48,7 @@
   CREATE TABLE infoD_tif_comunidade (
   id_comunidade            int primary key auto_increment,
   id_usuario               int NOT NULL,
-  ds_capa                  int NOT NULL,
+  ds_capa                  varchar(1555) NOT NULL,
   nm_comunidade            varchar(255) NOT NULL,
   dt_criacao               datetime NOT NULL,
   foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE
