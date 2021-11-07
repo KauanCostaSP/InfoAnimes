@@ -30,7 +30,7 @@ export default function inicio() {
                 </div>
 
                 <div className="card">
-                    <img classNameName="img-card" src="../../../assets/images/lol.jpeg" alt=""/>
+                    <img className="img-card" src="../../../assets/images/lol.jpeg" alt=""/>
                     <div className="info">
                         <a href="/home" className="bt">Mangás</a>
                         <a href="/home" className="bt">Tradução</a>
@@ -75,7 +75,7 @@ export default function inicio() {
                     </div>
                 </div>
             </div>
-            <Link className="cadastrar" to="/comunidades"><button>cadastrar</button></Link>
+            <Link className="cadastrar" to="/cadastrar"><button>cadastrar</button></Link>
         </div>
 
             <div className="informacao">
