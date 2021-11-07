@@ -410,6 +410,24 @@ app.post('/comunidade', async (req, resp) => {
 
 
 
+app.get('/chat', async (req, resp) => {
+    try {
+        
+        let r = await db.infod_tif_chat.findAll();
+
+        resp.send(r)
+
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+})
+
+
+
+
+
+
+
 
 
 app.post('/chat', async (req, resp) => {
@@ -432,6 +450,44 @@ app.post('/chat', async (req, resp) => {
 })
 
 
+
+
+
+app.put('/chat/:id', async (req, resp) => {
+    
+    try {
+        let id = req.params.id;
+    let {mensagem } = req.body;
+    
+
+    let r = await db.infod_tif_chat.update({
+        ds_mensagem:  mensagem
+    },
+    {where: {id_chat: id}}
+    )
+      resp.send(r)
+        
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+    
+})
+
+
+
+app.delete('/chat/:id', async (req, resp) => {
+    try {
+        
+        let id = req.params.id;
+
+        let r = await db.infod_tif_chat.destroy({ where: { id_chat: id } })
+        
+        resp.sendStatus(200)
+
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+})
 
 
 
