@@ -377,7 +377,7 @@ app.post('/comunidade', async (req, resp) => {
         let r = await db.infod_tif_comunidade.create(
             {
                 ds_capa: capa,
-                id_usuario: usuario.id_usuario,
+                id_usuario: usuario,
                 nm_comunidade: nome,
                 dt_criacao: new Date()
             }
