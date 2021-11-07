@@ -18,7 +18,7 @@ app.post('/login', async (req, resp) => {
     try {
         let { email, senha } = req.body;
     
-    let i = await db.infod_tif_usuario.finfOne({
+    let i = await db.infod_tif_usuario.findOne({
         where: {
             ds_email: email,
             ds_senha: senha
@@ -52,7 +52,7 @@ app.post('/cadastrar', async (req, resp) => {
     try {
         let { nome, email, senha} = req.body;
 
-        let h = await db.infod_tif_usuario.findOne({
+        let h = await db.infod_tif_usuario.create({
             where: {
                 nm_nome: nome,
                 ds_email: email,
@@ -365,10 +365,26 @@ app.get('/comunidade', async (req, resp) => {
 
 
 app.post('/comunidade', async (req, resp) => {
-    
-    let param = req.body;
+    try {
 
-    let comunidades = await db.infod_tif_comunidade.findAll()
+        let { capa, nome, criacao } = req.body;
+
+        let r = await db.infod_tif_comunidade.create(
+            {
+                ds_capa: capa,
+                nm_comunidade: nome,
+                dt_criacao: criacao
+            }
+        )
+        
+        resp.send(r)
+        
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+    
+
+    
 
 })
 
