@@ -13,6 +13,7 @@ import Login from "./pages/perfil-usuario/login";
 import Cadastrar from "./pages/perfil-usuario/cadastrar";
 import EditarSenha from "./pages/perfil-usuario/editar-senha";
 import Perfil from "./pages/perfil-usuario/pagina-perfil";
+import EsqueciSenha from "./pages/perfil-usuario/esqueci-minha-senha"
 
 export default function Routes() {
     return (
@@ -21,6 +22,7 @@ export default function Routes() {
                 <Route path="/" exact={true} component={Inicial} />
                 <Route path="/home" exact={true} component={Inicial} />
                 <Route path="/login" exact={true} component={Login} />
+                <Route path="/esqueci-senha" exact={true} component={EsqueciSenha} />
                 <Route path="/comunidades" exact={true} component={Comunidades} />
                 <Route path="/contato" exact={true} component={Contato} />
                 <Route path="/sala" exact={true} component={Sala} />

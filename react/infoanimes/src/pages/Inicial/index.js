@@ -19,7 +19,7 @@ export default function inicio() {
             </div>
             <div className="comunidades">
                 <div className="card">
-                    <img classNameName="img-card" src="../../../assets/images/Nf-Naruto.jpeg" alt=""/>
+                    <img className="img-card" src="../../../assets/images/Nf-Naruto.jpeg" alt=""/>
                     <div className="info">
                         <a href="/home" className="bt">Mangás</a>
                         <a href="/home" className="bt">Tradução</a>
@@ -42,7 +42,7 @@ export default function inicio() {
 
 
                 <div className="card">
-                    <img classNameName="img-card" src="../../../assets/images/Darlin.jpeg" alt="" style={{zIndex: 2}} />
+                    <img className="img-card" src="../../../assets/images/Darlin.jpeg" alt="" style={{zIndex: 2}} />
                     <div className="info">
                         <a href="/home" className="bt">Mangás</a>
                         <a href="/home" className="bt">Tradução</a>
@@ -54,7 +54,7 @@ export default function inicio() {
 
 
                 <div className="card">
-                    <img classNameName="img-card" src="../../../assets/images/Nf-Kakegurui.jpeg" alt="" style={{zIndex: 1}} />
+                    <img className="img-card" src="../../../assets/images/Nf-Kakegurui.jpeg" alt="" style={{zIndex: 1}} />
                     <div className="info">
                         <a href="/home" className="bt">Mangás</a>
                         <a href="/home" className="bt">Traduçaõ</a>

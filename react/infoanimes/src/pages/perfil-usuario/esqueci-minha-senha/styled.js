@@ -63,8 +63,9 @@ const Container = styled.div`
     height: 3.5em;
     transition: 0.3s;
 }
+
 #retangulo{
-    padding: 8em;
+    padding: 7em;
     border-radius: 25px;
     transition: 0.7s;
 }
@@ -74,14 +75,13 @@ const Container = styled.div`
     transition: 0.7s;
 }
 
-.texto-esqueci-senha{
-    color: white;
-    font: 1.5em fonte-100;
-    text-align: none;
-    padding-bottom: 1em
-    }
-    
 
+.texto-esqueci-senha{
+color: white;
+font: 1.5em fonte-100;
+text-align: none;
+padding-bottom: 1em
+}
 
 
 .campo-email{
@@ -117,11 +117,12 @@ background-position: 15px 10px;
 background-repeat: no-repeat;
 }
 
-.entrar{
-    padding-bottom: 2em;
-}
 
-.entrar button{
+
+
+
+
+.enviar button{
     font-family: fonte-100;
     font-size: 15px;
     color: white;
@@ -134,11 +135,11 @@ background-repeat: no-repeat;
     border: none;
 }
 
-.entrar button:hover{
+.enviar button:hover{
     cursor: pointer;
 }
 
-.entrar button::before{
+.enviar button::before{
     content: '';
     position: absolute;
     top: 0;
@@ -151,12 +152,12 @@ background-repeat: no-repeat;
     transition: 0.5s;
 }
 
-.entrar button:hover::before{
+.enviar button:hover::before{
     width: 99%;
     height: 97%;
 }
 
-.entrar button::after{
+.enviar button::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -168,7 +169,7 @@ background-repeat: no-repeat;
     transition: 0.5s;
 }
 
-.entrar button:hover::after{
+.enviar button:hover::after{
     width: 99%;
     height: 95%;
 }
@@ -177,8 +178,8 @@ background-repeat: no-repeat;
     color: white;
     font: 1em fonte-100;
     text-decoration: underline;
+    padding: 10em 0em 0em 0em;
     text-align: right;
-    padding-top: 4em;
 }
 
 .esqueci-senha:hover{

@@ -50,17 +50,6 @@ const Container = styled.div`
     justify-content: center;
 }
 
-.voltar-home{
-    position: absolute;
-   padding-left: 2em;
-   padding-top: 2em;
-}
-
-.voltar-home img{
-    height: 4em;
-    filter: invert(100%) sepia(13%) saturate(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
-}
-
 
 .titulo-left{
     font: 2.3em fonte-300;
@@ -171,6 +160,7 @@ background-image: url(../../../assets/images/Chaveiro.png);
 background-position: 15px 10px;
 background-repeat: no-repeat;
 }
+
 
 .campo-senha-repetida{
     margin: 1em 0px 0px 0em;
