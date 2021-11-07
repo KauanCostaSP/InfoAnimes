@@ -2,15 +2,9 @@ import db from './db.js';
 import express from 'express';
 import cors from 'cors';
 
-
 const app = express();
 app.use(cors());
 app.use(express.json());
-
-
-
-
-
 
 
 
@@ -171,6 +165,18 @@ app.get('/catalogo', async (req, resp) => {
 })
 
 
+app.get('/catalogo/:id', async (req, resp) => {
+    try {
+        
+        let r = await db.infod_tif_animes.findOne({where: {id_anime: req.params.id}})
+
+        resp.send(r)
+
+    } catch (e) {
+        resp.send({ error: e.toString() })
+    }
+})
+
 
 
 app.post('/catalogo', async (req, resp) => {
@@ -252,6 +258,57 @@ app.delete('/catalogo/:id', async (req, resp) => {
 })
 
 
+
+
+
+//endpoints /comentarios
+
+
+
+app.get('/comentarios/:anime', async (req, resp) => {
+    try {
+        
+        let anime = await db.infod_tif_animes.findOne({ where: { nm_anime: req.params.anime } })
+
+        let comentarios = await db.infod_tif_comentario.findAll({ where: { id_anime: anime.id_anime } })
+        
+        resp.send(comentarios)
+
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+})
+
+
+
+
+
+app.post('/comentarios', async (req, resp) => {
+    try {
+
+        
+        let comentario = req.body;
+        
+        let anime = await db.infod_tif_animes.findOne({ where: { nm_anime: comentario.anime.nome } })
+        let usuario = await db.infod_tif_usuario.findOne({where: {nm_usuario: comentario.usuario.nome}})
+        
+
+        let r = {
+            id_usuario: usuario.id_usuario,
+            id_anime: anime.id_anime,
+            ds_comentario: comentario.comentario,
+            dt_comentario: new Date()
+
+        }
+
+        let resultado = await db.infod_tif_comentario.create(r);
+        resp.send(resultado);
+
+
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+})
 
 
 
