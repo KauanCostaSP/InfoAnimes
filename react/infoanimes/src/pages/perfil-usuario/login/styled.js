@@ -117,7 +117,7 @@ background-position: 15px 10px;
 background-repeat: no-repeat;
 }
 
-.entrar{
+.entrar-div{
     padding-bottom: 2em;
 }
 
