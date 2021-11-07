@@ -12,13 +12,10 @@
   nm_usuario               varchar(19) NOT NULL,
   ds_email                 varchar(255) NOT NULL,
   ds_senha                 varchar(10) NOT NULL,
-  ds_telefone              varchar(19) NOT NULL,
+  ds_telefone              varchar(19) NULL,
   dt_criacao               datetime NOT NULL,
-  bt_login_face            boolean NOT NULL,
-  bt_login_insta           boolean NOT NULL,
-  bt_login_google          boolean NOT NULL,
   bt_online                boolean NOT NULL,
-  ds_perfil                varchar(255) NOT NULL
+  ds_perfil                varchar(255) NULL
   );
   
   
@@ -105,6 +102,9 @@
   bt_permitir_entrada      boolean NOT NULL,
   foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
   foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE
+  tb_usuario.belongsTo(tb_codigo, { as: "tb_codigo_usuario", foreignKey: "id_codigo"});
+tb_codigo.hasOne(tb_usuario, { as: "tb_usuario_codigo", foreignKey: "id_codigo"});
+
   );
   
   
