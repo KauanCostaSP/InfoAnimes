@@ -224,6 +224,8 @@ app.get('/catalogo/:anime', async (req, resp) => {
 
 
 
+// erro supostamente aqui 
+
 app.post('/catalogo', async (req, resp) => {
     try {
         let { anime, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem } = req.body;
