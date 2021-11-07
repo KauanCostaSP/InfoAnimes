@@ -31,14 +31,14 @@
   ds_temporadas            varchar(255) NOT NULL,
   ds_genero                varchar(255) NOT NULL,
   ds_estrelando            varchar(255) NOT NULL,
-  ds_sinopse               varchar(555) NOT NULL,
-  ds_sobre                 varchar(555) NOT NULL,
-  ds_enredo                varchar(555) NOT NULL,
-  ds_capa                  varchar(255) NOT NULL,
+  ds_sinopse               varchar(5555) NOT NULL,
+  ds_sobre                 varchar(5555) NOT NULL,
+  ds_enredo                varchar(5555) NOT NULL,
+  ds_capa                  varchar(155) NOT NULL,
   dt_postagem              datetime NOT NULL,
   dt_ano                   date NOT NULL,
-  ds_video1                varchar(255) NOT NULL,
-  ds_video2                varchar(255) NOT NULL
+  ds_video1                varchar(1555) NOT NULL,
+  ds_video2                varchar(1555) NOT NULL
   );
 
 
@@ -62,8 +62,7 @@
   id_anime                 int NOT NULL,
   ds_comentario            varchar(255) NOT NULL,
   dt_comentario            datetime NOT NULL,
-  id_like                  int NOT NULL,
-  foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
+  foreign key (id_usuario) references infoD_tif_usuario(id_usario) ON DELETE CASCADE ON UPDATE CASCADE,
   foreign key (id_anime) references infoD_tif_animes(id_anime) ON DELETE CASCADE ON UPDATE CASCADE
   );
   
@@ -109,20 +108,6 @@
   );
   
   
-  
-  
-  
-  CREATE TABLE infoD_tif_comentario_post (
-  id_comentario_post       int primary key auto_increment,
-  id_usuario               int NOT NULL,
-  id_comunidade            int NOT NULL,
-  ds_comentario            varchar(255) NOT NULL,
-  dt_comentario            datetime NOT NULL,
-  id_like                  int NOT NULL,
-  foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE,
-  foreign key (id_like) references infoD_tif_like(id_like) ON DELETE CASCADE ON UPDATE CASCADE
-  );
   
   
   
