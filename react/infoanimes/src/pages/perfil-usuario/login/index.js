@@ -11,7 +11,7 @@ export default function Registrar() {
                 <div className="campo-email"><input type="email" id="email" maxlength={32} placeholder="Email" size="40" /></div>
                 <div className="campo-senha"><input type="password" id="senha" maxlength={32} placeholder="Senha" size="40" /></div>
                 <div className="entrar"><button>Entrar</button></div>
-                <div className="esqueci-senha"> Esqueci minha senha </div>
+                <Link className="esqueci-senha" to="/esqueci-senha"> <div ClassName="esqueci-botao">  Esqueci minha senha </div> </Link>
         </div>
         </div>
     </div>

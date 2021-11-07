@@ -106,10 +106,9 @@ background-position: 15px 10px;
 background-repeat: no-repeat;
 }
 
-
-
-
-
+.entrar{
+    padding-bottom: 2em;
+}
 
 .entrar button{
     font-family: fonte-100;
@@ -167,14 +166,14 @@ background-repeat: no-repeat;
     color: white;
     font: 1em fonte-100;
     text-decoration: underline;
-    padding: 3em 0em 0em 0em;
     text-align: right;
+    padding-top: 4em;
 }
 
 .esqueci-senha:hover{
     color: #530194;
     transition: 0.3s;
-    cursor: pointer
+    cursor: pointer;
 }
 
 
