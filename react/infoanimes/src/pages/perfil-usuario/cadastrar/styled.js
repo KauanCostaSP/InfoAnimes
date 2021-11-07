@@ -70,11 +70,13 @@ padding: 7px 60px;
 font: 20px fonte-300;
 border-width: 2px;
 border-style: solid;
-
+transition: 0.3s;
 }
 
 .botao-login button:hover{
     cursor: pointer;
+    padding: 10px 70px;
+    transition: 0.3s;
     }
 
 
@@ -197,10 +199,13 @@ border-style: solid;
 background-color: #1f1f1f;
 border-color: #7E00FC;
 border-radius: 60px;
+transition: 0.3s;
 }
 
 .botao-criar-conta button:hover{
 cursor: pointer;
+padding: 13px 70px;
+transition: 0.3s;
 }
 `
 
