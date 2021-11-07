@@ -37,19 +37,20 @@
   
   CREATE TABLE infoD_tif_animes (
   id_anime                 int primary key auto_increment,
-  nm_anime                 varchar(255) NOT NULL,
-  ds_classificação         varchar(255) NOT NULL,
-  ds_temporadas            varchar(255) NOT NULL,
-  ds_genero                varchar(255) NOT NULL,
-  ds_estrelando            varchar(255) NOT NULL,
-  ds_sinopse               varchar(5555) NOT NULL,
-  ds_sobre                 varchar(5555) NOT NULL,
-  ds_enredo                varchar(5555) NOT NULL,
-  ds_capa                  varchar(155) NOT NULL,
-  dt_postagem              datetime NOT NULL,
-  dt_ano                   date NOT NULL,
-  ds_video1                varchar(1555) NOT NULL,
-  ds_video2                varchar(1555) NOT NULL
+  nm_anime                 varchar(255) NULL,
+  ds_classificação         varchar(255) NULL,
+  ds_temporadas            varchar(255) NULL,
+  ds_genero                varchar(255) NULL,
+  ds_estrelando            varchar(255) NULL,
+  ds_sinopse               varchar(5555) NULL,
+  ds_sobre                 varchar(5555) NULL,
+  ds_enredo                varchar(5555) NULL,
+  ds_capa                  varchar(155) NULL,
+  dt_postagem              datetime NULL,
+  dt_ano                   date NULL,
+  ds_video1                varchar(1555) NULL,
+  ds_video2                varchar(1555) NULL,
+  ds_imagem                varchar(1555) NULL
   );
 
 

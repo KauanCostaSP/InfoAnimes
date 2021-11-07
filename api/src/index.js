@@ -209,10 +209,24 @@ app.get('/catalogo/:id', async (req, resp) => {
 })
 
 
+app.get('/catalogo/:anime', async (req, resp) => {
+    try {
+        
+        let anime = await db.infod_tif_animes.findOne({ where: {nm_anime: req.params.anime } })
+
+        let imagem = await db.infod_tif_animes.findOne({ where: {ds_imagem: anime.id_anime} })
+
+        resp.send(imagem)
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+})
+
+
 
 app.post('/catalogo', async (req, resp) => {
     try {
-        let { anime, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, postagem, ano, video1, video2 } = req.body;
+        let { anime, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem } = req.body;
 
     let a = await db.infod_tif_animes.create({
         nm_anime: anime,
@@ -224,10 +238,11 @@ app.post('/catalogo', async (req, resp) => {
         ds_sobre: sobre,
         ds_enredo: enredo,
         ds_capa: capa,
-        dt_postagem: postagem,
+        dt_postagem: new Date(),
         dt_ano: ano,
         ds_video1: video1,
-        ds_video2: video2      
+        ds_video2: video2,
+        ds_imagem: imagem      
     })
 
     resp.send(a);
