@@ -345,36 +345,6 @@ a:hover{
     margin-bottom: 3em;
 }
 
-.curtidas{
-    display: flex;
-    flex-direction: row;
-
-    margin-bottom: 1em;
-}
-
-.like {
-    margin-right: 1em;
-}
-
-.like img{
-    margin-right: 1em;
-}
-
-.deslike{
-    display: flex;
-    flex-direction: row;
-}
-
-.deslike img{
-    margin-right: 1em;
-    padding-top: 5px;
-}
-
-.cont_deslike{
-    padding: 0px !important;
-    margin-top: 3px;
-}
-
 .ver_respostas{
     color: #7e00fc;
     font-size: 15px;

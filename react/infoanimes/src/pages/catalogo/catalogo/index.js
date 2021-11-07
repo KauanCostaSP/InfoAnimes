@@ -108,14 +108,6 @@ export default function Catalogo() {
 
                     <div className="comentario">Eu cheguei agora nesse mundo dos animes e esse foi o segundo que eu vi e simplesmente me apaixonei, cada personagem tem o seu jeito que te deixa preso no anime. A inteligência da Yumeko é ótima e as apostas vão ficando cada vez mais surpreendentes,nunca sabemos o que podem apostar. Recomendo a todos. </div>
 
-                    <div className="rodape_comentario">
-                        <div className="curtidas">
-                            <div className="like"><img src="../../../assets/images/like.png" alt=""/>17</div>
-                            <div className="deslike"><img src="../../../assets/images/deslike.png" alt=""/><div className="cont_deslike">0</div></div>
-                        </div>
-                        
-                    </div>
-
                     <div className="ver_respostas">Ver respostas
                             <svg
                               viewBox="0 0 18 18"
