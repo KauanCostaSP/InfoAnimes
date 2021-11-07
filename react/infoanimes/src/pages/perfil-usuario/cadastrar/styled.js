@@ -204,7 +204,7 @@ transition: 0.3s;
 
 .botao-criar-conta button:hover{
 cursor: pointer;
-padding: 13Ppx 70px;
+padding: 13px 70px;
 transition: 0.3s;
 }
 `
