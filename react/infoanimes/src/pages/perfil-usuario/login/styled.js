@@ -54,12 +54,17 @@ const Container = styled.div`
 }
 
 .voltar-home img{
-    height: 4em;
+    height: 3em;
     filter: invert(100%) sepia(13%) saturate(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
+    transition: 0.3s;
 }
 
+.voltar-home img:hover{
+    height: 3.5em;
+    transition: 0.3s;
+}
 #retangulo{
-    padding: 10em;
+    padding: 8em;
     border-radius: 25px;
     transition: 0.7s;
 }
@@ -69,7 +74,13 @@ const Container = styled.div`
     transition: 0.7s;
 }
 
-
+.texto-esqueci-senha{
+    color: white;
+    font: 1.5em fonte-100;
+    text-align: none;
+    padding-bottom: 1em
+    }
+    
 
 
 

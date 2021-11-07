@@ -18,8 +18,8 @@ export default function Registrar() {
             <div className="sub-titulo-right"> use seu email para registrar </div>
             <div className="campo-usuario"><input type="text" id="usuario" size="40" placeholder="Nome"/></div>
             <div className="campo-email"><input type="email" id="email" maxlength={32} placeholder="Email" size="40" /></div>
-            <div className="campo-senha"><input type="password" id="senha" maxlength={32} placeholder="Senha" size="40" /></div>
-            <div className="campo-senha-repetida"><input type="password" maxlength={32} placeholder="Confirmar senha" size="40" /></div>
+            <div className="campo-senha"><input type="password" id="password" maxlength={32} placeholder="Senha" size="40" /></div>
+            <div className="campo-senha-repetida"><input type="password" id="password" maxlength={32} placeholder="Confirmar senha" size="40" /></div>
             <div className="botao-criar-conta"> <button> Criar Conta </button></div>
         </div>
     </div>

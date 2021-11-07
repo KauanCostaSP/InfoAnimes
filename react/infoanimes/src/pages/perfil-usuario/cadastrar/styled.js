@@ -161,6 +161,7 @@ background-position: 15px 10px;
 background-repeat: no-repeat;
 }
 
+
 .campo-senha-repetida{
     margin: 1em 0px 0px 0em;
     text-align: center;
