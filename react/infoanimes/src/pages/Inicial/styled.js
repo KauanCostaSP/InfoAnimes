@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 const Container = styled.div`
+
     background-image: linear-gradient(#0E0E0E 70%, #1A1A1A);
 
     a{
@@ -34,6 +35,13 @@ a:hover{
 
 .apresentacao{
     margin-top: 10em;
+
+}
+
+.informacao{
+    justify-content: center;
+    display: flex;
+    padding-top: 10em;
 }
 
 
@@ -41,9 +49,10 @@ a:hover{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 80%;
-    margin-left: 7.6em;
     margin-bottom: 3em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -56,7 +65,13 @@ a:hover{
 }
 
 
-
+.botao{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -73,7 +88,6 @@ a:hover{
     border: none;
     width: 189px;
     height: 46px;
-    margin-left: 38em;
     margin-bottom: 2.7em;
 }
 
@@ -212,17 +226,16 @@ span{
 .t1{
     color: white;
     text-shadow: 3px 0px 1px #7E00FC;
-
     font: 36px fonte-300;
     font-family: 'Montserrat Subrayada', sans-serif;
-
     position: absolute;
     padding-top: 1.1em;
-    margin-left: 2.6em;
-
+    margin-right: 20em;
     text-transform: uppercase;
     letter-spacing: 0.225em;
 }
+
+
 
 .conteudo{
     margin-top: 3em;
@@ -235,6 +248,14 @@ span{
 
     margin-top: 3em;
     margin-bottom: 3em;
+}
+
+.cadastrar{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .cadastrar button{
@@ -250,7 +271,6 @@ span{
     border: none;
     width: 189px;
     height: 46px;
-    margin-left: 39em;
 }
 
 .cadastrar button::before{
@@ -310,17 +330,12 @@ span{
 }
 
 .t2-texto{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 40%;
-
-    text-align: center;
     color: white;
-
     font-family: fonte-100;
     font-weight: 500;
     font-size: 18px;
-    margin-left: 22.5em;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .img{
@@ -480,6 +495,20 @@ body::-webkit-scrollbar-thumb {
   div .comunidades .card{
     display: inline-block;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
