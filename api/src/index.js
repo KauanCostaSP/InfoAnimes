@@ -244,7 +244,7 @@ app.post('/catalogo', async (req, resp) => {
         dt_ano: ano,
         ds_video1: video1,
         ds_video2: video2,
-        ds_imagem: imagem      
+        ds_imagem: imagem
     })
 
     resp.send(a);
@@ -253,6 +253,7 @@ app.post('/catalogo', async (req, resp) => {
         resp.send({erro: b.toString() })
     }
 })
+
 
 
 
