@@ -1,7 +1,6 @@
 import Cabecalho from '../../../components/cabecalho/index'
 import Rodape from '../../../components/rodapé'
 import { Container } from './styled'
-import BarraLateral from '../../../components/comunidade1/comunidade/barra-lateral'
 import BoxComunidade from '../../../components/comunidade1/comunidade/box-comunidade'
 
 
