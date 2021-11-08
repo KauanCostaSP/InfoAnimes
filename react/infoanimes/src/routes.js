@@ -12,7 +12,8 @@ import Login from "./pages/perfil-usuario/login";
 import Cadastrar from "./pages/perfil-usuario/cadastrar";
 import EditarSenha from "./pages/perfil-usuario/editar-senha";
 import PerfilLogado from "./pages/perfil-usuario/pagina-perfil-logado";
-import EsqueciSenha from "./pages/perfil-usuario/esqueci-minha-senha"
+import EsqueciSenha from "./pages/perfil-usuario/esqueci-minha-senha";
+import PubliCatalogo from "./pages/paginas-adm/pub-catalogo";
 
 export default function Routes() {
     return (
@@ -33,6 +34,7 @@ export default function Routes() {
                 <Route path="/cadastrar" exact={true} component={Cadastrar} />
                 <Route path="/editarsenha" exact={true} component={EditarSenha} />
                 <Route path="/perfil-logado" exact={true} component={PerfilLogado} />
+                <Route path="/pub-catalogo" exact={true} component={PubliCatalogo} />
             </Switch>
         </BrowserRouter>
     )
