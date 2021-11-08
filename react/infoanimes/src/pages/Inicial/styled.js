@@ -507,7 +507,30 @@ body::-webkit-scrollbar-thumb {
     }
 
     .informacao{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        display: none;
         
+    }
+
+    .barra2{
+        display: none;
+    }
+
+    .barra{
+    width: 10em;
+    height: 80px;
+    }
+
+    .barra span{
+        display: flex;
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        justify-content: center;
     }
 
     .titulo{
@@ -522,6 +545,19 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     font-size: 12px;
   
+    }
+
+    .imagem img {
+        height: 10em;
+        display: none;
+    }
+
+    t1{
+    font: 1px fonte-300;
+    position: none;
+    padding-top: 0em;
+    margin-right: 0em;
+
     }
 
     .cadastrar{
