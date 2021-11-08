@@ -1,46 +1,34 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infod_tif_usuario extends Model {
+export default class infoc_tht_cadastro extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_usuario: {
+    id_cadastro: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    nm_usuario: {
-      type: DataTypes.STRING(19),
-      allowNull: true
-    },
     ds_email: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING(20),
       allowNull: true
     },
     ds_senha: {
-      type: DataTypes.STRING(10),
+      type: DataTypes.STRING(20),
       allowNull: true
     },
-    ds_telefone: {
-      type: DataTypes.STRING(19),
+    nr_celular: {
+      type: DataTypes.INTEGER,
       allowNull: true
     },
-    dt_criacao: {
-      type: DataTypes.DATE,
-      allowNull: true
-    },
-    bt_online: {
-      type: DataTypes.BOOLEAN,
-      allowNull: true
-    },
-    ds_perfil: {
-      type: DataTypes.STRING(255),
+    nm_nome: {
+      type: DataTypes.STRING(15),
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infod_tif_usuario',
+    tableName: 'infoc_tht_cadastro',
     timestamps: false,
     indexes: [
       {
@@ -48,11 +36,11 @@ export default class infod_tif_usuario extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_usuario" },
+          { name: "id_cadastro" },
         ]
       },
     ]
   });
-  return infod_tif_usuario;
+  return infoc_tht_cadastro;
   }
 }

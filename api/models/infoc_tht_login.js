@@ -1,38 +1,34 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoc_tht_cartao extends Model {
+export default class infoc_tht_login extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_cartao: {
+    id_login: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    nr_cartao: {
+    id_cadastro: {
       type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'infoc_tht_cadastro',
+        key: 'id_cadastro'
+      }
+    },
+    ds_email: {
+      type: DataTypes.STRING(20),
       allowNull: true
     },
-    nm_cartao: {
-      type: DataTypes.STRING(40),
-      allowNull: true
-    },
-    nr_validade: {
-      type: DataTypes.INTEGER,
-      allowNull: true
-    },
-    nr_cvv: {
-      type: DataTypes.INTEGER,
-      allowNull: true
-    },
-    nr_parcela: {
-      type: DataTypes.INTEGER,
+    ds_senha: {
+      type: DataTypes.STRING(20),
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoc_tht_cartao',
+    tableName: 'infoc_tht_login',
     timestamps: false,
     indexes: [
       {
@@ -40,11 +36,18 @@ export default class infoc_tht_cartao extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_cartao" },
+          { name: "id_login" },
+        ]
+      },
+      {
+        name: "id_cadastro",
+        using: "BTREE",
+        fields: [
+          { name: "id_cadastro" },
         ]
       },
     ]
   });
-  return infoc_tht_cartao;
+  return infoc_tht_login;
   }
 }

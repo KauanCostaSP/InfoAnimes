@@ -1,42 +1,54 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoc_tct_compra extends Model {
+export default class infoc_tht_usuario extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_compra: {
+    id_usuario: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    id_cliente: {
+    id_login: {
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: 'infoc_tct_cliente',
-        key: 'id_cliente'
+        model: 'infoc_tht_login',
+        key: 'id_login'
       }
     },
-    id_endereco: {
+    id_cartao: {
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: 'infoc_tct_endereco',
-        key: 'id_endereco'
+        model: 'infoc_tht_cartao',
+        key: 'id_cartao'
       }
     },
-    ds_nota_fiscal: {
-      type: DataTypes.STRING(50),
+    nm_usuario: {
+      type: DataTypes.STRING(30),
       allowNull: true
     },
-    ds_forma_pagamento: {
-      type: DataTypes.STRING(40),
+    ds_email: {
+      type: DataTypes.STRING(20),
+      allowNull: true
+    },
+    nr_celular: {
+      type: DataTypes.INTEGER,
+      allowNull: true
+    },
+    dt_nascimento: {
+      type: DataTypes.DATEONLY,
+      allowNull: true
+    },
+    ds_senha: {
+      type: DataTypes.STRING(255),
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoc_tct_compra',
+    tableName: 'infoc_tht_usuario',
     timestamps: false,
     indexes: [
       {
@@ -44,25 +56,25 @@ export default class infoc_tct_compra extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_compra" },
+          { name: "id_usuario" },
         ]
       },
       {
-        name: "id_cliente",
+        name: "id_login",
         using: "BTREE",
         fields: [
-          { name: "id_cliente" },
+          { name: "id_login" },
         ]
       },
       {
-        name: "id_endereco",
+        name: "id_cartao",
         using: "BTREE",
         fields: [
-          { name: "id_endereco" },
+          { name: "id_cartao" },
         ]
       },
     ]
   });
-  return infoc_tct_compra;
+  return infoc_tht_usuario;
   }
 }

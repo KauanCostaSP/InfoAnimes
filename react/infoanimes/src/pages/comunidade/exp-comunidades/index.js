@@ -1,3 +1,8 @@
+import { Container } from './styled'
+import Cabecalho from '../../../components/cabecalho'
+import Rodape from '../../../components/rodapé'
+
+
 export default function Index() {
     return (
         <Container>

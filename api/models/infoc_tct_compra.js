@@ -1,14 +1,22 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoc_tct_cliente extends Model {
+export default class infoc_tct_compra extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_cliente: {
+    id_compra: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
+    },
+    id_cliente: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'infoc_tct_cliente',
+        key: 'id_cliente'
+      }
     },
     id_endereco: {
       type: DataTypes.INTEGER,
@@ -18,54 +26,37 @@ export default class infoc_tct_cliente extends Model {
         key: 'id_endereco'
       }
     },
-    id_cartao: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'infoc_tct_cartao',
-        key: 'id_cartao'
-      }
-    },
-    nm_nome: {
-      type: DataTypes.STRING(30),
-      allowNull: true
-    },
-    ds_email: {
+    ds_nota_fiscal: {
       type: DataTypes.STRING(50),
       allowNull: true
     },
-    ds_senha: {
-      type: DataTypes.STRING(16),
+    ds_forma_pagamento: {
+      type: DataTypes.STRING(40),
       allowNull: true
     },
-    ds_genero: {
-      type: DataTypes.STRING(10),
+    vl_total: {
+      type: DataTypes.DECIMAL(10,2),
       allowNull: true
     },
-    dt_nascimento: {
-      type: DataTypes.DATEONLY,
-      allowNull: true
-    },
-    ds_telefone: {
-      type: DataTypes.STRING(11),
-      allowNull: true
-    },
-    ds_cpf: {
-      type: DataTypes.STRING(14),
-      allowNull: true
-    },
-    bt_administrador: {
+    bt_aprovada: {
       type: DataTypes.BOOLEAN,
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoc_tct_cliente',
+    tableName: 'infoc_tct_compra',
     timestamps: false,
     indexes: [
       {
         name: "PRIMARY",
         unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "id_compra" },
+        ]
+      },
+      {
+        name: "id_cliente",
         using: "BTREE",
         fields: [
           { name: "id_cliente" },
@@ -78,15 +69,8 @@ export default class infoc_tct_cliente extends Model {
           { name: "id_endereco" },
         ]
       },
-      {
-        name: "id_cartao",
-        using: "BTREE",
-        fields: [
-          { name: "id_cartao" },
-        ]
-      },
     ]
   });
-  return infoc_tct_cliente;
+  return infoc_tct_compra;
   }
 }
