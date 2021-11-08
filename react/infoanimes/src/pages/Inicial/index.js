@@ -7,7 +7,7 @@ import CardCatalogo from '../../components/inicial/card-catalogo'
 
 export default function inicio() {
     return (
-        <Container>
+        <Container> 
             <Cabecalho />
             
             
@@ -15,7 +15,7 @@ export default function inicio() {
             <div className="conteudo">
             <div className="texto">
                 <div className="t1-titulo">Conecte-se com pessoas</div>
-                <div className="t2-texto">Crie a sua própria comunidade ou faça parte de uma Compartilhe seu conhecimento </div>
+                <div className="t2-texto">Crie a sua própria comunidade ou faça parte de uma<br/> Compartilhe seu conhecimento </div>
             </div>
             <div className="comunidades">
                 <div className="card">
@@ -76,7 +76,7 @@ export default function inicio() {
                 </div>
             </div>
             <Link className="cadastrar" to="/cadastrar"><button>cadastrar-se</button></Link>
-        </div>
+
 
             <div className="informacao">
                 <div className="t1">Busque Diversidade</div>
@@ -97,7 +97,9 @@ export default function inicio() {
                     </div>
                 </div>
             </div>
-                <div className="catalogos">
+
+
+            <div className="catalogos">
                     
                     <CardCatalogo
                         img="/assets/images/Darlin.jpeg"
@@ -174,6 +176,9 @@ export default function inicio() {
                 </div>
 
                 <Link className="botao" to="catalogos"><button>Saiba Mais</button></Link>
+
+        </div>
+ 
             <Rodape />
         </Container>
     )
