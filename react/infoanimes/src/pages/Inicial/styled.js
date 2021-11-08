@@ -217,7 +217,7 @@ span{
 .barra2{
     border-top:  4px solid white;
     background-color: #7E00FC;
-    width: 249px;
+    width: 140px;
     height: 80px;  
     margin-top: 4.7em;
 }
@@ -507,7 +507,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .informacao{
-        display: none;
+        
     }
 
     .titulo{
