@@ -21,13 +21,19 @@ export default class Api {
 
     //perfil 
 
-    async adicionarInformacoes(nome, email, senha, telefone, criacao, online, perfil) {
-        let r = await api.post(`/usuario`, {nome, email, senha, telefone, criacao, online, perfil})
+    async alterarInformacoes(id, nome, email, senha, telefone, online, perfil) {
+        let r = await api.put(`/usuario/${id}`, {nome, email, senha, telefone, online, perfil})
         return r.data;
     }
 
 
 
+
+
+
+    async excluirperfil(id) {
+        let r = await api.delete(`/usuario/${id}`)
+    }
 
 
 
@@ -35,19 +41,22 @@ export default class Api {
 
 
     async listaranimes() {
-        let r = api.get(`catalogo`)
+        let r = await api.get(`/catalogo`)
         return r.data;
     }
 
 
     async catalogoanime(idAnime) {
-        let r = api.get(`catalogo/${idAnime}`)
+        let r = await api.get(`/catalogo/${idAnime}`)
         return r.data;
     }
 
 
 
-
+    async adicionarcatalogo(id, anime, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem) {
+        let r = await api.post(`/catalogo/${id}`, { anime, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem })
+        return r.data;
+    }
 
 
 
@@ -56,25 +65,75 @@ export default class Api {
 
 
 
-    async adicionarcoment(idUsuario, idAnime, comentario) {
-        let chat = {
-            anime: {
-                id: idAnime
-            },
-            usuario: {
-                id: idUsuario
-            },
-            comentario: comentario
-        }
+    async adicionarcoment(idAnime, idUsuario, comentario) {
 
-        let r = await api.post(`/comentarios`, chat)
+        let r = await api.post(`/comentarios/${idAnime}`, {idUsuario, comentario} )
         return r.data;
     }
 
 
 
-    async listarcoment(idAnime) {
-        let r = await api.get(`comentarios`, {idAnime})
+    async listarcoment(Anime) {
+        let r = await api.get(`/comentarios/${Anime}` )
+        return r.data;
+    }
+
+
+
+
+    
+    
+    //comunidades
+
+
+
+
+
+
+    async listarcomunidades() {
+        let r = await api.get(`/comunidade`)
+        return r.data;
+    }
+
+
+
+    async adicionarcomunidade(capa, nome, id_usu) {
+        let r = await api.post(`/comunidade`, {capa, nome, id_usu})
+        return r.data;
+    }
+
+
+
+
+
+
+    //chat
+
+
+
+
+
+    async listarmensagens() {
+        let r = await api.get(`/chat`)
+        return r.data;
+    }
+
+
+    async adicionarmensagem(id_comuni, id_usu, mensagem) {
+        let r = await api.post(`/chat`, { id_comuni, id_usu, mensagem })
+        return r.data;
+    }
+
+
+    async alterarmensagem(id, mensagem) {
+        let r = await api.put(`/chat/${id}`, { mensagem })
+        return r.data;
+    }
+
+
+
+    async apagarmensagem(id) {
+        let r = await api.delete(`chat/${id}`)
         return r.data;
     }
 }

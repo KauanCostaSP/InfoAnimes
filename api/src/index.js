@@ -99,45 +99,18 @@ try{
 
 
 
-
-app.post('/usuario', async (req, resp) => {
+app.put('/usuario/:id', async (req, resp) => {
     try {
         
-        let { nome, email, senha, telefone, criacao, online, perfil } = req.body;
+        let idUsu = await db.infod_tif_usuario.findOne({where: {id_usuario: id}})
 
-        let r = await db.infod_tif_usuario.create({
-            nm_usuario: nome,
-            ds_email: email,
-            ds_senha: senha,
-            ds_telefone: telefone,
-            dt_criacao: criacao,
-            bt_online: online,
-            ds_perfil: perfil
-        })
-
-        resp.send(r)
-
-    } catch (e) {
-        resp.send({ error: e.toString() })
-    }
-})
-
-
-
-
-
-
-app.put('/usuario', async (req, resp) => {
-    try {
-        
-        let { nome, email, senha, telefone, criacao, online, perfil } = req.body;
+        let { nome, email, senha, telefone, online, perfil } = req.body;
 
         let r = await db.infod_tif_usuario.update({
             nm_usuario: nome,
             ds_email: email,
             ds_senha: senha,
             ds_telefone: telefone,
-            dt_criacao: criacao,
             bt_online: online,
             ds_perfil: perfil
         })
