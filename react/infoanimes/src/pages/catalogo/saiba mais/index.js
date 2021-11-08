@@ -2,6 +2,7 @@ import Cabecalho from '../../../components/cabecalho/index'
 import BoxSaibaMais from '../../../components/catalogo 1/saiba-mais/box-anime'
 import Rodape from '../../../components/rodapé'
 import { Container } from './styled'
+import { Link } from 'react-router-dom';
 
 export default function saibaMais() {
     return (
@@ -12,7 +13,7 @@ export default function saibaMais() {
             <div className="cabecalho-corpo">
                 <div className="barrinha"></div>
                 <div className="titulo"> Clássicos </div>
-                <div className="icone"> <button><img src="../../../assets/images/Menu.ico" alt="" /></button> </div>
+                <Link className="icone" to="/publi_catalogo"><button><img src="../../../assets/images/Menu.ico" alt="" /></button> </Link>
             </div>
 
             <div className="conteudo">
