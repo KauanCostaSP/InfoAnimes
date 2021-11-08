@@ -379,12 +379,11 @@ span{
 
 .card::before{
     display: block;
-    width: 100%;
-    height: 100%;
-    max-width: 155%;
+    width: auto;
+    height: auto;
     content: "";
     position: absolute;
-    background: rgba(0, 0, 0, 0.63);
+    background-color: rgba(0, 0, 0, 0.63);
     border-radius: 5px;
     box-shadow: 0 0 5em rgba(255, 255, 255, 0.726);
     top: 0px;

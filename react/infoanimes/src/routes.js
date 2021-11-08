@@ -34,7 +34,7 @@ export default function Routes() {
                 <Route path="/cadastrar" exact={true} component={Cadastrar} />
                 <Route path="/editarsenha" exact={true} component={EditarSenha} />
                 <Route path="/perfil-logado" exact={true} component={PerfilLogado} />
-                <Route path="/pub-catalogo" exact={true} component={PubliCatalogo} />
+                <Route path="/publi_catalogo" exact={true} component={PubliCatalogo} />
             </Switch>
         </BrowserRouter>
     )
