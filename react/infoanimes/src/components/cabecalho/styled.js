@@ -11,7 +11,6 @@ const CabecalhoComp = styled.div`
    
 
 
-
     .item:hover{
     cursor: pointer;
     color: #7e00fc;
@@ -43,13 +42,13 @@ cursor: pointer;
     justify-content: center;
 }
 
-.item{
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
     margin: 0.8em 0.8em 1.4em 0.8em;
     font-size: 1em;
     font: 14px Montserrat-Regular;
 }
 
-.item, .item-favorito img{
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-favorito img{
  margin-right: 8px;
 }
 
@@ -71,7 +70,7 @@ cursor: pointer;
     margin-left: 2em;
 }
 
-.item{
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
     text-decoration: none;
     color: #ffffff;
 }
@@ -81,6 +80,74 @@ cursor: pointer;
     flex-direction: row;
     margin-right: 30px;
 }
+
+
+@media screen and (max-width: 768px) {
+
+        display: flex;
+        flex-direction: column;
+
+        .item-logo{
+            display: flex;
+            justify-content: center;
+        }
+
+    .item-logo img{
+        height: 3.5em;
+        padding-right: 0em;
+
+    }
+
+
+    .itens{
+    justify-content: none;
+    margin: 0;
+    padding: 0;
+    }
+
+
+    .item-1, .item-2, .item-3, .item-4, .item-5, .item-6{
+        font: 12px Montserrat-Regular;
+    }
+
+
+    .itens-end{
+        padding-right: 100px;
+        display: flex;
+        justify-content: center;
+        align-itens: center;
+        padding-left: 9em; 
+    }
+
+
+    .item-2{
+        display: none;
+    }
+
+    .item-lupa{
+        margin-right: 15em;
+    }
+
+    .item-lupa svg{
+        margin: 0;
+        padding: 0;
+        viewBox="0 0 0 0"
+    }
+
+    .item-usuario, item-usuario img{
+        margin: 0;
+        padding: 0;
+    }
+
+    .item-usuario img{
+        height: 1.5em;
+    }
+
+
+}
+
+
+
 `
 
 export {CabecalhoComp}

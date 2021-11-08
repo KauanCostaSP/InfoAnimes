@@ -59,6 +59,31 @@ const Container = styled.div`
         text-decoration: none;
         color: #ffffff;
     }
+
+
+    @media screen and (max-width: 768px) {
+
+        .copyright{
+            font: 12px Montserrat-Regular; 
+            max-width: 100vw;
+        }
+
+        .box-itens{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item{
+            font: 12px Montserrat-Medium;
+            padding-top: 5px;
+        }
+
+
+
+    }
+
+
+
 `
 
 export {Container}

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 const Container = styled.div`
-
     background-image: linear-gradient(#0E0E0E 70%, #1A1A1A);
 
     a{
@@ -380,7 +379,7 @@ span{
 
 .card::before{
     display: block;
-    width: 156%;
+    width: 100%;
     height: 100%;
     max-width: 155%;
     content: "";
@@ -501,17 +500,44 @@ body::-webkit-scrollbar-thumb {
 
 
 
+@media screen and (max-width: 768px) {
+
+    .comunidades{
+        display: none;
+    }
+
+    .informacao{
+        display: none;
+    }
+
+    .titulo{
+        font: 30px fonte-300;
+    }
+
+    .subtitulo{
+        font-size: 20px;
+    }
+
+    .texto1, .texto2{
+    text-align: center;
+    font-size: 12px;
+  
+    }
+
+    .cadastrar{
+        margin-top: 100px;
+    }
+
+    .t1-titulo{
+        font-size: 24px;
+    } 
+    
+    .t2-texto {
+        font-size: 12px;
+    }
 
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
