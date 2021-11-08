@@ -9,7 +9,10 @@ app.use(express.json());
 
 
 
+
+
 //Endpoints /login
+
 
 
 
@@ -54,7 +57,7 @@ app.post('/cadastrar', async (req, resp) => {
 
         let h = await db.infod_tif_usuario.create({
             where: {
-                nm_nome: nome,
+                nm_usuario: nome,
                 ds_email: email,
                 ds_senha: senha
             },
@@ -104,14 +107,13 @@ app.put('/usuario/:id', async (req, resp) => {
         
         let idUsu = await db.infod_tif_usuario.findOne({where: {id_usuario: id}})
 
-        let { nome, email, senha, telefone, online, perfil } = req.body;
+        let { nome, email, senha, telefone, perfil } = req.body;
 
         let r = await db.infod_tif_usuario.update({
             nm_usuario: nome,
             ds_email: email,
             ds_senha: senha,
             ds_telefone: telefone,
-            bt_online: online,
             ds_perfil: perfil
         })
 
@@ -197,7 +199,6 @@ app.get('/catalogo/:anime', async (req, resp) => {
 
 
 
-// erro supostamente aqui 
 
 app.post('/catalogo', async (req, resp) => {
     try {

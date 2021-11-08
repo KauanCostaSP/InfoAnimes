@@ -18,7 +18,7 @@ export default function Salas() {
 
         <div className="conteudo">
             <UsersOn />
-           
+           <div> CARALHO </div>
            
             <BoxMsg />
             

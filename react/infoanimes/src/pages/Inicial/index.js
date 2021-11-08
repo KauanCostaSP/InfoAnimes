@@ -26,6 +26,7 @@ export default function inicio() {
                         <h1>Mangá</h1>
                         <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
                         <a href="/home" className="btn">Entrar</a>
+                        
                     </div>
                 </div>
 

@@ -38,7 +38,7 @@ export default function Registrar() {
     return (
         <Container>
             <ToastContainer />
-            <LoadingBar color="red" ref={loading} />
+            <LoadingBar color="#A245FF" ref={loading} />
         <div className="Container">
         <SetaVoltar/>
         <div className="box-left">
