@@ -1,46 +1,38 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoc_tdv_pedido extends Model {
+export default class infoa_dtn_tb_avaliacao extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_pedido: {
+    id_avaliacao: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
+    id_produto: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'infoa_dtn_tb_produto',
+        key: 'id_produto'
+      }
+    },
     id_cliente: {
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: 'infoc_tdv_cliente',
+        model: 'infoa_dtn_tb_cliente',
         key: 'id_cliente'
       }
     },
-    id_cupom: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'infoc_tdv_cupom',
-        key: 'id_cupom'
-      }
-    },
-    nr_pedido: {
-      type: DataTypes.INTEGER,
-      allowNull: true
-    },
-    dt_pedido: {
-      type: DataTypes.DATE,
-      allowNull: true
-    },
-    ds_situacao_ped: {
-      type: DataTypes.STRING(255),
+    ds_descricao_avaliacao: {
+      type: DataTypes.STRING(350),
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoc_tdv_pedido',
+    tableName: 'infoa_dtn_tb_avaliacao',
     timestamps: false,
     indexes: [
       {
@@ -48,7 +40,14 @@ export default class infoc_tdv_pedido extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_pedido" },
+          { name: "id_avaliacao" },
+        ]
+      },
+      {
+        name: "id_produto",
+        using: "BTREE",
+        fields: [
+          { name: "id_produto" },
         ]
       },
       {
@@ -58,15 +57,8 @@ export default class infoc_tdv_pedido extends Model {
           { name: "id_cliente" },
         ]
       },
-      {
-        name: "id_cupom",
-        using: "BTREE",
-        fields: [
-          { name: "id_cupom" },
-        ]
-      },
     ]
   });
-  return infoc_tdv_pedido;
+  return infoa_dtn_tb_avaliacao;
   }
 }

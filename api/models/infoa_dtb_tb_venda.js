@@ -1,42 +1,46 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoa_sti_venda extends Model {
+export default class infoa_dtb_tb_venda extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_venda: {
+    ID_VENDA: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    id_endereco: {
+    ID_VENDA_ITEM: {
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: 'infoa_sti_endereco',
-        key: 'id_endereco'
+        model: 'infoa_dtb_tb_venda_item',
+        key: 'ID_VENDA_ITEM'
       }
     },
-    id_produto: {
+    ID_CLIENTE: {
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: 'infoa_sti_produto',
-        key: 'id_produto'
+        model: 'infoa_dtb_tb_cliente',
+        key: 'ID_CLIENTE'
       }
     },
-    ds_codigo: {
+    VL_VENDA: {
+      type: DataTypes.DECIMAL(15,2),
+      allowNull: true
+    },
+    DS_PAGAMENTO: {
       type: DataTypes.STRING(255),
       allowNull: true
     },
-    dt_venda: {
+    DT_VENDA: {
       type: DataTypes.DATEONLY,
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoa_sti_venda',
+    tableName: 'infoa_dtb_tb_venda',
     timestamps: false,
     indexes: [
       {
@@ -44,25 +48,25 @@ export default class infoa_sti_venda extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_venda" },
+          { name: "ID_VENDA" },
         ]
       },
       {
-        name: "id_endereco",
+        name: "ID_VENDA_ITEM",
         using: "BTREE",
         fields: [
-          { name: "id_endereco" },
+          { name: "ID_VENDA_ITEM" },
         ]
       },
       {
-        name: "id_produto",
+        name: "ID_CLIENTE",
         using: "BTREE",
         fields: [
-          { name: "id_produto" },
+          { name: "ID_CLIENTE" },
         ]
       },
     ]
   });
-  return infoa_sti_venda;
+  return infoa_dtb_tb_venda;
   }
 }

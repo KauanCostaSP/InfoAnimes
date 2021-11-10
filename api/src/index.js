@@ -468,5 +468,33 @@ app.delete('/chat/:id', async (req, resp) => {
 
 
 
+
+
+
+//Endpoints /favoritos 
+
+
+app.post('/favorito', async (req, resp) => {
+    try {
+        
+        let { id_usu, id_anime } = req.body;
+
+        let f = await db.infod_tif_favoritos.create(
+            {
+                id_usuario: id_usu,
+                id_anime: id_anime
+            }
+        )
+        resp.send(f)
+
+    } catch (e) {
+        
+    }
+})
+
+
+
+
+
 app.listen(process.env.PORT,
     x => console.log(`>> Subiu esse caralho na porta ${process.env.PORT}`))

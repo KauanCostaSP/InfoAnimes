@@ -28,6 +28,7 @@
   ds_senha                 varchar(10) NOT NULL,
   ds_telefone              varchar(19) NULL,
   dt_criacao               datetime NULL,
+  bt_adm                   boolean NULL,
   ds_perfil                varchar(255) NULL
   );
   

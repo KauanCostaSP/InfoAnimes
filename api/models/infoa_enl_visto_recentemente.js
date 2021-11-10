@@ -1,10 +1,10 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoa_gab_venda extends Model {
+export default class infoa_enl_visto_recentemente extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_venda: {
+    id_visto_recentemente: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -12,39 +12,27 @@ export default class infoa_gab_venda extends Model {
     },
     id_usuario: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       references: {
-        model: 'infoa_gab_usuario',
+        model: 'infoa_enl_usuario',
         key: 'id_usuario'
       }
     },
-    dt_venda: {
+    id_produto: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'infoa_enl_produto',
+        key: 'id_produto'
+      }
+    },
+    dt_visualizacao: {
       type: DataTypes.DATE,
-      allowNull: false
-    },
-    qtd_parcelas: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    bt_situacao: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false
-    },
-    ds_pagamento: {
-      type: DataTypes.STRING(255),
-      allowNull: false
-    },
-    vl_total: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    qtd_itens: {
-      type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoa_gab_venda',
+    tableName: 'infoa_enl_visto_recentemente',
     timestamps: false,
     indexes: [
       {
@@ -52,7 +40,7 @@ export default class infoa_gab_venda extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_venda" },
+          { name: "id_visto_recentemente" },
         ]
       },
       {
@@ -62,8 +50,15 @@ export default class infoa_gab_venda extends Model {
           { name: "id_usuario" },
         ]
       },
+      {
+        name: "id_produto",
+        using: "BTREE",
+        fields: [
+          { name: "id_produto" },
+        ]
+      },
     ]
   });
-  return infoa_gab_venda;
+  return infoa_enl_visto_recentemente;
   }
 }

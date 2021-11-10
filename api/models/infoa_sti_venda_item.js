@@ -1,34 +1,38 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoa_dtn_tb_avaliacao extends Model {
+export default class infoa_sti_venda_item extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_avaliacao: {
+    id_venda_item: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
+    id_venda: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'infoa_sti_venda',
+        key: 'id_venda'
+      }
+    },
     id_produto: {
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: 'infoa_dtn_tb_produto',
+        model: 'infoa_sti_produto',
         key: 'id_produto'
       }
     },
-    id_cliente: {
+    qtd_produto: {
       type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'infoa_dtn_tb_cliente',
-        key: 'id_cliente'
-      }
+      allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoa_dtn_tb_avaliacao',
+    tableName: 'infoa_sti_venda_item',
     timestamps: false,
     indexes: [
       {
@@ -36,7 +40,14 @@ export default class infoa_dtn_tb_avaliacao extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_avaliacao" },
+          { name: "id_venda_item" },
+        ]
+      },
+      {
+        name: "id_venda",
+        using: "BTREE",
+        fields: [
+          { name: "id_venda" },
         ]
       },
       {
@@ -46,15 +57,8 @@ export default class infoa_dtn_tb_avaliacao extends Model {
           { name: "id_produto" },
         ]
       },
-      {
-        name: "id_cliente",
-        using: "BTREE",
-        fields: [
-          { name: "id_cliente" },
-        ]
-      },
     ]
   });
-  return infoa_dtn_tb_avaliacao;
+  return infoa_sti_venda_item;
   }
 }

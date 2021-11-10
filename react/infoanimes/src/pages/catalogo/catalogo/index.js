@@ -15,8 +15,7 @@ export default function Catalogo() {
                 <div className="info_b">
                     <div className="ano">2014 |</div>
                     <div className="classificacao">Classificação 14</div>
-                    <div className="temporada"> | 3 temporadas |</div>
-                    <div className="produtora">Animes Shounen </div>
+                    <div className="temporada"> | 3 temporadas</div>
                 </div>
 
             </div>

@@ -1,46 +1,46 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infod_omn_empresa extends Model {
+export default class infod_tif_usuario extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_empresa: {
+    id_usuario: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    nm_empresa: {
-      type: DataTypes.STRING(255),
-      allowNull: true
+    nm_usuario: {
+      type: DataTypes.STRING(19),
+      allowNull: false
     },
     ds_email: {
       type: DataTypes.STRING(255),
-      allowNull: true
+      allowNull: false
     },
     ds_senha: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.STRING(10),
+      allowNull: false
+    },
+    ds_telefone: {
+      type: DataTypes.STRING(19),
       allowNull: true
     },
-    ds_cnpj: {
-      type: DataTypes.STRING(255),
+    dt_criacao: {
+      type: DataTypes.DATE,
       allowNull: true
     },
-    ds_localidade: {
-      type: DataTypes.STRING(255),
+    bt_adm: {
+      type: DataTypes.BOOLEAN,
       allowNull: true
     },
-    ds_area_atuacao: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    ds_porte: {
+    ds_perfil: {
       type: DataTypes.STRING(255),
       allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infod_omn_empresa',
+    tableName: 'infod_tif_usuario',
     timestamps: false,
     indexes: [
       {
@@ -48,11 +48,11 @@ export default class infod_omn_empresa extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_empresa" },
+          { name: "id_usuario" },
         ]
       },
     ]
   });
-  return infod_omn_empresa;
+  return infod_tif_usuario;
   }
 }

@@ -58,6 +58,33 @@ cursor: pointer;
     font: 14px Montserrat-Regular;
 }
 
+#divBusca {
+    display: flex;
+    flex-direction: row;
+    background-color: #2F4F4F;
+    border: solid 1px;
+    border-radius: 3em;
+    padding: 0.5em 1em 0em 0.5em ;
+    height: 2.4em;
+    width: 300px;
+}
+  
+#txtBusca {
+    float: left;
+    background-color: trasparent !important;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 20px;
+    width: 240px;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+}
+
 .item-lupa svg{
     margin-left: 17em;
     fill: #ffffff;

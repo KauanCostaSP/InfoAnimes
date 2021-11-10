@@ -1,46 +1,50 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infoc_tht_lugar extends Model {
+export default class infod_omn_empresa extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_lugar: {
+    id_empresa: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    nm_lugar: {
-      type: DataTypes.STRING(80),
+    nm_empresa: {
+      type: DataTypes.STRING(255),
       allowNull: true
     },
-    ds_avaliacao: {
-      type: DataTypes.DECIMAL(10,5),
+    ds_email: {
+      type: DataTypes.STRING(255),
       allowNull: true
     },
-    ds_endereco: {
-      type: DataTypes.STRING(100),
+    ds_senha: {
+      type: DataTypes.STRING(255),
+      allowNull: true
+    },
+    ds_cnpj: {
+      type: DataTypes.STRING(255),
+      allowNull: true
+    },
+    ds_localidade: {
+      type: DataTypes.STRING(255),
+      allowNull: true
+    },
+    ds_area_atuacao: {
+      type: DataTypes.STRING(255),
+      allowNull: true
+    },
+    ds_porte: {
+      type: DataTypes.STRING(255),
       allowNull: true
     },
     ds_imagem: {
       type: DataTypes.STRING(255),
       allowNull: true
-    },
-    ds_informacao: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    ds_dias: {
-      type: DataTypes.STRING(255),
-      allowNull: true
-    },
-    dt_horario: {
-      type: DataTypes.DATE,
-      allowNull: true
     }
   }, {
     sequelize,
-    tableName: 'infoc_tht_lugar',
+    tableName: 'infod_omn_empresa',
     timestamps: false,
     indexes: [
       {
@@ -48,11 +52,11 @@ export default class infoc_tht_lugar extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_lugar" },
+          { name: "id_empresa" },
         ]
       },
     ]
   });
-  return infoc_tht_lugar;
+  return infod_omn_empresa;
   }
 }
