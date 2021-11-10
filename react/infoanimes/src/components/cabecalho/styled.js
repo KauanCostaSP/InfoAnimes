@@ -59,17 +59,20 @@ cursor: pointer;
 }
 
 #divBusca {
+    color: #fff;
     display: flex;
     flex-direction: row;
-    background-color: #2F4F4F;
+    background-color: rgb(54, 4, 73);
     border: solid 1px;
     border-radius: 3em;
-    padding: 0.5em 1em 0em 0.5em ;
+    padding: 0.5em 0em 0em .5em ;
     height: 2.4em;
-    width: 300px;
+    width: 287px;
 }
   
 #txtBusca {
+    display: block;
+    color: #fff;
     float: left;
     background-color: trasparent !important;
     padding-left: 5px;
