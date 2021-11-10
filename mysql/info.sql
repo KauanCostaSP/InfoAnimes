@@ -23,9 +23,9 @@
   
   CREATE TABLE infoD_tif_usuario (
   id_usuario               int primary key auto_increment,
-  nm_usuario               varchar(19) NOT NULL,
-  ds_email                 varchar(255) NOT NULL,
-  ds_senha                 varchar(10) NOT NULL,
+  nm_usuario               varchar(19) NULL,
+  ds_email                 varchar(255) NULL,
+  ds_senha                 varchar(10) NULL,
   ds_telefone              varchar(19) NULL,
   dt_criacao               datetime NULL,
   bt_adm                   boolean NULL,

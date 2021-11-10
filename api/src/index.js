@@ -359,13 +359,14 @@ app.get('/comunidade', async (req, resp) => {
 app.post('/comunidade', async (req, resp) => {
     try {
 
-        let { capa, nome, id_usu } = req.body;
+        let { capa, nome, id_usu, descricao } = req.body;
 
         let r = await db.infod_tif_comunidade.create(
             {
                 ds_capa: capa,
                 id_usuario: id_usu,
                 nm_comunidade: nome,
+                ds_descricao: descricao,
                 dt_criacao: new Date()
             }
         )

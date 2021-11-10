@@ -25,6 +25,10 @@ export default class infod_tif_comunidade extends Model {
     dt_criacao: {
       type: DataTypes.DATE,
       allowNull: false
+    },
+    ds_descricao: {
+      type: DataTypes.STRING(1000),
+      allowNull: false
     }
   }, {
     sequelize,

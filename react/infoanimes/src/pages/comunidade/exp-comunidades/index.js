@@ -1,6 +1,7 @@
 import { Container } from './styled'
 import Cabecalho from '../../../components/cabecalho'
 import Rodape from '../../../components/rodapé'
+import { Link } from 'react-router-dom';
 
 
 export default function Index() {
@@ -17,7 +18,7 @@ export default function Index() {
                     <div className="box1">
                     
                             
-                      
+                    <Link className="atalho_adm" to="/postagem-comunidade"> Provisório mas vai né </Link> 
 
                     <div className="comunidade">
                     <div className="titulo">Comunidade lgbtqia+</div>

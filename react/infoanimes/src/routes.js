@@ -14,6 +14,7 @@ import EditarSenha from "./pages/perfil-usuario/editar-senha";
 import PerfilLogado from "./pages/perfil-usuario/pagina-perfil-logado";
 import EsqueciSenha from "./pages/perfil-usuario/esqueci-minha-senha";
 import PubliCatalogo from "./pages/paginas-adm/pub-catalogo";
+import Postagem_comuni from "./pages/paginas-adm/postagem-comunidade";
 
 export default function Routes() {
     return (
@@ -35,6 +36,7 @@ export default function Routes() {
                 <Route path="/editarsenha" exact={true} component={EditarSenha} />
                 <Route path="/perfil-logado" exact={true} component={PerfilLogado} />
                 <Route path="/publi_catalogo" exact={true} component={PubliCatalogo} />
+                <Route path="/postagem-comunidade" exact={true} component={Postagem_comuni}/>
             </Switch>
         </BrowserRouter>
     )
