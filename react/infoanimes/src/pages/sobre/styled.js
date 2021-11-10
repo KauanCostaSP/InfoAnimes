@@ -7,6 +7,7 @@ background-color: #0d0d0d;
 *{
     margin: 0px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 a{
@@ -39,10 +40,7 @@ a:hover{
     background: linear-gradient(180deg, rgba(126, 0, 252, 0.03) 55.07%, rgba(126, 0, 252, 0.03) 100%);
     box-shadow: 0px 4px 20px 5px #A64FFD;
     border-radius: 10px;
-    max-width: 90%;
-    margin-left: 4em;
-    margin-top: 3em;
-    margin-bottom: 4em;
+    margin: 4em;
 }
 
 
@@ -63,6 +61,7 @@ a:hover{
     font-size: 18px;
     padding: 10px;
     padding-left: 1.3em;
+    padding-right: 1.3em;
     padding-top: 12px;
     line-height: 29px;
     height: 82px;
@@ -75,10 +74,12 @@ a:hover{
     padding-bottom: 22px;
     font-family: 'Montserrat Subrayada', sans-serif;
     text-align: center;
+    
 }
 
-.gif{
-   margin-left: 1.3em;
+.gif img{
+    max-width:100%;
+    padding: 0em 2em 0em 2em
 }
 
 .texto{
@@ -87,8 +88,8 @@ a:hover{
    line-height: 29px;
    margin-top: 2em;
    margin-left: 2em;
+   margin-right: 2em;
    color: white;
-   width: 1120px;
 }
 
 
@@ -115,7 +116,9 @@ a:hover{
     margin-top: 2em;
     margin-left: 2em;
     color: white;
-    width: 1120px;
+    margin-left: 2em;
+    margin-right: 2em;
+    
 }
 
 
@@ -125,9 +128,7 @@ a:hover{
     font: 36px fonte-300;
     font-family: fonte-100;
     text-align: center;
-    margin-left: 8.2em;
     margin-top: 3.5em;
-    max-width: 50%;
 }
 
 .texto-2{
@@ -137,7 +138,7 @@ a:hover{
     margin-top: 1em;
     margin-left: 3em;
     color: white;
-    width: 1120px;
+    margin-right: 2em;
 }
 
 .informacoes{
@@ -145,9 +146,7 @@ a:hover{
     font-size: 18px;
     line-height: 22px;
     color: white;
-    width: 400px;
     text-align: center;
-    margin-left: 22em;
     margin-top: 3em;
     padding-bottom: 3em;
 }
@@ -155,6 +154,7 @@ a:hover{
 .informacoes b{
     text-decoration: underline;
     font-weight: lighter;
+    margin-left: 2em;
 }
 
 .informacoes span{
@@ -181,6 +181,66 @@ body::-webkit-scrollbar-thumb {
 .gif img{
     width: 1174px; height: 450px;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .descricao{
+        font: 9px fonte-300;
+    }
+
+    .infoanimes{
+        text-align: center;
+        font: 24px fonte-300;
+    }
+
+    .titulo{
+        font: 18px fonte-300;
+    }
+
+    .texto{
+        font-size: 14px;
+    }
+
+    .titulo-1{
+        font-size: 14px;
+    }
+
+    .texto-1{
+        font-size: 14px;
+    }
+
+    .texto-2{
+        font-size: 14px;
+    }
+
+    .titulo-2{
+        font-size: 18px;
+    }
+
+    .informacoes{
+        font-size: 12px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 `
 export {Container}
