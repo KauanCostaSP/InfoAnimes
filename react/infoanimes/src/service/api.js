@@ -97,8 +97,8 @@ export default class Api {
 
 
 
-    async adicionarcomunidade(capa, nome, id_usu) {
-        let r = await api.post(`/comunidade`, {capa, nome, id_usu})
+    async adicionarcomunidade(capa, nome, id_usu, descricao, ) {
+        let r = await api.post(`/comunidade`, {capa, nome, id_usu, descricao})
         return r.data;
     }
 
