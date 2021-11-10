@@ -82,7 +82,7 @@ export default function inicio() {
             <div className="informacao">
                 <div className="t1">Busque Diversidade</div>
                 <div className="img-completa">
-                <div className="barra">Tudo que você mais gosta <b>EM UM SÓ LUGAR</b> <span>ESTANDO ÀTOA, OU APENAS A PROCURA DE NOVAS IDÉIAS , NOVIDADES OU ATÉ MESMO NOVAS AMIZADES</span> </div>
+                <div className="barra"> Tudo que você mais gosta <b>EM UM SÓ LUGAR</b> <span>ESTANDO ÀTOA, OU APENAS A PROCURA DE NOVAS <br/>IDÉIAS , NOVIDADES OU ATÉ MESMO NOVAS AMIZADES</span> </div>
                 <div className="imagem"><img src="../../../assets/images/Imagem.png" alt="" /></div>
                 <div className="barra2"></div>
                 </div>

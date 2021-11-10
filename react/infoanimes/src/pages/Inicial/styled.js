@@ -55,7 +55,6 @@ a:hover{
 }
 
 
-
 .desc{
     font-family: fonte-100;
     color: white;
@@ -209,7 +208,6 @@ span{
     font-weight: 200;
     font-size: 15px;
     line-height: 22px;
-    width: 29em;
     margin-left: 9em;
     margin-top: 1em;
 }
@@ -362,13 +360,14 @@ span{
 .card{
     display: flex;
     align-items: flex-start;
-    width: 380px;
+    width: 250px;
     height: 360px;
     padding: 2rem 1rem;
     background: white;
     border-radius: 5px;
     position: relative;
     transition: 0.5s ease-in-out;
+    justify-content: center;
 }
 
 .card:hover{
@@ -505,12 +504,11 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
 
+   
     .informacao{
         display: flex;
-        flex-direction: column;
         text-align: center;
         justify-content: center;
-        display: none;
         
     }
 
@@ -518,18 +516,32 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
 
-    .barra{
-    width: 10em;
-    height: 80px;
+    .t1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font: 28px fonte-300;
+        padding-top: 0em;
+        margin-right: 0em;
+        margin-bottom: 0em; 
+        
     }
 
-    .barra span{
+    .barra{
         display: flex;
+        flex-direction: column;
+        margin-top: 4em;
+        font-size: 24px;
+        width: 100vw;
+        height: 80px;
+    }
+    
+
+    .barra span{
+        display: inline;
         font-size: 10px;
-        margin: 0;
-        padding: 0;
         text-align: center;
-        justify-content: center;
+        margin: 0;
     }
 
     .titulo{
@@ -547,16 +559,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .imagem img {
-        height: 10em;
         display: none;
-    }
-
-    t1{
-    font: 1px fonte-300;
-    position: none;
-    padding-top: 0em;
-    margin-right: 0em;
-
     }
 
     .cadastrar{
