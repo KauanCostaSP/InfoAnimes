@@ -1,12 +1,38 @@
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import LoadingBar from 'react-top-loading-bar'
+
 import { Container } from './styled'
+import BoxComunidade from '../../../components/comunidade1/comunidade/box-comunidade';
 import Cabecalho from '../../../components/cabecalho'
 import Rodape from '../../../components/rodapé'
 import { Link } from 'react-router-dom';
+import api from '../../../service/api'
+import { useState, useRef } from 'react'
+const Api = new api();
+
+
 
 
 export default function Index() {
+   const [comunidades, setComunidades] = useState([])
+   
+    const loading = useRef(null);
+    
+    const ListComun = async () => {
+        loading.current.continuousStart()
+        
+        let resp = await Api.listarcomunidades()
+        setComunidades(resp)
+
+        loading.current.complete();
+    }
+
     return (
         <Container>
+            <ToastContainer />
+            <LoadingBar color="#A245FF" ref={loading} />
         <Cabecalho />
 
 
@@ -14,90 +40,16 @@ export default function Index() {
 
             <div className="COMUNIDADES">
 
-            <Link className="atalho_adm" to="/postagem-comunidade"> Provisório mas vai né </Link>
+                    <Link className="atalho_adm" to="/postagem-comunidade"> Provisório mas vai né </Link>
+                    <div> <button onClick={ListComun}> listar comunidades</button></div>
 
                 <div className="conteudo-comunidade">
                     <div className="box1">
 
+                            {comunidades.map((i) => 
+                                <BoxComunidade comun={i}/>
+                    )}
 
-                    <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/images/manga.jpg" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                    </div>
-
-                    <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/images/lol.jpg" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                    </div>
-
-                    <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/videos/Boku No Hero Academia GIF .gif" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                    </div>
-
-                    <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/images/aa.jpg" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                    </div>
-
-                    <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/images/desenho.jpg" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                    </div>
-
-                    <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/images/nanatsuu.jpg" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                    </div>
-
-                    <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/images/jogos rpg.jpg" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                    </div>
-
-
-                   <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/images/vex.jpg" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                   </div>
-
-                   <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/videos/𝐀𝐃𝐀𝐌𝐀𝐒 𝗄𝗇𝗒..gif" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                </div>
-
-                <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/images/OnePeace.jpeg" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                </div>
-
-                <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/images/Darlin.jpeg" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                </div>
-
-                <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/videos/boku no hero.gif" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                </div>
-
-                <div className="comunidade">
-                    <div className="titulo">Comunidade lgbtqia+</div>
-                    <div className="imagem"><img src="../../../assets/images/he man.jpg" alt=""/></div>
-                    <div className="entrar"><button>Entrar</button></div>
-                </div>
                  </div>
 
     
