@@ -74,6 +74,7 @@
   id_anime                 int NOT NULL,
   ds_comentario            varchar(255) NOT NULL,
   dt_comentario            datetime NOT NULL,
+  ds_descricao             boolean,
   foreign key (id_usuario) references infoD_tif_usuario(id_usario) ON DELETE CASCADE ON UPDATE CASCADE,
   foreign key (id_anime) references infoD_tif_animes(id_anime) ON DELETE CASCADE ON UPDATE CASCADE
   );
