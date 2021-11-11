@@ -14,11 +14,11 @@ export default function Index() {
 
             <div className="COMUNIDADES">
 
+            <Link className="atalho_adm" to="/postagem-comunidade"> Provisório mas vai né </Link>
+
                 <div className="conteudo-comunidade">
                     <div className="box1">
-                    
-                            
-                    <Link className="atalho_adm" to="/postagem-comunidade"> Provisório mas vai né </Link> 
+
 
                     <div className="comunidade">
                     <div className="titulo">Comunidade lgbtqia+</div>

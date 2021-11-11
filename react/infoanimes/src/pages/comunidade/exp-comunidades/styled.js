@@ -26,13 +26,14 @@ const Container = styled.div`
 
     .conteudo{
     display: flex;
-    flex-direction: row;
+   
 }
 
 .box1{
     display: flex;
-    flex-direction: column;
-    margin-left: 1em;
+    flex-wrap: wrap;
+    margin-left: 2.1em;
+    margin-top: 1em;
 }
 
 .entrar button{
@@ -111,8 +112,7 @@ const Container = styled.div`
 
 
 .comunidade{
-    
-    margin-top: 1em;
+    padding-left: 2.5em;
 }
 
 
