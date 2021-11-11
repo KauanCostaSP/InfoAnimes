@@ -16,6 +16,22 @@ const Container = styled.div`
     margin-top: .5em;
     }
 
+    .explorar button{
+        background-color: #7E00FC;
+        color: #ffffff;
+        border: none;
+        border-radius: 10px;
+        width: 100px;
+        height: 25px;
+        font: 15px fonte-300;
+    }
+
+    .explorar{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
 `
 
 export {Container}

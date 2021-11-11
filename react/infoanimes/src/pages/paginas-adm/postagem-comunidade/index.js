@@ -1,5 +1,5 @@
 import { useState, useRef } from "react"
-import { useHistory } from "react-router"
+
 import { Container } from "./styled"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,22 +10,24 @@ const Api = new api();
 export default function Postagem_comuni() {
     const [capa, setCapa] = useState('')
     const [nome, setNome] =useState('')
-    const [idusu, setIdusu] = useState(0)
+    const [idusu, ] = useState(0)
     const [descricao, setDescricao] = useState('')
  
-    const navig = useHistory();
+    
     const loading = useRef(null);
 
     const AdcComun = async () =>  {
         loading.current.continuousStart();
 
-        let resp = await  Api.adicionarcomunidade(capa, nome, idusu, descricao)
+        let resp = await Api.adicionarcomunidade(capa, nome, idusu, descricao)
 
+        console.log(resp)
         if(resp.erro) {
             toast.error(`${resp.erro}`)
             loading.current.complete();
         } else {
             loading.current.complete();
+            toast.dark('Comunidade criada')
         }
     }
 

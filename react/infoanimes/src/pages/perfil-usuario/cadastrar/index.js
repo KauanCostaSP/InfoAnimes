@@ -17,6 +17,7 @@ export default function Registrar() {
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
+    const [confsenha, setConfsenha] = useState('')
     
     const navig = useHistory();
     const loading = useRef(null);
@@ -25,13 +26,21 @@ export default function Registrar() {
         loading.current.continuousStart();
 
         let resp = await Api.cadastrar(nome, email, senha);
+        console.log(resp)
+      
+
          
         if(resp.erro) {
             toast.error(`${resp.erro}`);
             loading.current.complete();
-        }else {
+        } else {
+            if (confsenha !== senha) {
+                toast.error("As senhas tem que ser iguais, burro.")
+            } else {
+            
             cookie.set('perfil-cadastrado', JSON.stringify(resp));
             navig.push('/perfil-cadastrado')
+            }
         }
     }
     
@@ -53,7 +62,7 @@ export default function Registrar() {
             <div className="campo-usuario"><input type="text" id="usuario" size="40" placeholder="Nome" value={nome} onChange={e =>setNome(e.target.value)}/></div>
             <div className="campo-email"><input type="email" id="email" maxlength={32} placeholder="Email" size="40" value={email} onChange={e => setEmail(e.target.value)} /></div>
             <div className="campo-senha"><input type="password" id="password" maxlength={32} placeholder="Senha" size="40" value={senha} onChange={e => setSenha(e.target.value)} /></div>
-            <div className="campo-senha-repetida"><input type="password" id="password" maxlength={32} placeholder="Confirmar senha" size="40" /></div>
+            <div className="campo-senha-repetida"><input type="password" id="password" maxlength={32} placeholder="Confirmar senha" size="40" value={confsenha} onChange={e => setConfsenha(e.target.value)}/></div>
             <div className="botao-criar-conta"> <button onClick={cadastrar}> Criar Conta </button></div>
         </div>
     </div>

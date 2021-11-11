@@ -1,21 +1,28 @@
+import { useState } from "react"
 import Cabecalho from "../../../components/cabecalho"
 import Rodape from "../../../components/rodapé"
 import { Container } from "./styled"
 
-export default function Catalogo() {
+export default function Catalogo(props) {
+    const [anime, ] = useState(props.location.state)
+    
     return (
         <Container>
             <Cabecalho />
             <div className="catalogo" >
             <div className="adi_fav"><img src="/assets/images/icon (1).svg" alt="adicionar a favoritos" /></div>
 
-            <div className="info_basica">
+            <div className="info_basica" style={{backgroundImage: anime.ds_capa}}>
                 <div className="situacao">Novo</div>
 
                 <div className="info_b">
-                    <div className="ano">2014 |</div>
-                    <div className="classificacao">Classificação 14</div>
-                    <div className="temporada"> | 3 temporadas</div>
+
+                    <div className="ano"> {anime.dt_ano} |</div>
+                        <div className="classificacao">Classificação {anime.ds_classificacao}</div>
+                    <div className="temporada"> | {anime.ds_temporadas} temporadas |</div>
+                    <div className="produtora">{anime.ds_genero} </div>
+
+                  
                 </div>
 
             </div>
@@ -24,7 +31,7 @@ export default function Catalogo() {
                 <div className="gen_est">
                     <div className="genero">
                         <div className="tit_gen">Genêros</div>
-                        <div className="text_gen">Japonês, Animes – mistério e suspense, Séries baseadas em mangá, Anime sobre a escola, Animes Shounen, Animes com drama, Suspense para TV, Séries de anime</div>
+                        <div className="text_gen">{anime.ds_genero}</div>
                     </div>
 
                     <div className="estrelando">
@@ -54,17 +61,17 @@ export default function Catalogo() {
 
                 <div className="sinopse">
                     <div className="tit_s"><div className="linha_red"></div>Sinopse</div>
-                    <div className="text_s">O anime se passa na Hyakkaou, uma academia privada bastante influente no Japão. Nesta escola, o principal foco são os jogos de azar, onde os alunos podem fazer apostas muito rígidas e complexas, então, os estudantes que sabem trapacear nos ‘’games’’ sempre se dão bem, mas há aqueles capazes de descobrir as falcatruas e virar o jogo. A obra foca, principalmente, em Yumeko Jabami, uma colegial com grandes habilidades nesses tipos de apostas e que adora correr riscos; a jovem possui a enorme vontade de jogar contra os membros do Conselho Estudantil, pois eles utilizam métodos rígidos, nos quais também colocam a vida do apostador em risco, deixando a garota animada, pois adora correr perigo. No decorrer do anime, ela vai enfrentando todos os integrantes do Comitê Escolar, importando-se pouco com a vitoria ou a derrota, apenas deseja enfrentá-los; ademais, vem fazendo diversas amizades na trama.</div>
+                        <div className="text_s">{anime.ds_sinopse}</div>
                 </div>
 
                 <div className="sobre">
                     <div className="tit_s"> <div className="linha_red"></div>Sobre</div>
-                    <div className="text_s">Kakegurui é um mangá e anime japonês criado por Homura Kawamoto e animado pelo estúdio Mappa, a obra passa no estilo de vida escolar misturado a jogos de azar. Mesmo possuindo três protagonistas, o foco maior fica em Yumeko Jabami, que demonstrou ser especialista em apostas e, principalmente, em descobrir trapaças. O instituto possui um Conselho Estudantil muito rígido, além das regras que também são bastante rigorosas, a qual trata os apostadores ruins como a escória da instituição, mais conhecidos como ‘’bichos de estimação’’, já os melhores colegiais possuem diversos benefícios e, dependendo de suas habilidades, podem entrar no Comitê Escolar.</div>
+                        <div className="text_s">{anime.ds_sobre}</div>
                 </div>
 
                 <div className="enredo">                  
                     <div className="tit_s"> <div className="linha_red"></div>Enredo</div>
-                    <div className="text_s">O enredo iniciou com uma nova aluna chegando à instituição, cujo nome é Yumeko Jabami, sendo a protagonista do anime. Ela é uma garota muito bonita, ou seja, chamou a atenção de todos os garotos da classe, além de poucos olhares invejosos, principalmente de Saotome Mary, outra personagem principal. Após saber de algumas coisas sobre o instituto com a ajuda de Suzui, a jovem foi desafiada para um jogo de azar, esta que é uma pratica tradicional na escola. Inicialmente, a garota se encontrava perdendo a aposta, porém, estava apenas vendo a forma que sua adversária jogava para descobrir como ela trapaceava e, assim, poder ganhar o jogo. No final, a protagonista venceu a sua oponente mesmo com uma desvantagem enorme, deixando a moça completamente endivida. Um pouco depois, Ryota, que havia se tornado um dos melhores amigos da Yumeko, explicou-lhe como funcionava o sistema de pochi e mike (cão e gato) na academia e um pouco sobre o rígido Conselho Estudantil que dominava a escola, deixando a garota extremamente empolgada e excitada, a qual passou a querer enfrentar todos os membros do Comitê Escolar, principalmente a presidente deste.</div>
+                    <div className="text_s">{anime.ds_enredo}</div>
                 </div>
             </div>
 

@@ -33,6 +33,7 @@ export default class Api {
 
     async excluirperfil(id) {
         let r = await api.delete(`/usuario/${id}`)
+        return r.data;
     }
 
 
