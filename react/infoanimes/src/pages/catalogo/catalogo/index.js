@@ -1,13 +1,37 @@
-import { useState } from "react"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import LoadingBar from 'react-top-loading-bar'
+
+import { useState, useRef } from "react"
 import Cabecalho from "../../../components/cabecalho"
 import Rodape from "../../../components/rodapé"
 import { Container } from "./styled"
+import api from "../../../service/api"
+const Api = new api();
+
 
 export default function Catalogo(props) {
-    const [anime, ] = useState(props.location.state)
+    const [anime] = useState(props.location.state)
+    const [comentarios, setComentarios] = useState([]);
+    const [idAnime, setIdAnime] = useState(anime.id_anime)
+    
+    const loading = useRef(null);
+
+
+    const listarcomentarios = async () => {
+        loading.current.continuousStart()
+       
+        let resp = await Api.listarcoment(idAnime);
+        console.log(resp)
+        setComentarios(resp)
+
+        loading.current.complete()
+    }
     
     return (
         <Container>
+            <ToastContainer />
+            <LoadingBar color="#A245FF" ref={loading} />
             <Cabecalho />
             <div className="catalogo" >
             <div className="adi_fav"><img src="/assets/images/icon (1).svg" alt="adicionar a favoritos" /></div>
@@ -95,6 +119,9 @@ export default function Catalogo(props) {
                 <div className="coment">Comentários 31</div>
                 <div className="frase">Lembre-se de manter o respeito nos comentários e seguir nossas diretrizes da comunidade</div>
 
+                    
+                    <div><button onClick={listarcomentarios}>Carregar comentarios</button></div>
+
                 <div className="novo_coment">
                     <div className="perfil"><img src="../../../assets/images/perfil_ket_otaku.png" height="49" width="57" alt="Perfil usuario" /></div>
                     <div className="adicionar"> <textarea name="adi" id="adi" cols="30" rows="10" placeholder="Adicionar um comentário público..." ></textarea><hr /></div>
@@ -112,7 +139,9 @@ export default function Catalogo(props) {
                         
                     </div>
 
-                    <div className="comentario">Eu cheguei agora nesse mundo dos animes e esse foi o segundo que eu vi e simplesmente me apaixonei, cada personagem tem o seu jeito que te deixa preso no anime. A inteligência da Yumeko é ótima e as apostas vão ficando cada vez mais surpreendentes,nunca sabemos o que podem apostar. Recomendo a todos. </div>
+                        {comentarios.map((i) => 
+                            <div className="comentario">{i.ds_comentario}</div>
+                    )}
 
                     <div className="ver_respostas">Ver respostas
                             <svg
