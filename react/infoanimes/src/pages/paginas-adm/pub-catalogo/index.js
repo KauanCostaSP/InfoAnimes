@@ -7,7 +7,6 @@ import api from "../../../service/api"
 const Api = new api();
 
 export default function PubliCatalogo() {
-    const [animes, setAnimes] = useState([]);
     const [nome, setAnime] = useState('');
     const [classificacao, setClassificacao] = useState('');
     const [temporadas, setTemporadas] = useState('');
@@ -21,7 +20,7 @@ export default function PubliCatalogo() {
     const [video1, setVideo1] = useState('')
     const [video2, setVideo2] = useState('')
     const [imagem, setImagem] = useState('')
-    
+
     const loading = useRef(null);
 
     const adicionarAnime = async () => {
@@ -45,7 +44,7 @@ export default function PubliCatalogo() {
             <div className="sobre">Sobre<input type="text" id="sobre" size="40" placeholder="Sobre" value={sobre} onChange={e => setSobre(e.target.value)}/></div>
             <div className="enredo">Enredo<input type="text" id="enredo" size="40" placeholder="Enredo" value={enredo} onChange={e => setEnredo(e.target.value)} /></div>
             <div className="enredo">capa<input type="text" id="enredo" size="40" placeholder="Enredo" value={capa} onChange={e => setCapa(e.target.value)} /></div>
-            <div className="ano">ano de lançamento<input type="text" id="ano" name="ano" placeholder="ano de lançamento" max="2021" /></div>
+            <div className="ano">ano de lançamento<input type="text" id="ano" name="ano" placeholder="ano de lançamento" max="2021" value={ano} onChange={e => setAno(e.target.value)} /></div>
             <div className="alterar_fundo"> url da imagem<input type="text" id="imagem" size="40" placeholder="url da imagem" value={imagem} onChange={e => setImagem(e.target.value)}/></div>
             
             
