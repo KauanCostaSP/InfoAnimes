@@ -309,7 +309,6 @@ app.post('/comentarios/:id', async (req, resp) => {
         
         let anime = await db.infod_tif_animes.findOne({ where: { id_anime: req.params.id } })
         
-        
 
         let r = {
          
@@ -399,14 +398,21 @@ app.get('/chat', async (req, resp) => {
 
 app.post('/chat/:id', async (req, resp) => {
     try {
-        let { id_comuni, id_usu, mensagem } = req.body;
+        let { comunidade, usuario, mensagem } = req.body;
 
-        
+        if (usuario == null)
+            return resp.send({ erro: '☠️ Usuário não existe!' });
+    
+        if (comunidade == null)
+            return resp.send({ erro: 'Sala não existe!' });
+     
+         if (!chat.mensagem || chat.mensagem.replace(/\n/g, '') == '')
+            return resp.send({ erro: 'Mensagem é obrigatória!' });
 
         let r =  await db.infod_tif_chat.create(
             {
-                id_comunidade: id_comuni,
-                id_usuario: id_usu,
+                id_comunidade: comunidade,
+                id_usuario: usuario,
                 ds_mensagem:  mensagem,
                 dt_mensagem: new Date()
             }
