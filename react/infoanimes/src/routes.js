@@ -23,7 +23,7 @@ export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact={true} component={ConfigPerfilLogado} />
+                <Route path="/" exact={true} component={Inicial} />
                 <Route path="/home" exact={true} component={Inicial} />
                 <Route path="/login" exact={true} component={Login} />
                 <Route path="/esqueci-senha" exact={true} component={EsqueciSenha} />
