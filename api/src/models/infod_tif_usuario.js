@@ -19,7 +19,7 @@ export default class infod_tif_usuario extends Model {
       allowNull: true
     },
     ds_senha: {
-      type: DataTypes.STRING(10),
+      type: DataTypes.STRING(32),
       allowNull: true
     },
     ds_telefone: {
