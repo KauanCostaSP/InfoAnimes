@@ -283,10 +283,10 @@ app.delete('/catalogo/:id', async (req, resp) => {
 
 
 
-app.get('/comentarios/:anime', async (req, resp) => {
+app.get('/comentarios/:id', async (req, resp) => {
     try {
         
-        let anime = await db.infod_tif_animes.findOne({ where: { nm_anime: req.params.anime } })
+        let anime = await db.infod_tif_animes.findOne({ where: { id_anime: req.params.id } })
 
         let comentarios = await db.infod_tif_comentario.findAll({ where: { id_anime: anime.id_anime } })
         
@@ -301,20 +301,20 @@ app.get('/comentarios/:anime', async (req, resp) => {
 
 
 
-app.post('/comentarios', async (req, resp) => {
+app.post('/comentarios/:id', async (req, resp) => {
     try {
 
         
-        let comentario = req.body;
+        let {comentario} = req.body;
         
-        let anime = await db.infod_tif_animes.findOne({ where: { nm_anime: comentario.anime.nome } })
-        let usuario = await db.infod_tif_usuario.findOne({where: {nm_usuario: comentario.usuario.nome}})
+        let anime = await db.infod_tif_animes.findOne({ where: { id_anime: req.params.id } })
+        
         
 
         let r = {
-            id_usuario: usuario.id_usuario,
-            id_anime: anime.id_anime,
-            ds_comentario: comentario.comentario,
+         
+            id_anime: anime,
+            ds_comentario: comentario,
             dt_comentario: new Date()
 
         }
@@ -394,12 +394,6 @@ app.get('/chat', async (req, resp) => {
         resp.send({error: e.toString()})
     }
 })
-
-
-
-
-
-
 
 
 
