@@ -15,12 +15,15 @@ import PerfilLogado from "./pages/perfil-usuario/pagina-perfil-logado";
 import EsqueciSenha from "./pages/perfil-usuario/esqueci-minha-senha";
 import PubliCatalogo from "./pages/paginas-adm/pub-catalogo";
 import Postagem_comuni from "./pages/paginas-adm/postagem-comunidade";
+import PerfilNaoLogado from     "./pages/perfil-usuario/pagina-perfil-nao-logado";
+import ConfigPerfilNaoLogado from  "./pages/perfil-usuario/configurar-perfil-nao-logado";
+import ConfigPerfilLogado from  "./pages//perfil-usuario/configurar-perfil-logado";
 
 export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route path="/" exact={true} component={Inicial} />
+                <Route path="/" exact={true} component={ConfigPerfilLogado} />
                 <Route path="/home" exact={true} component={Inicial} />
                 <Route path="/login" exact={true} component={Login} />
                 <Route path="/esqueci-senha" exact={true} component={EsqueciSenha} />
@@ -37,6 +40,9 @@ export default function Routes() {
                 <Route path="/perfil-logado" exact={true} component={PerfilLogado} />
                 <Route path="/publi_catalogo" exact={true} component={PubliCatalogo} />
                 <Route path="/postagem-comunidade" exact={true} component={Postagem_comuni}/>
+                <Route path="/perfil-nao-logado" exact={true} component={PerfilNaoLogado}/>
+                <Route path="/config-perfil-nao-logado" exact={true} component={ConfigPerfilNaoLogado}/>
+                <Route path="/config-perfil-logado" exact={true} component={ConfigPerfilLogado}/>
             </Switch>
         </BrowserRouter>
     )
