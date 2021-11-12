@@ -12,13 +12,25 @@ background-color: #0d0d0d;
 height: 100vh;
 
 .box-1{
-   
-   background-image: url(../../../assets/images/fundo-criar-servidor.png);
-   max-width: 58em;
-   min-height: 26em;
-   margin-top: 2em;
+   background-image: url(../../../assets/images/fundo-config-2.png);
+   margin-top: 10em;
+   margin-bottom: 5em;
    background-repeat: no-repeat;
-  
+   padding: 5em 7em 4em 7em;
+   transition: 0.7s;
+}
+
+.box-1:hover{
+   box-shadow: 0px 4px 30px #A245FF;
+   transition: 0.7s;
+}
+
+.botao_voltar button:hover{
+   cursor: pointer;
+}
+
+.botao_desativar button:hover{
+   cursor: pointer;
 }
 
 .cabecalho_box-1 {
@@ -31,7 +43,7 @@ height: 100vh;
    display: flex;
    flex-direction: row;
    height: 3.5em;
-  margin-left: 54em;
+   margin-left: 54em;
 }
 
 .criar{
@@ -44,9 +56,10 @@ height: 100vh;
 
 .perfil_box-1 img{
    text-align: center;
-
+   filter: invert(100%) sepia(13%) saturate(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
    height: 140px;
    width: 150px;
+
 }
 
 .nick_box-1{
@@ -67,19 +80,15 @@ height: 100vh;
 .botoes_box-1{
    display: flex;
    flex-direction: row;
-
    text-align: center;
-   
-   margin-left: 18em;
+   margin-left: 0em;
    margin-top: 2em;
 }
 
-
-.botao_editar button{
+.botao_voltar button{
    color: #ffffff;
    font-size: 15px;
    font-family: Montserrat-Regular;
-   font-weight: bold;
    background-color: #7E00FC;
 
    border-radius: 30px;
@@ -89,30 +98,14 @@ height: 100vh;
    margin-right: 3em;
 }
 
-.botao_chat img{
-   padding-top: px;
-   margin-right: 5px;
-}
-
-.botao_chat button{
-   cursor: pointer;
-}
-
-.botao_editar button:hover{
-   cursor: pointer;
-}
-
-.botao_chat button{
+.botao_desativar button{
    color: #ffffff;
    font-size: 15px;
    font-family: Montserrat-Regular;
-   font-weight: bold;
-   background-color: #7E00FC3D;
-
-   border-radius: 30px;
-   border: 1px solid #ffffff;
-
-   padding: 0px 35px 5px 35px;
+   background-color: transparent;
+   border: 0;
+   text-decoration: underline;
+   padding-left: 9em;
 }
 
 
@@ -162,13 +155,13 @@ height: 100vh;
 .descricao{
   padding-top: 3em;
   color: white;
+  opacity: 0.7;
 }
 
 .descricao textarea{
    color: #ffffff;
    font: 16px Montserrat-Regular;
    background: transparent;
-
    outline: none;
    resize: none;
    border-radius: 5px;
@@ -178,9 +171,10 @@ height: 100vh;
 }
 
 .chats{
-  display: flex;
-  flex-direction: row !important;
-  padding: 20px 50px 
+   color: white;
+   opacity: 0.7;
+   text-align: left;
+   padding-left: 6em;
 }
 
 .img_chats img{
@@ -246,19 +240,83 @@ height: 100vh;
 }
 
 
+.alterar button{
+   font-family: fonte-100;
+   font-size: 15px;
+   color: white;
+   position: relative;
+   background-color: #373737;
+   opacity: 0.9;
+   border: none;
+   width: 30em;
+   height: 3em;
+   margin-top: 2.5em;
+   border: none;
+}
 
+.alterar button:hover{
+   cursor: pointer;
+}
 
+.alterar button::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 15px;
+   height: 15px;
+   overflow: hidden;
+   border-top: 2px solid white;
+   border-left: 2px solid white;
+   transition: 0.5s;
+   opacity: 0.9;
+}
 
+.alterar button:hover::before{
+   width: 99%;
+   height: 97%;
+}
 
+.alterar button::after{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 15px;
+   height: 15px;
+   border-bottom: 2px solid white;
+   border-right: 2px solid white;
+   transition: 0.5s;
+   opacity: 0.9;
+}
 
+.alterar button:hover::after{
+   width: 99%;
+   height: 95%;
+}
 
+.campo-nome{
+   margin: 3em 0px 0px 0em;
+   text-align: center;
+   opacity: 0.9;
+  
+  }
 
-
-
-
-
-
-
+.campo-usuario, .campo-biografia, .campo-email, .campo-telefone, .campo-genero{
+   margin: 1em 0px 0px 0em;
+   text-align: center;
+   opacity: 0.9;
+  }
+  
+  .campo-nome input, .campo-usuario input, .campo-biografia input, .campo-email input, .campo-telefone input, .campo-genero input{
+  position: relative;
+   background-color: #373737;
+   border: none;
+  font: 1em fonte-100;
+  color: white;
+  padding: 15px 60px 15px 15px;
+  background-repeat: no-repeat;
+  }
 
 
 

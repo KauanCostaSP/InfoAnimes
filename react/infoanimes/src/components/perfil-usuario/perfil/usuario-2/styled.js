@@ -13,7 +13,7 @@ height: 100vh;
 
 .box-1{
    
-   background-image: url(../../../assets/images/fundo-criar-servidor.png);
+   background-image: url(../../../assets/images/fundo-config.png);
    max-width: 58em;
    min-height: 26em;
    margin-top: 2em;
@@ -44,7 +44,7 @@ height: 100vh;
 
 .perfil_box-1 img{
    text-align: center;
-
+   filter: invert(100%) sepia(13%) saturate(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
    height: 140px;
    width: 150px;
 }
@@ -74,7 +74,6 @@ height: 100vh;
    margin-top: 2em;
 }
 
-
 .botao_editar button{
    color: #ffffff;
    font-size: 15px;
@@ -95,14 +94,6 @@ height: 100vh;
 }
 
 .botao_chat button{
-   cursor: pointer;
-}
-
-.botao_editar button:hover{
-   cursor: pointer;
-}
-
-.botao_chat button{
    color: #ffffff;
    font-size: 15px;
    font-family: Montserrat-Regular;
@@ -115,7 +106,13 @@ height: 100vh;
    padding: 0px 35px 5px 35px;
 }
 
+.botao_chat button{
+   cursor: pointer;
+}
 
+.botao_editar button:hover{
+   cursor: pointer;
+}
 
 .box-2{
 
@@ -162,13 +159,13 @@ height: 100vh;
 .descricao{
   padding-top: 3em;
   color: white;
+  opacity: 0.7;
 }
 
 .descricao textarea{
    color: #ffffff;
    font: 16px Montserrat-Regular;
    background: transparent;
-
    outline: none;
    resize: none;
    border-radius: 5px;
@@ -178,9 +175,10 @@ height: 100vh;
 }
 
 .chats{
-  display: flex;
-  flex-direction: row !important;
-  padding: 20px 50px 
+   color: white;
+   opacity: 0.7;
+   text-align: left;
+   padding-left: 6em;
 }
 
 .img_chats img{
@@ -246,7 +244,58 @@ height: 100vh;
 }
 
 
+.entrar button{
+   font-family: fonte-100;
+   font-size: 15px;
+   color: white;
+   position: relative;
+   background-color: #373737;
+   opacity: 0.9;
+   border: none;
+   width: 30em;
+   height: 3em;
+   margin-top: 2.5em;
+   border: none;
+}
 
+.entrar button:hover{
+   cursor: pointer;
+}
+
+.entrar button::before{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 15px;
+   height: 15px;
+   overflow: hidden;
+   border-top: 2px solid white;
+   border-left: 2px solid white;
+   transition: 0.5s;
+}
+
+.entrar button:hover::before{
+   width: 99%;
+   height: 97%;
+}
+
+.entrar button::after{
+   content: '';
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 15px;
+   height: 15px;
+   border-bottom: 2px solid white;
+   border-right: 2px solid white;
+   transition: 0.5s;
+}
+
+.entrar button:hover::after{
+   width: 99%;
+   height: 95%;
+}
 
 
 

@@ -71,7 +71,7 @@ export default function Registrar() {
             <div className="campo-email"><input type="email" id="email" maxlength={32} placeholder="Email" size="40" value={email} onChange={e => setEmail(e.target.value)} /></div>
             <div className="campo-senha"><input type="password" id="password" maxlength={32} placeholder="Senha" size="40" value={senha} onChange={e => setSenha(e.target.value)} /></div>
             <div className="campo-senha-repetida"><input type="password" id="password" maxlength={32} placeholder="Confirmar senha" size="40" value={confsenha} onChange={e => setConfsenha(e.target.value)}/></div>
-            <div className="botao-criar-conta"> <button onClick={cadastrar}> Criar Conta </button></div>
+            <Link className="botao-criar-conta" to="/perfil-nao-logado"> <button onClick={cadastrar}> Criar Conta </button></Link>
         </div>
     </div>
         </Container>
