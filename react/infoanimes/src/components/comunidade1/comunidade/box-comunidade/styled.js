@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const Comunidade = styled.div`
 
-    margin-top: 20px;
+    
+    margin: 15px;
     width: 270px;
     
 

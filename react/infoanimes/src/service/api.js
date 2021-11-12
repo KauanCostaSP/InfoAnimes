@@ -12,7 +12,7 @@ export default class Api {
 
 
     async cadastrar(nome, email, senha) {
-        let r = await api.post(`/cadastrar`, {nome, email, senha})
+        let r = await api.post(`/usuario`, {nome, email, senha})
         return r.data;
     }
 
@@ -54,8 +54,8 @@ export default class Api {
 
 
 
-    async adicionarcatalogo(id, anime, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem) {
-        let r = await api.post(`/catalogo/${id}`, { anime, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem })
+    async adicionarcatalogo( nome, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem) {
+        let r = await api.post(`/catalogo`, { nome, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem })
         return r.data;
     }
 

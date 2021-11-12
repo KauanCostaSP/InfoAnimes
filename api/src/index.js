@@ -51,25 +51,20 @@ app.post('/login', async (req, resp) => {
 
 
 
-app.post('/cadastrar', async (req, resp) => {
+app.post('/usuario', async (req, resp) => {
     try {
-        let { nome, email, senha} = req.body;
+        let { nome, email, senha } = req.body;
 
-        let h = await db.infod_tif_usuario.create({
-            where: {
-                nm_usuario: nome,
-                ds_email: email,
-                ds_senha: senha
-            },
-            raw : true
-        })
 
-        if (h == null) {
-            return resp.send({ erro: 'ah vai pa bosta amigo, preenche de novo' });
-        }
-        resp.send(h);
+    let h = await db.infod_tif_usuario.create({
+        nm_usuario: nome,
+        ds_email: email,
+        ds_senha: senha
+    })
+
+    resp.send(h)
     } catch (e) {
-        resp.send({ erro : e.toString() })
+        resp.send({error: e.toString()})
     }
 })
 
@@ -202,10 +197,10 @@ app.get('/catalogo/:anime', async (req, resp) => {
 
 app.post('/catalogo', async (req, resp) => {
     try {
-        let { anime, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem } = req.body;
+        let { nome, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem } = req.body;
 
     let a = await db.infod_tif_animes.create({
-        nm_anime: anime,
+        nm_anime: nome,
         ds_classificação: classificacao,
         ds_temporadas: temporadas,
         ds_genero: genero,
@@ -288,10 +283,10 @@ app.delete('/catalogo/:id', async (req, resp) => {
 
 
 
-app.get('/comentarios/:anime', async (req, resp) => {
+app.get('/comentarios/:id', async (req, resp) => {
     try {
         
-        let anime = await db.infod_tif_animes.findOne({ where: { nm_anime: req.params.anime } })
+        let anime = await db.infod_tif_animes.findOne({ where: { id_anime: req.params.id } })
 
         let comentarios = await db.infod_tif_comentario.findAll({ where: { id_anime: anime.id_anime } })
         
@@ -306,20 +301,20 @@ app.get('/comentarios/:anime', async (req, resp) => {
 
 
 
-app.post('/comentarios', async (req, resp) => {
+app.post('/comentarios/:id', async (req, resp) => {
     try {
 
         
-        let comentario = req.body;
+        let {comentario} = req.body;
         
-        let anime = await db.infod_tif_animes.findOne({ where: { nm_anime: comentario.anime.nome } })
-        let usuario = await db.infod_tif_usuario.findOne({where: {nm_usuario: comentario.usuario.nome}})
+        let anime = await db.infod_tif_animes.findOne({ where: { id_anime: req.params.id } })
+        
         
 
         let r = {
-            id_usuario: usuario.id_usuario,
-            id_anime: anime.id_anime,
-            ds_comentario: comentario.comentario,
+         
+            id_anime: anime,
+            ds_comentario: comentario,
             dt_comentario: new Date()
 
         }
@@ -402,15 +397,11 @@ app.get('/chat', async (req, resp) => {
 
 
 
-
-
-
-
-
-
-app.post('/chat', async (req, resp) => {
+app.post('/chat/:id', async (req, resp) => {
     try {
-        let { id_comuni, id_usu, mensagem} = req.body;
+        let { id_comuni, id_usu, mensagem } = req.body;
+
+        
 
         let r =  await db.infod_tif_chat.create(
             {

@@ -24,22 +24,30 @@ export default function Registrar() {
 
     const cadastrar = async () => {
         loading.current.continuousStart();
+       
 
         let resp = await Api.cadastrar(nome, email, senha);
         console.log(resp)
       
-
+        
          
-        if(resp.erro) {
-            toast.error(`${resp.erro}`);
+        if(resp.error) {
+            toast.error(`${resp.error}`);
             loading.current.complete();
+
         } else {
-            if (confsenha !== senha) {
-                toast.error("As senhas tem que ser iguais, burro.")
+            if (nome === "" || senha === "" || email === "" || confsenha === "") {
+                toast.error("Tem que preencher tudo, abestalhado.")
+                loading.current.complete();
             } else {
-            
-            cookie.set('perfil-cadastrado', JSON.stringify(resp));
-            navig.push('/perfil-cadastrado')
+
+                if (confsenha !== senha) {
+                    toast.error("As senhas tem que ser iguais, burro.")
+                    loading.current.complete();
+                } else {
+                    cookie.set('/perfil-cadastrado', JSON.stringify(resp));
+                    navig.push('/perfil-cadastrado')
+                }
             }
         }
     }
