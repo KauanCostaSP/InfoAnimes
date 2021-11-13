@@ -401,7 +401,7 @@ app.post('/chat/:id', async (req, resp) => {
         let { comunidade, usuario, mensagem } = req.body;
 
         if (usuario == null)
-            return resp.send({ erro: '☠️ Usuário não existe!' });
+            return resp.send({ erro: 'Usuario não logado' });
     
         if (comunidade == null)
             return resp.send({ erro: 'Sala não existe!' });
