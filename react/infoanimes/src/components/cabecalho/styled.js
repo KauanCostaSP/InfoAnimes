@@ -33,7 +33,7 @@ cursor: pointer;
 
 .item-logo img{
     height: 2.5em;
-    padding-right: 14em;
+    
 }
 
 .itens{
@@ -58,43 +58,11 @@ cursor: pointer;
     font: 14px Montserrat-Regular;
 }
 
-#divBusca {
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(54, 4, 73);
-    border: solid 1px;
-    border-radius: 3em;
-    padding: 0.5em 0em 0em .5em ;
-    height: 2.4em;
-    width: 287px;
-}
-  
-#txtBusca {
-    display: block;
-    color: #fff;
-    float: left;
-    background-color: trasparent !important;
-    padding-left: 5px;
-    font-style: italic;
-    font-size: 18px;
-    border: none;
-    height: 20px;
-    width: 240px;
-}
 
 input {
     background-color: transparent;
     outline: none;
 }
-
-.item-lupa svg{
-    margin-left: 17em;
-    fill: #ffffff;
-    width: 31px;
-    height: 31px;
-}
-
 .item-usuario{
     height: 1.8em;
     margin-left: 2em;
