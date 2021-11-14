@@ -107,6 +107,8 @@ export default function PubliCatalogo() {
                     </video></div>
                 </div>
             </div>
+
+            <div className="Cadastrar"><button onClick={adicionarAnime} > Cadastrar </button></div>
         </div>
             <Rodape />
         </Container>

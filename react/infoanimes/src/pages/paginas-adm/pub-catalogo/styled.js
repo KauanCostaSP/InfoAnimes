@@ -71,7 +71,7 @@ a:hover{
     padding-bottom: 3em;
 }
 
-.info_b{
+.info_b {
     display: flex;
     flex-direction: row;
     color: #ffffff;
@@ -80,18 +80,28 @@ a:hover{
     margin-top: 15px;
 }
 
-.classificacao input{
+input {
+    background-color: rgba(255, 255, 255, 0.21);
+    outline: none;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+}
+
+input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.classificacao input {
     background-color: #ff0000;
+    outline: none;
+    border:none;
     border-radius: 3px;
     padding: 4px 10px;
     margin: 0px 8px;
 }
 
-.produtora{
-    margin-left: 6px;
-}
-
-.info_gerais{
+.info_gerais {
     padding-left: 2em;
     padding-right: 5em;
     padding-top: 3.5em;
