@@ -14,8 +14,6 @@ export default function Index () {
             <div className="usuario_box-1">
                 <div className="perfil_box-1"><img src="../../../assets/images/perf_ket.png" alt="Foto de Perfil"/></div>
                 <div className="nick_box-1">Ketellyn_Otako_</div>
-                <div className="info_1">TikTok: Kety_Narutoo</div>
-                <div className="info_2">Insta: KetyReal_</div>
             </div>
 
             <div className="botoes_box-1">
