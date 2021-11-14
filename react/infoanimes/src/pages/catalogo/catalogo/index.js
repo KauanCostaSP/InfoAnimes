@@ -44,7 +44,6 @@ export default function Catalogo(props) {
                     <div className="ano"> {anime.dt_ano} |</div>
                         <div className="classificacao">Classificação {anime.ds_classificacao}</div>
                     <div className="temporada"> | {anime.ds_temporadas} temporadas |</div>
-                    <div className="produtora">{anime.ds_genero} </div>
 
                   
                 </div>
@@ -62,21 +61,7 @@ export default function Catalogo(props) {
                         <div className="tit_est">Estrelando</div>
                         <div className="atores">
                            <div className="est">
-                                <div className="text_est">Saori Hayami</div>
-                                <div className="text_est"> Yuki Wakai</div>
-                                <div className="text_est"> Yu Serizawa</div>
-                                <div className="text_est"> Ayaka Fukuhara</div>
-                            </div>
-                            <div className="est">
-                                <div className="text_est">Tatsuya Tokutake</div>
-                                <div className="text_est">Minami Tanaka</div>
-                                <div className="text_est"> Karin Nanami</div>
-                                <div className="text_est">Tomokazu Sugita</div>
-                            </div>
-                            <div className="est">
-                                <div className="text_est">Miyuki Sawashiro</div>
-                                <div className="text_est">Mariya Ise</div>
-                                <div className="text_est">Mayu Udono</div>
+                                {anime.ds_estrelando}
                             </div>
                         </div>
                         
@@ -100,7 +85,7 @@ export default function Catalogo(props) {
             </div>
 
             <div className="videos">
-                <div className="titulo_v">Vídeos | <span className="nome_anime_v">Kakegurui</span></div>
+                <div className="titulo_v">Vídeos | <span className="nome_anime_v">{anime.nm_anime}</span></div>
                 
                 <div className="trailers">
                     <div className="trailer"><div className="titulo_video"><div className="linha_red"></div>Kakegurui xx (Trailer)</div>
@@ -143,22 +128,6 @@ export default function Catalogo(props) {
                             <div className="comentario">{i.ds_comentario}</div>
                     )}
 
-                    <div className="ver_respostas">Ver respostas
-                            <svg
-                              viewBox="0 0 18 18"
-                              role="img"
-                              aria-hidden="false"
-                              aria-label="Fotografia do anúncio em destaque anterior"
-                              focusable="false"
-                              style={{height: '16px', width: '16px', display: 'block', fill: '#7E00FC'}}
-                              
-                            >
-                              <path
-                                d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z"
-                                fill-rule="evenodd"
-                              ></path>
-                            </svg>
-                    </div>
                 </div>
             </div>
         </div>
