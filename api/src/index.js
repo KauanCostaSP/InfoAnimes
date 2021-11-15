@@ -296,9 +296,9 @@ app.delete('/catalogo/:id', async (req, resp) => {
 app.get('/comentarios/:id', async (req, resp) => {
     try {
         
-        let anime = await db.infod_tif_animes.findOne({ where: { id_anime: req.params.id } })
+        let anime = await db.infod_tif_comentario.findOne({ where: { id_anime: req.params.id } })
 
-        let comentarios = await db.infod_tif_comentario.findAll({ where: { id_anime: anime.id_anime } })
+        let comentarios = await db.infod_tif_comentario.findAll({where: {id_anime: anime}})
         
         resp.send(comentarios)
 
@@ -310,19 +310,35 @@ app.get('/comentarios/:id', async (req, resp) => {
 
 
 
+app.get('/comentarios', async (req, resp) => {
+    try {
+        
+      
 
-app.post('/comentarios/:id', async (req, resp) => {
+        let comentarios = await db.infod_tif_comentario.findAll()
+        
+        resp.send(comentarios)
+
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+})
+
+
+
+
+app.post('/comentarios', async (req, resp) => {
     try {
 
         
-        let {comentario} = req.body;
+        let {comentario, idzinho} = req.body;
         
-        let anime = await db.infod_tif_animes.findOne({ where: { id_anime: req.params.id } })
+        
         
 
         let r = {
          
-            id_anime: anime,
+            id_anime: idzinho,
             ds_comentario: comentario,
             dt_comentario: new Date()
 

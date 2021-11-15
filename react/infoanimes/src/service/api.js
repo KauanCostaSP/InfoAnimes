@@ -65,9 +65,9 @@ export default class Api {
 
 
 
-    async adicionarcoment(idAnime, idUsuario, comentario) {
+    async adicionarcoment(comentario, idAnime) {
 
-        let r = await api.post(`/comentarios/${idAnime}`, {idUsuario, comentario} )
+        let r = await api.post(`/comentarios`, {comentario, idAnime} )
         return r.data;
     }
 
