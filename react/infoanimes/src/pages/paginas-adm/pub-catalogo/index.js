@@ -43,9 +43,11 @@ export default function PubliCatalogo() {
             <div className="sinopse">Sinopse<input type="text" id="sinopse" size="40" placeholder="Sinopse" value={sinopse} onChange={e => setSinopse(e.target.value)}/></div>
             <div className="sobre">Sobre<input type="text" id="sobre" size="40" placeholder="Sobre" value={sobre} onChange={e => setSobre(e.target.value)}/></div>
             <div className="enredo">Enredo<input type="text" id="enredo" size="40" placeholder="Enredo" value={enredo} onChange={e => setEnredo(e.target.value)} /></div>
-            <div className="enredo">capa<input type="text" id="enredo" size="40" placeholder="Enredo" value={capa} onChange={e => setCapa(e.target.value)} /></div>
+            <div className="capa">capa<input type="text" id="enredo" size="40" placeholder="Enredo" value={capa} onChange={e => setCapa(e.target.value)} /></div>
             <div className="ano">ano de lançamento<input type="text" id="ano" name="ano" placeholder="ano de lançamento" max="2021" value={ano} onChange={e => setAno(e.target.value)} /></div>
             <div className="alterar_fundo"> url da imagem<input type="text" id="imagem" size="40" placeholder="url da imagem" value={imagem} onChange={e => setImagem(e.target.value)}/></div>
+            <div className="Vídeo1"> Video1<input type="text" id="video" size="40" placeholder="url do video" value={video1} onChange={e => setVideo1(e.target.value)}/></div>
+            <div className="Vídeo2"> Video2<input type="text" id="video" size="40" placeholder="url do video" value={video2} onChange={e => setVideo2(e.target.value)}/></div>
             
             
             <div className="t1-titulo"><button onClick={adicionarAnime} > Cadastrar </button></div>

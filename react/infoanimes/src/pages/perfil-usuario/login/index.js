@@ -48,7 +48,7 @@ export default function Login() {
         <div className="texto-esqueci-senha"> Insira suas informações abaixo! </div>
                 <div className="campo-email"><input type="email" id="email" maxlength={32} placeholder="Email" size="40" value={email} onChange={ e => setEmail(e.target.value)} /></div>
                 <div className="campo-senha"><input type="password" id="senha" maxlength={32} placeholder="Senha" size="40" value={senha} onChange={e => setSenha(e.target.value)} /></div>
-                <div className="entrar"><button onClick={logar}>Entrar</button></div>
+                <Link className="entrar" to="/perfil-logado"><button onClick={logar}>Entrar</button></Link>
                 <Link className="esqueci-senha" to="/esqueci-senha"> <div ClassName="esqueci-botao">  Esqueci minha senha </div> </Link>
         </div>
         </div>

@@ -4,7 +4,7 @@ CREATE TABLE infoD_tif_usuario_comunidade (
     id_comunidade          int,
     foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
     foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE
-    );
+    )ENGINE=InnoDB;
 
 
 
@@ -15,7 +15,7 @@ CREATE TABLE infoD_tif_usuario_comunidade (
     id_anime               int,
     foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
     foreign key (id_anime) references infoD_tif_animes(id_anime) ON DELETE CASCADE ON UPDATE CASCADE
-    );
+    )ENGINE=InnoDB;
   
   
 
@@ -29,7 +29,7 @@ CREATE TABLE infoD_tif_usuario_comunidade (
   dt_criacao               datetime,
   bt_adm                   boolean,
   ds_perfil                varchar(255)
-  );
+  )ENGINE=InnoDB;
   
   
   
@@ -50,7 +50,7 @@ CREATE TABLE infoD_tif_usuario_comunidade (
   ds_video1                varchar(1555),
   ds_video2                varchar(1555),
   ds_imagem                varchar(1555)
-  );
+  )ENGINE=InnoDB;
 
 
 
@@ -64,7 +64,7 @@ CREATE TABLE infoD_tif_usuario_comunidade (
   ds_descricao             varchar(2555),
   dt_criacao               datetime,
   foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE
-  );
+  )ENGINE=InnoDB;
   
 
 
@@ -74,9 +74,9 @@ CREATE TABLE infoD_tif_usuario_comunidade (
   id_anime                 int,
   ds_comentario            varchar(255),
   dt_comentario            datetime,
-  foreign key (id_usuario) references infoD_tif_usuario(id_usario) ON DELETE CASCADE ON UPDATE CASCADE,
+  foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
   foreign key (id_anime) references infoD_tif_animes(id_anime) ON DELETE CASCADE ON UPDATE CASCADE
-  );
+  )ENGINE=InnoDB;
   
   
   CREATE TABLE infoD_tif_chat (
@@ -87,4 +87,4 @@ CREATE TABLE infoD_tif_usuario_comunidade (
   dt_mensagem              datetime,
   foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE,
   foreign key (id_comunidade) references infoD_tif_comunidade(id_comunidade) ON DELETE CASCADE ON UPDATE CASCADE
-  );
+  )ENGINE=InnoDB;
