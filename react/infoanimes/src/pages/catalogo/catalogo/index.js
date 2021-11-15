@@ -27,7 +27,7 @@ export default function Catalogo(props) {
 
         loading.current.complete()
     }
-    
+
     return (
         <Container>
             <ToastContainer />
@@ -37,13 +37,12 @@ export default function Catalogo(props) {
             <div className="adi_fav"><img src="/assets/images/icon (1).svg" alt="adicionar a favoritos" /></div>
 
             <div className="info_basica" style={{backgroundImage: anime.ds_capa}}>
-                <div className="situacao">Novo</div>
 
                 <div className="info_b">
 
                     <div className="ano"> {anime.dt_ano} |</div>
                         <div className="classificacao">Classificação {anime.ds_classificacao}</div>
-                    <div className="temporada"> | {anime.ds_temporadas} temporadas |</div>
+                    <div className="temporada"> | {anime.ds_temporadas} temporadas</div>
 
                   
                 </div>

@@ -29,7 +29,6 @@ export default function Registrar() {
         let resp = await Api.cadastrar(nome, email, senha);
         console.log(resp)
       
-        
          
         if(resp.error) {
             toast.error(`${resp.error}`);
@@ -45,7 +44,7 @@ export default function Registrar() {
                     toast.error("As senhas tem que ser iguais, burro.")
                     loading.current.complete();
                 } else {
-                    cookie.set('/perfil-cadastrado', JSON.stringify(resp));
+                    cookie.set('perfil-cadastrado', JSON.stringify(resp));
                     navig.push('/perfil-cadastrado')
                 }
             }
