@@ -12,6 +12,7 @@ export default function Index() {
                 <Link className="item" to="/sobre"> Sobre </Link>
                 <Link className="item" to="/politica"> Política de Privacidade </Link>
                 <Link className="item" to="/termos"> Termos de Uso </Link>
+                <Link className="item" to="/contato"> Contato </Link>
             </div>
 
             <div className="redes-sociais">

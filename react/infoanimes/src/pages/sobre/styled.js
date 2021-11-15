@@ -227,20 +227,5 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 `
 export {Container}

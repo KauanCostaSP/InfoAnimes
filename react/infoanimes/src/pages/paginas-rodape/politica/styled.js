@@ -102,5 +102,30 @@ p{
     font-size: 15px;
 }
 
+@media screen and (max-width: 768px) {
+
+*{
+    text-align: center;
+}
+
+.titulo-politica{
+    font: 24px fonte-300;
+}
+
+p{
+    font: 14px fonte-100;
+}
+
+.texto{
+    margin: 20px 40px;
+}
+
+.titulo-informacoes{
+    font: 21px fonte-300;
+}
+
+}
+
+
 `
 export{Container}

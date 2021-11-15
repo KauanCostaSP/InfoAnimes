@@ -17,7 +17,8 @@ import PubliCatalogo from "./pages/paginas-adm/pub-catalogo";
 import Postagem_comuni from "./pages/paginas-adm/postagem-comunidade";
 import PerfilNaoLogado from     "./pages/perfil-usuario/pagina-perfil-nao-logado";
 import ConfigPerfilNaoLogado from  "./pages/perfil-usuario/configurar-perfil-nao-logado";
-import ConfigPerfilLogado from  "./pages//perfil-usuario/configurar-perfil-logado";
+import ConfigPerfilLogado from  "./pages/perfil-usuario/configurar-perfil-logado";
+import Contato from  "./pages/paginas-rodape/contato";
 
 export default function Routes() {
     return (
@@ -43,6 +44,8 @@ export default function Routes() {
                 <Route path="/perfil-nao-logado" exact={true} component={PerfilNaoLogado}/>
                 <Route path="/config-perfil-nao-logado" exact={true} component={ConfigPerfilNaoLogado}/>
                 <Route path="/config-perfil-logado" exact={true} component={ConfigPerfilLogado}/>
+                <Route path="/contato" exact={true} component={Contato}/>
+                
             </Switch>
         </BrowserRouter>
     )
