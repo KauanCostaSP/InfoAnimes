@@ -136,5 +136,31 @@ export default class Api {
         let r = await api.delete(`chat/${id}`)
         return r.data;
     }
-}
+
    
+
+
+
+
+
+//Favoritos
+
+
+    async mostrarFavoritos (usuario) {
+        let v = await api.get(`/favorito/?usuario=${usuario}`)
+        return v.data;
+    }
+
+    async adicionarFavoritos(usuario, anime) {
+        let v = await api.post('/favorito', {
+            usuario,
+             anime
+        });
+        return v.data;
+    }
+
+    async deletarFavorito(id) {
+        let v = await api.delete('/favorito/' + id)
+        return v.data;
+    }
+}
