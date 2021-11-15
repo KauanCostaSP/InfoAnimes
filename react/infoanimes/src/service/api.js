@@ -5,11 +5,10 @@ const api = axios.create({
 
 export default class Api {
     
-    async login(email, senha) {
+    async logar(email, senha) {
         let r = await api.post(`/login`, { email, senha })
         return r.data;
     }
-
 
     async cadastrar(nome, email, senha) {
         let r = await api.post(`/usuario`, {nome, email, senha})
@@ -114,8 +113,8 @@ export default class Api {
 
 
 
-    async listarmensagens() {
-        let r = await api.get(`/chat`)
+    async listarmensagens(id) {
+        let r = await api.get(`/chat${id}`)
         return r.data;
     }
 

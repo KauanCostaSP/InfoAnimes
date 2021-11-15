@@ -27,7 +27,7 @@ export default function Catalogo(props) {
 
         loading.current.complete()
     }
-    
+
     return (
         <Container>
             <ToastContainer />

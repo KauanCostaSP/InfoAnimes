@@ -14,7 +14,7 @@ app.use(express.json());
 //Endpoints /login
 
 
-
+ 
 
 
 app.post('/login', async (req, resp) => {
@@ -26,13 +26,15 @@ app.post('/login', async (req, resp) => {
             ds_email: email,
             ds_senha: senha
         },
-        raw : true
+        raw: true
+  
     })
 
     if (i == null) {
         return resp.send({ erro: 'preenche direito abestalhado' });
     }
-    resp.send(i);
+        resp.send(i);
+        
     } catch (e) {
         resp.send({ erro : e.toString() })
     }
@@ -390,9 +392,10 @@ app.post('/comunidade', async (req, resp) => {
 
 
 
-app.get('/chat', async (req, resp) => {
+app.get('/chat/:id', async (req, resp) => {
     try {
         
+        let comunidade = await db.infod_tif_chat.findOne({where: {id_comunidade: id}})
         let r = await db.infod_tif_chat.findAll();
 
         resp.send(r)
