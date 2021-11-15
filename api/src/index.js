@@ -14,7 +14,7 @@ app.use(express.json());
 //Endpoints /login
 
 
-
+ 
 
 
 app.post('/login', async (req, resp) => {
@@ -26,13 +26,15 @@ app.post('/login', async (req, resp) => {
             ds_email: email,
             ds_senha: senha
         },
-        raw : true
+        raw: true
+  
     })
 
     if (i == null) {
         return resp.send({ erro: 'preenche direito abestalhado' });
     }
-    resp.send(i);
+        resp.send(i);
+        
     } catch (e) {
         resp.send({ erro : e.toString() })
     }
@@ -44,7 +46,36 @@ app.post('/login', async (req, resp) => {
 
 
 
-//Endpoints /cadastrar
+
+
+
+
+
+
+//Endpoints /usuario 
+
+
+
+
+
+
+
+
+
+
+
+
+app.get('/usuario', async (req, resp) => {
+try{
+    
+    let r = await db.infod_tif_usuario.findAll()
+
+    resp.send(r)
+
+} catch (e) {
+    resp.send({ error: e.toString() })
+}
+})
 
 
 
@@ -74,27 +105,6 @@ app.post('/usuario', async (req, resp) => {
 
 
 
-//Endpoints /usuario 
-
-
-
-
-
-
-
-
-app.get('/usuario', async (req, resp) => {
-try{
-    
-    let r = await db.infod_tif_usuario.findAll()
-
-    resp.send(r)
-
-} catch (e) {
-    resp.send({ error: e.toString() })
-}
-})
-
 
 
 app.put('/usuario/:id', async (req, resp) => {
@@ -111,7 +121,7 @@ app.put('/usuario/:id', async (req, resp) => {
             ds_telefone: telefone,
             ds_perfil: perfil
         })
-
+        
         resp.send(r)
 
     } catch (e) {
@@ -382,9 +392,10 @@ app.post('/comunidade', async (req, resp) => {
 
 
 
-app.get('/chat', async (req, resp) => {
+app.get('/chat/:id', async (req, resp) => {
     try {
         
+        let comunidade = await db.infod_tif_chat.findOne({where: {id_comunidade: id}})
         let r = await db.infod_tif_chat.findAll();
 
         resp.send(r)

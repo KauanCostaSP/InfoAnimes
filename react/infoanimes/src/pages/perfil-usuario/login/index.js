@@ -18,20 +18,30 @@ export default function Login() {
         const [senha, setSenha] = useState('');
     
         const navig = useHistory();
+    
         const loading = useRef(null);
     
         const logar = async () => {
             loading.current.continuousStart();
             
-            let resp = await Api.login(email, senha);
-            if(resp.erro) {
-                toast.error(`${resp.erro}`);
+            let r = await Api.logar(email, senha);
+            console.log(r)
+            
+
+           
+            if(r.erro) {
+                toast.error(`${r.erro}`);
                 loading.current.complete();
-            }else {
-                cookie.set('perfil-logado', JSON.stringify(resp));
-                navig.push('/perfil-logado')
+            } else {
+
+                if (email === "" || senha === "") {
+                    toast.error("Tem que preencher tudo, bakaaaaaa")
+                }
+                    cookie.set('perfil-logado', JSON.stringify(r));
+                    navig.push('/perfil-logado')
+                }
             }
-        }
+    
     
     
     
