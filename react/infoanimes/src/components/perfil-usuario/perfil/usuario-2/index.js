@@ -13,7 +13,7 @@ export default function Index () {
 
             <div className="usuario_box-1">
                 <div className="perfil_box-1"><img src="../../../assets/images/usuario-nao-logado.png" alt="Foto de Perfil"/></div>
-                <div className="entrar"><button>Alterar plano fe fundo</button></div>
+                <div className="entrar"><button>Alterar plano de fundo</button></div>
                 <div className="nick_box-1"></div>
                 <div className="info_1"></div>
                 <div className="info_2"></div>

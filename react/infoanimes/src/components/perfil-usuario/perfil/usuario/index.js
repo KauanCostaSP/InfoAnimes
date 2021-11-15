@@ -18,7 +18,6 @@ export default function Index () {
 
             <div className="botoes_box-1">
                 <Link className="botao_editar" to="/config-perfil-logado"><a href="../../PERFIL-USUARIO/config-editar-perfil/index.html"><button>Editar Perfil</button></a></Link>
-                <Link className="botao_chat" to="/sala"><button> <img src="../../../assets/images/chat_icon.png" alt="Icon Chat"/>Chat</button></Link>
             </div>
 
             <div className="box-2"> 

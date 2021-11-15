@@ -58,12 +58,12 @@ import _infob_hdm_login_adm from  "./infob_hdm_login_adm.js";
 import _infob_hdm_mapa from  "./infob_hdm_mapa.js";
 import _infob_hdm_sala from  "./infob_hdm_sala.js";
 import _infob_hdm_usuario from  "./infob_hdm_usuario.js";
-import _infob_mw_atores from  "./infob_mw_atores.js";
-import _infob_mw_comentarios from  "./infob_mw_comentarios.js";
-import _infob_mw_filme_usuario from  "./infob_mw_filme_usuario.js";
 import _infob_mw_filmes from  "./infob_mw_filmes.js";
-import _infob_mw_lista from  "./infob_mw_lista.js";
-import _infob_mw_lista_item from  "./infob_mw_lista_item.js";
+import _infob_mw_tbatores from  "./infob_mw_tbatores.js";
+import _infob_mw_tbcomentarios from  "./infob_mw_tbcomentarios.js";
+import _infob_mw_tbfilmeusu from  "./infob_mw_tbfilmeusu.js";
+import _infob_mw_tblista from  "./infob_mw_tblista.js";
+import _infob_mw_tblistaitem from  "./infob_mw_tblistaitem.js";
 import _infob_mw_usuario from  "./infob_mw_usuario.js";
 import _infoc_atn_tb_chat from  "./infoc_atn_tb_chat.js";
 import _infoc_atn_tb_configuracoes_empresa from  "./infoc_atn_tb_configuracoes_empresa.js";
@@ -223,12 +223,12 @@ export default function initModels(sequelize) {
   const infob_hdm_mapa = _infob_hdm_mapa.init(sequelize, DataTypes);
   const infob_hdm_sala = _infob_hdm_sala.init(sequelize, DataTypes);
   const infob_hdm_usuario = _infob_hdm_usuario.init(sequelize, DataTypes);
-  const infob_mw_atores = _infob_mw_atores.init(sequelize, DataTypes);
-  const infob_mw_comentarios = _infob_mw_comentarios.init(sequelize, DataTypes);
-  const infob_mw_filme_usuario = _infob_mw_filme_usuario.init(sequelize, DataTypes);
   const infob_mw_filmes = _infob_mw_filmes.init(sequelize, DataTypes);
-  const infob_mw_lista = _infob_mw_lista.init(sequelize, DataTypes);
-  const infob_mw_lista_item = _infob_mw_lista_item.init(sequelize, DataTypes);
+  const infob_mw_tbatores = _infob_mw_tbatores.init(sequelize, DataTypes);
+  const infob_mw_tbcomentarios = _infob_mw_tbcomentarios.init(sequelize, DataTypes);
+  const infob_mw_tbfilmeusu = _infob_mw_tbfilmeusu.init(sequelize, DataTypes);
+  const infob_mw_tblista = _infob_mw_tblista.init(sequelize, DataTypes);
+  const infob_mw_tblistaitem = _infob_mw_tblistaitem.init(sequelize, DataTypes);
   const infob_mw_usuario = _infob_mw_usuario.init(sequelize, DataTypes);
   const infoc_atn_tb_chat = _infoc_atn_tb_chat.init(sequelize, DataTypes);
   const infoc_atn_tb_configuracoes_empresa = _infoc_atn_tb_configuracoes_empresa.init(sequelize, DataTypes);
@@ -415,6 +415,12 @@ export default function initModels(sequelize) {
   infob_hdm_sala.hasMany(infob_hdm_chat, { as: "infob_hdm_chats", foreignKey: "id_HDM_sala"});
   infob_hdm_chat.belongsTo(infob_hdm_usuario, { as: "id_HDM_usuario_infob_hdm_usuario", foreignKey: "id_HDM_usuario"});
   infob_hdm_usuario.hasMany(infob_hdm_chat, { as: "infob_hdm_chats", foreignKey: "id_HDM_usuario"});
+  infob_mw_tblistaitem.belongsTo(infob_mw_filmes, { as: "id_filme_infob_mw_filme", foreignKey: "id_filme"});
+  infob_mw_filmes.hasMany(infob_mw_tblistaitem, { as: "infob_mw_tblistaitems", foreignKey: "id_filme"});
+  infob_mw_tblistaitem.belongsTo(infob_mw_tblista, { as: "id_lista_infob_mw_tblistum", foreignKey: "id_lista"});
+  infob_mw_tblista.hasMany(infob_mw_tblistaitem, { as: "infob_mw_tblistaitems", foreignKey: "id_lista"});
+  infob_mw_tblista.belongsTo(infob_mw_usuario, { as: "id_usuario_infob_mw_usuario", foreignKey: "id_usuario"});
+  infob_mw_usuario.hasMany(infob_mw_tblista, { as: "infob_mw_tblista", foreignKey: "id_usuario"});
   infoc_jdf_cliente.belongsTo(infoc_jdf_cartao, { as: "id_cartao_infoc_jdf_cartao", foreignKey: "id_cartao"});
   infoc_jdf_cartao.hasMany(infoc_jdf_cliente, { as: "infoc_jdf_clientes", foreignKey: "id_cartao"});
   infoc_jdf_pedido.belongsTo(infoc_jdf_cliente, { as: "id_cliente_infoc_jdf_cliente", foreignKey: "id_cliente"});
@@ -603,12 +609,12 @@ export default function initModels(sequelize) {
     infob_hdm_mapa,
     infob_hdm_sala,
     infob_hdm_usuario,
-    infob_mw_atores,
-    infob_mw_comentarios,
-    infob_mw_filme_usuario,
     infob_mw_filmes,
-    infob_mw_lista,
-    infob_mw_lista_item,
+    infob_mw_tbatores,
+    infob_mw_tbcomentarios,
+    infob_mw_tbfilmeusu,
+    infob_mw_tblista,
+    infob_mw_tblistaitem,
     infob_mw_usuario,
     infoc_atn_tb_chat,
     infoc_atn_tb_configuracoes_empresa,
