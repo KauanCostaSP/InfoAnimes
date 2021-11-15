@@ -93,7 +93,45 @@ p{
     font-size: 15px;
 }
 
+button{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font: 24px fonte-100;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
+@media screen and (max-width: 768px) {
 
+    *{
+        text-align: center;
+    }
+
+    .titulo-terms{
+        font: 21px fonte-300;
+    }
+
+    .texto{
+        margin: 20px 40px;
+    }
+
+    p{
+        font: 14px fonte-100;
+    }
+
+    .titulo-compromisso{
+        font: 21px fonte-300;
+    }
+
+    .titulo-informacoes{
+        font: 21px fonte-300;
+    }
+
+    button{
+        font: 14px fonte-100;
+    }
+
+}
 `
 export {Container}

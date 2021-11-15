@@ -1,6 +1,7 @@
 import Cabecalho from "../../../components/cabecalho"
 import Rodape from "../../../components/rodapé"
 import { Container } from "./styled"
+import { Link } from 'react-router-dom'
 export default function Termos() {
     return(
 
@@ -14,7 +15,7 @@ export default function Termos() {
                 ou comentários sobre estes termos de uso entre em contato conosco, através do nosso email infoanimes123@gmail…</p>
                 <p>Os termos de uso são um contrato entre os criadores e os usuários caso você não concorde ou não queira 
                 seguir o mesmo você não terá acesso a nossos serviços. Estas regras permaneceram em vigor enquanto você utilizar nossos serviços,
-                incluido as de <button>Política de Privacidade</button>. </p>
+                incluido as de <Link ClassName="botao-politica" to="/politica"> <button>Política de Privacidade  </button> </Link> </p>
                 <p>Esses termos correm o risco de mudar pois estamos em constante mudança e sempre a procura de melhoramentos,
                     pois nós (INFOAnimes) temos esse direito de fazer alterações mas caso iso ocorra os usuarios seram notificados
                     com antecedencia para que os mesmos possam ler e concordar para continuar usando. Você como usuario tem o direito 
