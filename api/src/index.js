@@ -44,7 +44,36 @@ app.post('/login', async (req, resp) => {
 
 
 
-//Endpoints /cadastrar
+
+
+
+
+
+
+//Endpoints /usuario 
+
+
+
+
+
+
+
+
+
+
+
+
+app.get('/usuario', async (req, resp) => {
+try{
+    
+    let r = await db.infod_tif_usuario.findAll()
+
+    resp.send(r)
+
+} catch (e) {
+    resp.send({ error: e.toString() })
+}
+})
 
 
 
@@ -74,27 +103,6 @@ app.post('/usuario', async (req, resp) => {
 
 
 
-//Endpoints /usuario 
-
-
-
-
-
-
-
-
-app.get('/usuario', async (req, resp) => {
-try{
-    
-    let r = await db.infod_tif_usuario.findAll()
-
-    resp.send(r)
-
-} catch (e) {
-    resp.send({ error: e.toString() })
-}
-})
-
 
 
 app.put('/usuario/:id', async (req, resp) => {
@@ -111,7 +119,7 @@ app.put('/usuario/:id', async (req, resp) => {
             ds_telefone: telefone,
             ds_perfil: perfil
         })
-
+        
         resp.send(r)
 
     } catch (e) {
