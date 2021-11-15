@@ -133,7 +133,6 @@ export default function Catalogo(props) {
                             <div className="nick_postado">$as4Midori</div>
                             <div className="data_postado">2 dias atrás</div>
                         </div>
-                        <div className="responder">Responder</div>
                         
                     </div>
 

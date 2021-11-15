@@ -1,10 +1,15 @@
 import db from './db.js';
 import express from 'express';
 import cors from 'cors';
+import Sequelize from 'sequelize';
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const Router = express.Router
+const app = Router();
+const { Op, col, fn } = Sequelize;
 
 
 
@@ -112,14 +117,18 @@ app.put('/usuario/:id', async (req, resp) => {
         
         let idUsu = await db.infod_tif_usuario.findOne({where: {id_usuario: id}})
 
-        let { nome, email, senha, telefone, perfil } = req.body;
+        let { nome, email, senha, telefone, perfil, biografia, fundo, genero } = req.body;
 
         let r = await db.infod_tif_usuario.update({
             nm_usuario: nome,
             ds_email: email,
             ds_senha: senha,
             ds_telefone: telefone,
-            ds_perfil: perfil
+            dt_criacao: new Date(),
+            ds_perfil: perfil,
+            ds_biografia: biografia,
+            ds_fundo: fundo,
+            ds_genero: genero
         })
         
         resp.send(r)
