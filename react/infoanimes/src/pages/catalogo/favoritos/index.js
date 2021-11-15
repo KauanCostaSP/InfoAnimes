@@ -3,6 +3,13 @@ import Cabecalho from "../../../components/cabecalho"
 import Anime from "../../../components/catalogo 1/favoritos"
 import { Container } from "./styled"
 
+import { useState, useEffect } from "react";
+import { useHistory } from "react-router";
+import Cookies from 'js-cookie';
+import Api from "../../service/api";
+const api = new Api();
+
+
 export default function Favoritos() {
     return (
         <Container>
