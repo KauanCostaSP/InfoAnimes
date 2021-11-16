@@ -306,7 +306,7 @@ app.get('/comentarios/:id', async (req, resp) => {
         
         let anime = await db.infod_tif_comentario.findOne({ where: { id_anime: req.params.id } })
 
-        let comentarios = await db.infod_tif_comentario.findAll({where: {id_anime: anime}})
+        let comentarios = await db.infod_tif_comentario.findAll({where: {id_anime: anime.id_anime}})
         
         resp.send(comentarios)
 

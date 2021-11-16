@@ -13,7 +13,7 @@ const Api = new api();
 export default function Catalogo(props) {
     const [anime] = useState(props.location.state)
     const [comentarios, setComentarios] = useState([]);
-    const [idAnime, setIdAnime] = useState(anime.id_anime)
+    const [idAnime, setIdAnime] = useState(Number(anime.id_anime))
     const [comentario, setComentario] = useState('')
 
     
@@ -49,7 +49,9 @@ export default function Catalogo(props) {
             <div className="catalogo" >
             <div className="adi_fav"><img src="/assets/images/icon (1).svg" alt="adicionar a favoritos" /></div>
 
-            <div className="info_basica" style={{backgroundImage: anime.ds_capa}}>
+                <div className="info_basica" >
+                    
+                    <img src={anime.ds_capa} />
 
                 <div className="info_b">
 
