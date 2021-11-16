@@ -188,6 +188,40 @@ background-repeat: no-repeat;
 }
 
 
+@media screen and (max-width: 768px) {
+
+    #retangulo{
+        padding: 3em 1em 3em 1em;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texto-esqueci-senha{
+        text-align: center;
+        font: 1em fonte-100;
+    }
+
+    .campo-email input{
+        font: 0.6em fonte-100;
+    }
+
+    .campo-senha input{
+        font: 0.6em fonte-100;
+    }
+
+    .entrar button{
+        font: 10px fonte-100;
+    }
+
+
+    .esqueci-senha div{
+        font: 0.6em fonte-100;
+    }
+}
+
+
+
+
 `
 
 export {Container}

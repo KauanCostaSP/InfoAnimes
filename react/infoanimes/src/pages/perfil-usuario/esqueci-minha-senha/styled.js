@@ -36,7 +36,7 @@ const Container = styled.div`
     flex-direction: row;
 }
 
-.conteudo-login{
+.conteudo-esqueci-senha{
     display: flex;
     flex-direction: column;
     background-color: #0e0e0e;
@@ -187,6 +187,44 @@ background-repeat: no-repeat;
     transition: 0.3s;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+
+
+    .conteudo-esqueci-senha{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #retangulo{
+        padding: 3em 1em 3em 1em;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .texto-esqueci-senha{
+        text-align: center;
+        font: 0.9em fonte-100;
+    }
+
+    .campo-email input{
+        font: 0.6em fonte-100;
+    }
+
+    .campo-senha input{
+        font: 0.6em fonte-100;
+    }
+
+    .enviar button{
+        font: 10px fonte-100;
+    }
+
+
+    .esqueci-senha div{
+        font: 0.6em fonte-100;
+    }
+}
+
 
 
 `

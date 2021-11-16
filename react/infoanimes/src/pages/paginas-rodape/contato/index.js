@@ -1,7 +1,6 @@
 import Cabecalho from "../../../components/cabecalho"
 import Rodape from "../../../components/rodapé"
 import { Container } from "./styled"
-import { Link } from 'react-router-dom'
 export default function Termos() {
     return(
 

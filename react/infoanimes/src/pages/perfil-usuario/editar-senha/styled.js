@@ -12,7 +12,7 @@ const Container=styled.div`
     flex-direction: row;
 }
 
-.conteudo-login{
+.conteudo-editar{
     display: flex;
     flex-direction: column;
     background-color: #0e0e0e;
@@ -53,17 +53,14 @@ const Container=styled.div`
 .usuario{
     color: white;
     font: 1.5em fonte-100;
-    text-align: none;
-    padding-bottom: 0.8em;
-    margin-right: 8em;
+    text-align: left;
     }
     
     .usuario img{
         height: 2em;
-        padding-right: 10px
+        padding-right: 10px;
+        filter: invert(100%) sepia(13%) saturate(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
     }
-
-
 
 .campo-email{
     margin: 1em 0px 0px 0em;
@@ -98,8 +95,8 @@ background-position: 15px 10px;
 background-repeat: no-repeat;
 }
 
-.alterar-div{
-    padding-bottom: 2em;
+.alterar{
+    text-align: center;
 }
 
 .alterar button{
@@ -109,11 +106,10 @@ background-repeat: no-repeat;
     position: relative;
     background-color: #373737;
     border: none;
-    width: 17em;
+    width: 30em;
     height: 3em;
     margin-top: 2.5em;
     border: none;
-    margin-right: 14em;
 }
 
 .alterar button:hover{
@@ -168,6 +164,33 @@ background-repeat: no-repeat;
     transition: 0.3s;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+
+    .usuario{
+        text-align: center;
+    }
+
+    #retangulo{
+        padding: 3em 1em 3em 1em;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .campo-email input{
+        font: 0.6em fonte-100;
+    }
+
+    .campo-senha input{
+        font: 0.6em fonte-100;
+    }
+
+    .alterar button{
+        font: 12px fonte-100;
+            width: 25em;
+        }
+    }
+
 
 `
 export{Container}

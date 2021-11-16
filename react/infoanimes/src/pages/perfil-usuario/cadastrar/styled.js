@@ -180,11 +180,6 @@ background-position: 15px 10px;
 background-repeat: no-repeat;
 }
 
-
-.botao-criar-conta{
-   
-}
-
 .botao-criar-conta{
     text-align: center;
     padding-top: 2em;
@@ -207,6 +202,68 @@ cursor: pointer;
 padding: 13px 70px;
 transition: 0.3s;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .Container{
+        flex-direction: column;
+    }
+   
+    .box-left{
+        width: 100vw;
+        color: white;
+    }
+
+    .titulo-left{
+        font: 1.7em fonte-300;
+    }
+
+
+    .sub-titulo-left{
+        font: 0.9em fonte-200;
+    }
+
+    .botao-login button{
+        padding: 7px 50px;
+        font: 16px fonte-300;
+    }
+
+
+    .titulo-right{
+        font: 1.5em fonte-300;
+    }
+
+    .sub-titulo-right{
+        font: 1em fonte-50;
+    }
+
+    .campo-usuario input{
+       font: 0.6em fonte-100;
+    }
+
+    .campo-email input{
+        font: 0.6em fonte-100;
+    }
+
+    .campo-senha input{
+        font: 0.6em fonte-100;
+    }
+
+    .campo-senha-repetida input{
+        font: 0.6em fonte-100;
+    }
+
+    .botao-criar-conta button{
+        padding: 10px 50px;
+        font: 15px fonte-300;
+    }
+
+}
+
+
+
+
 `
 
 export {Container}
