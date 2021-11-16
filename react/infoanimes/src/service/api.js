@@ -1,6 +1,6 @@
 import axios from 'axios'
 const api = axios.create({
-    baseURL: 'https://infoanimes.herokuapp.com'
+    baseURL: 'https://infoanimes.netlify.app/'
 })
 
 export default class Api {
