@@ -7,8 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const Router = express.Router
-const app = Router();
+
 const { Op, col, fn } = Sequelize;
 
 
