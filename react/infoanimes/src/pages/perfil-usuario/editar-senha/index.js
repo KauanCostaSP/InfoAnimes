@@ -5,7 +5,7 @@ export default function EditarSenha() {
         <Container>
         
         <div className="Container">
-        <Link className="voltar-home" to="/cadastrar"> <img className="img-voltar" src="../../../assets/images/seta-esquerda (1).png" alt="" /> </Link> 
+        <Link className="voltar-home" to="/perfil-nao-logado"> <img className="img-voltar" src="../../../assets/images/seta-esquerda (1).png" alt="" /> </Link> 
         <div className="conteudo-editar">
         <div id="retangulo">
         <div className="usuario"> <img src="../../../assets/images/usuario-nao-logado.png" alt="Foto de Perfil"/> (Usuário) </div>
