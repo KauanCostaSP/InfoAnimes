@@ -10,6 +10,7 @@ import { Container } from './styled'
 import { Link } from 'react-router-dom';
 import api from '../../../service/api'
 import { useState, useRef } from 'react'
+import { useEffect } from 'react';
 const Api = new api();
 
 
@@ -33,7 +34,7 @@ export default function SaibaMais() {
     }
 
 
-   
+    useEffect (()=>{listar()},[])
    
    
     return (
@@ -45,7 +46,7 @@ export default function SaibaMais() {
             <div className="back">
             <div className="cabecalho-corpo">
                 <div className="barrinha"></div>
-                <div className="titulo" onClick={listar}> Clássicos </div>
+                <div className="titulo"> Clássicos </div>
                 <Link className="icone" to="/publi_catalogo"><button ><img src="../../../assets/images/Menu.ico" alt="" /></button> </Link>
             </div>
 
