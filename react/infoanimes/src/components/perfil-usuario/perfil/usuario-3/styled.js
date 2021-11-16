@@ -9,15 +9,15 @@ justify-content: center;
 align-items: center;
 text-align: center;
 background-color: #0d0d0d;
-height: 100vh;
 
 .box-1{
    background-image: url(../../../assets/images/fundo-config-2.png);
-   margin-top: 10em;
+   margin-top: 5em;
    margin-bottom: 5em;
-   background-repeat: no-repeat;
    padding: 5em 7em 4em 7em;
    transition: 0.7s;
+   max-width: 100%;
+   height: auto;
 }
 
 .box-1:hover{
@@ -38,13 +38,6 @@ height: 100vh;
    flex-direction: row;
 }
 
-
-.menu_box-1 img{
-   display: flex;
-   flex-direction: row;
-   height: 3.5em;
-   margin-left: 54em;
-}
 
 .criar{
    margin-left: 50em;
@@ -318,7 +311,51 @@ height: 100vh;
   background-repeat: no-repeat;
   }
 
+  @media screen and (max-width: 768px) {
 
+   .box-1{
+      padding: 2em 2em 2em 2em;
+   }
+
+
+   .perfil_box-1 img{
+      height: 70px;
+      width: 70px;
+   }
+
+   .alterar button{
+      font-size: 10px;
+   }
+     
+     .campo-nome input, .campo-usuario input, .campo-biografia input, .campo-email input, .campo-telefone input, .campo-genero input{
+     font: 0.5em fonte-100;
+     padding: 15px 60px 15px 15px;
+     }
+
+     .botoes_box-1{
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      margin-left: 0em;
+      margin-top: 2em;
+   }
+   
+   .botao_voltar button{
+      font-size: 10px;
+      padding: 5px 30px 5px 30px;
+      margin-right: 3em;
+   }
+   
+   .botao_desativar button{
+      font-size: 10px;
+      padding-left: 9em;
+   }
+
+   .box-1:hover{
+      box-shadow: 0px 0px 0px #A245FF;
+   }
+
+   }
 
 `
 

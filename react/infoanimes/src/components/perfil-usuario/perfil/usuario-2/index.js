@@ -8,7 +8,7 @@ export default function Index () {
 
         <div className="box-1"> 
             <div className="cabecalho_box-1">
-                <Link className="menu_box-1"> <img src="../../../assets/images/menu.jpg" alt="" /></Link>
+                <Link className="menu_box-1" to="/editarsenha"> <img src="../../../assets/images/menu.jpg" alt="" /></Link>
             </div>
 
             <div className="usuario_box-1">

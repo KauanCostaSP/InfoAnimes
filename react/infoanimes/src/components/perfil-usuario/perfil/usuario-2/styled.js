@@ -9,7 +9,6 @@ justify-content: center;
 align-items: center;
 text-align: center;
 background-color: #0d0d0d;
-height: 100vh;
 
 .box-1{
    
@@ -32,10 +31,6 @@ height: 100vh;
    flex-direction: row;
    height: 3.5em;
   margin-left: 54em;
-}
-
-.criar{
-   margin-left: 50em;
 }
 
 .usuario_box-1{
@@ -299,16 +294,80 @@ height: 100vh;
 
 
 
+@media screen and (max-width: 768px) {
+
+   .box-1{
+      max-width: 100%;
+      min-height: 26em;
+      margin-top: 2em;
+   }
+
+   .menu_box-1 img{
+      height: 2.5em;
+     margin-left: 18em;
+   }
+
+
+   .perfil_box-1 img{
+      text-align: center;
+      filter: invert(100%) sepia(13%) saturate(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
+      height: 70px;
+      width: 70px;
+   }
+
+
+
+   .entrar button{
+      font-size: 10px;
+   }
 
 
 
 
+   .botoes_box-1{
+      display: flex;
+      flex-direction: row;
+      margin-left: 5em;
+   }
+   
+   .botao_editar button{
+      font-size: 10px;
+      padding: 5px 20px 5px 20px;
+      margin-right: 3em;
+   }
+   
+   .botao_chat img{
+      height: 1.5em;
+      margin-right: 5px;
+   }
+   
+   .botao_chat button{
+      font-size: 10px;
+      padding: 5px 20px 5px 20px;
+   }
+
+   .box-2{
+      padding: 2em 2em 5em 0em;
+      max-width: 100%;
+      margin-top: 3.5em;
+      
+   }
 
 
+   .text-retangulo-branco{
+      font: 14px Montserrat-Medium;
+   }
 
+    
+    .descricao{
+       font: 12px Montserrat-Regular;
+    }
 
+    .chats{
+      font: 12px Montserrat-Regular;
+   }
 
-
+   }
 
 
 `
