@@ -1,6 +1,6 @@
 import Rodape from "../../../components/rodapé"
 import Cabecalho from "../../../components/cabecalho"
-import Anime from "../../../components/catalogo 1/favoritos"
+import BoxSaibaMais from '../../../components/catalogo 1/saiba-mais/box-anime'
 import { Container } from "./styled"
 
 import { useState, useEffect } from "react";
@@ -58,17 +58,10 @@ export default function Favoritos() {
             </div>
 
             <div className="animes">
-                        <Anime
-                            img={}
-                            nome={}
-                        />
 
-                    {favoritos.map(anime =>
-                        <BoxProduto
-                            key={item.id}
-                            info={item} />
+                    {favoritos.map((i) =>
+                        <BoxSaibaMais info={i}/>
                     )}
-                <div className="anime"><img src="../../../assets/images/Evangelion.png" alt="Evangelion"/><div className="titulo"><a href="../../CATALOGO/pagina-catalogo/index_evangelion.html" >Neon Genesis...</a></div></div>
             </div>
             </div>
             </div>
