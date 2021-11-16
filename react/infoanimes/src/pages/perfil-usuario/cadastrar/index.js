@@ -50,7 +50,7 @@ export default function Registrar() {
             }
         }
     }
-    
+
     return (
         <Container>
             <ToastContainer backgrround-color="#000"/>
