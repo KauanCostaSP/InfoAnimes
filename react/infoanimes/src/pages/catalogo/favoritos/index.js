@@ -6,7 +6,7 @@ import { Container } from "./styled"
 import { useState, useEffect } from "react";
 import { useHistory } from "react-router";
 import Cookies from 'js-cookie';
-import Api from "../../service/api";
+import Api from "../../../service/api";
 const api = new Api();
 
 
