@@ -2,7 +2,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LoadingBar from 'react-top-loading-bar'
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import Cabecalho from "../../../components/cabecalho"
 import Rodape from "../../../components/rodapé"
 import { Container } from "./styled"
@@ -20,7 +20,7 @@ export default function Catalogo(props) {
     const loading = useRef(null);
 
 
-    const listarcomentarios = async () => {
+    async function listarcomentarios() {
         loading.current.continuousStart()
        
         let resp = await Api.listarcoment(idAnime);
@@ -29,6 +29,8 @@ export default function Catalogo(props) {
 
         loading.current.complete()
     }
+
+    
 
     const adicionarcoment = async () => {
         loading.current.continuousStart()
@@ -40,6 +42,8 @@ export default function Catalogo(props) {
 
         listarcomentarios();
     }
+
+    useEffect (()=>{listarcomentarios()},[])
 
     return (
         <Container>
@@ -119,7 +123,7 @@ export default function Catalogo(props) {
                 <div className="frase">Lembre-se de manter o respeito nos comentários e seguir nossas diretrizes da comunidade</div>
 
                     
-                    <div><button onClick={listarcomentarios}>Carregar comentarios</button></div>
+                    
 
                 <div className="novo_coment">
                     <div className="perfil"><img src="../../../assets/images/perfil_ket_otaku.png" height="49" width="57" alt="Perfil usuario" /></div>
