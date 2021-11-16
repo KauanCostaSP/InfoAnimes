@@ -51,7 +51,7 @@ export default function SaibaMais() {
 
             <div className="conteudo">
                 
-                  {animes.map((i) => 
+                    {animes.map((i) => 
                       <BoxSaibaMais info={i}/>
                     )}
             </div>

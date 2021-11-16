@@ -1,10 +1,14 @@
 import db from './db.js';
 import express from 'express';
 import cors from 'cors';
+import Sequelize from 'sequelize';
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+
+const { Op, col, fn } = Sequelize;
 
 
 
@@ -112,14 +116,18 @@ app.put('/usuario/:id', async (req, resp) => {
         
         let idUsu = await db.infod_tif_usuario.findOne({where: {id_usuario: id}})
 
-        let { nome, email, senha, telefone, perfil } = req.body;
+        let { nome, email, senha, telefone, perfil, biografia, fundo, genero } = req.body;
 
         let r = await db.infod_tif_usuario.update({
             nm_usuario: nome,
             ds_email: email,
             ds_senha: senha,
             ds_telefone: telefone,
-            ds_perfil: perfil
+            dt_criacao: new Date(),
+            ds_perfil: perfil,
+            ds_biografia: biografia,
+            ds_fundo: fundo,
+            ds_genero: genero
         })
         
         resp.send(r)
@@ -296,9 +304,9 @@ app.delete('/catalogo/:id', async (req, resp) => {
 app.get('/comentarios/:id', async (req, resp) => {
     try {
         
-        let anime = await db.infod_tif_animes.findOne({ where: { id_anime: req.params.id } })
+        let anime = await db.infod_tif_comentario.findOne({ where: { id_anime: req.params.id } })
 
-        let comentarios = await db.infod_tif_comentario.findAll({ where: { id_anime: anime.id_anime } })
+        let comentarios = await db.infod_tif_comentario.findAll({where: {id_anime: anime}})
         
         resp.send(comentarios)
 
@@ -310,19 +318,35 @@ app.get('/comentarios/:id', async (req, resp) => {
 
 
 
+app.get('/comentarios', async (req, resp) => {
+    try {
+        
+      
 
-app.post('/comentarios/:id', async (req, resp) => {
+        let comentarios = await db.infod_tif_comentario.findAll()
+        
+        resp.send(comentarios)
+
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+})
+
+
+
+
+app.post('/comentarios', async (req, resp) => {
     try {
 
         
-        let {comentario} = req.body;
+        let {comentario, idzinho} = req.body;
         
-        let anime = await db.infod_tif_animes.findOne({ where: { id_anime: req.params.id } })
+        
         
 
         let r = {
          
-            id_anime: anime,
+            id_anime: idzinho,
             ds_comentario: comentario,
             dt_comentario: new Date()
 
@@ -483,21 +507,108 @@ app.delete('/chat/:id', async (req, resp) => {
 //Endpoints /favoritos 
 
 
+
+
+
+app.get('/favorito', async (req, resp) => {
+    try {
+        let f = await db.infod_tif_favoritos.findAll({
+            where: {id_usuario: Number(req.query.usuario)},
+            atributes: [
+                ['id_favorito', 'id_favorito'],
+                [col('id_anime_infod_tif_animes.id_anime'), 'id'],
+                [col('id_anime_infod_tif_animes.nm_anime'), 'anime'],
+                [col('id_anime_infod_tif_animes.ds_classificação'), 'classificacao'],
+                [col('id_anime_infod_tif_animes.ds_temporadas'), 'temporadas'],
+                [col('id_anime_infod_tif_animes.ds_genero'), 'genero'],
+                [col('id_anime_infod_tif_animes.ds_estrelando'), 'estrelando'],
+                [col('id_anime_infod_tif_animes.ds_sinopse'), 'sinopse'],
+                [col('id_anime_infod_tif_animes.ds_sobre'), 'sobre'],
+                [col('id_anime_infod_tif_animes.ds_enredo'), 'enredo'],
+                [col('id_anime_infod_tif_animes.de_capa'), 'capa'],
+                [col('id_anime_infod_tif_animes.dt_ano'), 'ano'],
+                [col('id_anime_infod_tif_animes.ds_video1'), 'video1'],
+                [col('id_anime_infod_tif_animes.ds_video2'), 'video2'],
+                [col('id_anime_infod_tif_animes.ds_imagem'), 'imagem']
+            ],
+            order: [
+                ['id_favorito', 'desc']
+            ],
+            include: [
+                {
+                    model: db.infod_tif_animes,
+                    as: 'id_anime_infod_tif_animes',
+                    required: true
+                }
+            ]
+        });
+
+        resp.send(f);
+    } catch (e) {
+        resp.send({ erro: e.toString() })
+    }
+})
+
+
+
+
+
+
 app.post('/favorito', async (req, resp) => {
     try {
         
-        let { id_usu, id_anime } = req.body;
+        let { usu, anime } = req.body;
 
         let f = await db.infod_tif_favoritos.create(
             {
-                id_usuario: id_usu,
-                id_anime: id_anime
+                id_usuario: usu,
+                id_anime: anime
             }
         )
         resp.send(f)
 
-    } catch (e) {
+    } catch (f) {
+        resp.send({ erro: f.toString() })
+    }
+})
+
+
+
+
+
+app.put('/favorito/:id', async (req, resp) => {
+    try {
+        let { usu, anime } = req.body;
+        let{ id } = req.params;
+
+        let i = await db.infod_tif_favoritos.update(
+            {
+                id_usuario: usu,
+                id_anime: anime
+            },
+            {
+                where: { id_favorito: id }
+            }
+        )
         
+        resp.sendStatus(200);
+    } catch (i) {
+        resp.send({ erro: b.toString() })
+    }
+} )
+
+
+
+
+
+
+app.delete('/:id' , async ( req, resp ) => {
+    try {
+        let { id } = req.params;
+        let r = await db.infod_tif_favoritos.destroy({ where: { id_favorito: id } })
+        resp.sendStatus(200);
+    } catch (e) {
+        resp.send({ erro: e.toString() })
     }
 })
 

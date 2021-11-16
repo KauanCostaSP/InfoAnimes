@@ -14,6 +14,8 @@ export default function Catalogo(props) {
     const [anime] = useState(props.location.state)
     const [comentarios, setComentarios] = useState([]);
     const [idAnime, setIdAnime] = useState(anime.id_anime)
+    const [comentario, setComentario] = useState('')
+
     
     const loading = useRef(null);
 
@@ -26,6 +28,17 @@ export default function Catalogo(props) {
         setComentarios(resp)
 
         loading.current.complete()
+    }
+
+    const adicionarcoment = async () => {
+        loading.current.continuousStart()
+
+        let resp = await Api.adicionarcoment(comentario, idAnime)
+        console.log(idAnime)
+
+        loading.current.complete();
+
+        listarcomentarios();
     }
 
     return (
@@ -108,7 +121,8 @@ export default function Catalogo(props) {
 
                 <div className="novo_coment">
                     <div className="perfil"><img src="../../../assets/images/perfil_ket_otaku.png" height="49" width="57" alt="Perfil usuario" /></div>
-                    <div className="adicionar"> <textarea name="adi" id="adi" cols="30" rows="10" placeholder="Adicionar um comentário público..." ></textarea><hr /></div>
+                    <div className="adicionar"> <textarea name="adi" id="adi" cols="30" rows="10" placeholder="Adicionar um comentário público..." value={comentario} onChange={e => setComentario(e.target.value)} ></textarea><hr /></div>
+                    <div> <button onClick={adicionarcoment}> enviar</button> </div>    
                 </div>
 
                 <div className="coment_postado">
@@ -119,7 +133,6 @@ export default function Catalogo(props) {
                             <div className="nick_postado">$as4Midori</div>
                             <div className="data_postado">2 dias atrás</div>
                         </div>
-                        <div className="responder">Responder</div>
                         
                     </div>
 
