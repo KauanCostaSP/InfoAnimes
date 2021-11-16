@@ -20,7 +20,7 @@ export default function Catalogo(props) {
     const loading = useRef(null);
 
 
-    async function listarcomentarios() {
+   /* async function listarcomentarios() {
         loading.current.continuousStart()
        
         let resp = await Api.listarcoment(idAnime);
@@ -44,6 +44,7 @@ export default function Catalogo(props) {
     }
 
     useEffect (()=>{listarcomentarios()},[])
+    */
 
     return (
         <Container>
@@ -128,7 +129,7 @@ export default function Catalogo(props) {
                 <div className="novo_coment">
                     <div className="perfil"><img src="../../../assets/images/perfil_ket_otaku.png" height="49" width="57" alt="Perfil usuario" /></div>
                     <div className="adicionar"> <textarea name="adi" id="adi" cols="30" rows="10" placeholder="Adicionar um comentário público..." value={comentario} onChange={e => setComentario(e.target.value)} ></textarea><hr /></div>
-                    <div> <button onClick={adicionarcoment}> enviar</button> </div>    
+                {/*    <div> <button onClick={adicionarcoment}> enviar</button> </div> */ }
                 </div>
 
                 <div className="coment_postado">
