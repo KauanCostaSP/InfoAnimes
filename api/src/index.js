@@ -14,7 +14,6 @@ const { Op, col, fn } = Sequelize;
 
 
 
-
 //Endpoints /login
 
 
