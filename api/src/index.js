@@ -14,7 +14,6 @@ const { Op, col, fn } = Sequelize;
 
 
 
-
 //Endpoints /login
 
 
@@ -430,7 +429,8 @@ app.get('/chat/:id', async (req, resp) => {
 })
 
 
-/* get de teste, falta finalizar
+/* GET TESTE, FALTA FINALIZAR, APOSTO UM RIM QUE TÁ ERRADO
+
 app.get('/chat/:comunidade', async (req, resp) => {
     try {
         let sala = await db.tb_sala.findOne({ where: { nm_sala: req.params.sala } });

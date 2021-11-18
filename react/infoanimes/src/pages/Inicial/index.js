@@ -113,6 +113,16 @@ export default function inicio() {
                     />
 
                     <CardCatalogo
+                        img="/assets/images/Darlin.jpeg"
+                        desc="comp "
+                    />
+
+                    <CardCatalogo
+                        img="/assets/images/Darlin.jpeg"
+                        desc="comp "
+                    />
+
+                    <CardCatalogo
                             img="/assets/images/Darlin.jpeg"
                             desc="comp "
                     />

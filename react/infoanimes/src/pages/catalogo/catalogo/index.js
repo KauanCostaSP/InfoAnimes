@@ -20,7 +20,7 @@ export default function Catalogo(props) {
     const loading = useRef(null);
 
 
-   /* async function listarcomentarios() {
+    async function listarcomentarios() {
         loading.current.continuousStart()
        
         let resp = await Api.listarcoment(idAnime);
@@ -44,7 +44,7 @@ export default function Catalogo(props) {
     }
 
     useEffect (()=>{listarcomentarios()},[])
-    */
+    
 
     return (
         <Container>
