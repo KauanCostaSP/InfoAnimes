@@ -11,7 +11,7 @@ const Api = new api();
 
 
 export default function Catalogo(props) {
-    const [anime] = useState(props.location.state)
+    const [anime, setAnime] = useState(props.location.state)
     const [comentarios, setComentarios] = useState([]);
     const [idAnime, setIdAnime] = useState(Number(anime.id_anime))
     const [comentario, setComentario] = useState('')
