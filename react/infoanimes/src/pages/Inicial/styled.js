@@ -382,7 +382,7 @@ span{
     height: auto;
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.63);
+    background: rgba(0, 0, 0, 0.63);
     border-radius: 5px;
     box-shadow: 0 0 5em rgba(255, 255, 255, 0.726);
     top: 0px;
