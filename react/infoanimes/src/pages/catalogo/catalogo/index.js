@@ -1,8 +1,8 @@
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LoadingBar from 'react-top-loading-bar'
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import Cabecalho from "../../../components/cabecalho"
 import Rodape from "../../../components/rodapé"
 import { Container } from "./styled"
@@ -11,16 +11,16 @@ const Api = new api();
 
 
 export default function Catalogo(props) {
-    const [anime] = useState(props.location.state)
+    const [anime, setAnime] = useState(props.location.state)
     const [comentarios, setComentarios] = useState([]);
-    const [idAnime, setIdAnime] = useState(anime.id_anime)
+    const [idAnime, setIdAnime] = useState(Number(anime.id_anime))
     const [comentario, setComentario] = useState('')
 
     
     const loading = useRef(null);
 
 
-    const listarcomentarios = async () => {
+    async function listarcomentarios() {
         loading.current.continuousStart()
        
         let resp = await Api.listarcoment(idAnime);
@@ -29,6 +29,8 @@ export default function Catalogo(props) {
 
         loading.current.complete()
     }
+
+    
 
     const adicionarcoment = async () => {
         loading.current.continuousStart()
@@ -41,6 +43,9 @@ export default function Catalogo(props) {
         listarcomentarios();
     }
 
+   
+    
+
     return (
         <Container>
             <ToastContainer />
@@ -49,7 +54,9 @@ export default function Catalogo(props) {
             <div className="catalogo" >
             <div className="adi_fav"><img src="/assets/images/icon (1).svg" alt="adicionar a favoritos" /></div>
 
-            <div className="info_basica" style={{backgroundImage: anime.ds_capa}}>
+                <div className="info_basica" >
+                    
+                    <img src={anime.ds_capa} />
 
                 <div className="info_b">
 
@@ -117,12 +124,12 @@ export default function Catalogo(props) {
                 <div className="frase">Lembre-se de manter o respeito nos comentários e seguir nossas diretrizes da comunidade</div>
 
                     
-                    <div><button onClick={listarcomentarios}>Carregar comentarios</button></div>
+                    
 
                 <div className="novo_coment">
                     <div className="perfil"><img src="../../../assets/images/perfil_ket_otaku.png" height="49" width="57" alt="Perfil usuario" /></div>
                     <div className="adicionar"> <textarea name="adi" id="adi" cols="30" rows="10" placeholder="Adicionar um comentário público..." value={comentario} onChange={e => setComentario(e.target.value)} ></textarea><hr /></div>
-                    <div> <button onClick={adicionarcoment}> enviar</button> </div>    
+                {/*    <div> <button onClick={adicionarcoment}> enviar</button> </div> */ }
                 </div>
 
                 <div className="coment_postado">

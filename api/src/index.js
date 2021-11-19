@@ -14,7 +14,6 @@ const { Op, col, fn } = Sequelize;
 
 
 
-
 //Endpoints /login
 
 
@@ -306,7 +305,7 @@ app.get('/comentarios/:id', async (req, resp) => {
         
         let anime = await db.infod_tif_comentario.findOne({ where: { id_anime: req.params.id } })
 
-        let comentarios = await db.infod_tif_comentario.findAll({where: {id_anime: anime}})
+        let comentarios = await db.infod_tif_comentario.findAll({where: {id_anime: anime.id_anime}})
         
         resp.send(comentarios)
 
@@ -430,16 +429,37 @@ app.get('/chat/:id', async (req, resp) => {
 })
 
 
+/* GET TESTE, FALTA FINALIZAR, APOSTO UM RIM QUE TÁ ERRADO
 
-app.post('/chat/:id', async (req, resp) => {
+app.get('/chat/:comunidade', async (req, resp) => {
+    try {
+        let sala = await db.tb_sala.findOne({ where: { nm_sala: req.params.sala } });
+        if (sala == null)
+            return resp.send({ erro: 'Sala não existe!' });
+        
+        let mensagens = await
+            db.tb_chat.findAll({
+                where: {
+                    id_sala: sala.id_sala
+                },
+                order: [['id_chat', 'desc']],
+                include: ['tb_usuario', 'tb_sala'],
+            });
+    
+        resp.send(mensagens);
+    } catch (e) {
+        resp.send(e.toString())
+    }
+})*/
+
+
+
+app.post('/chat', async (req, resp) => {
     try {
         let { comunidade, usuario, mensagem } = req.body;
 
         if (usuario == null)
             return resp.send({ erro: 'Usuario não logado' });
-    
-        if (comunidade == null)
-            return resp.send({ erro: 'Sala não existe!' });
      
          if (!chat.mensagem || chat.mensagem.replace(/\n/g, '') == '')
             return resp.send({ erro: 'Mensagem é obrigatória!' });
@@ -602,13 +622,48 @@ app.put('/favorito/:id', async (req, resp) => {
 
 
 
-app.delete('/:id' , async ( req, resp ) => {
+app.delete('/favorito/:id' , async ( req, resp ) => {
     try {
         let { id } = req.params;
         let r = await db.infod_tif_favoritos.destroy({ where: { id_favorito: id } })
         resp.sendStatus(200);
     } catch (e) {
         resp.send({ erro: e.toString() })
+    }
+})
+
+
+
+
+
+
+//Endpoints /usuario_comunidade
+
+
+
+
+app.get('/usuario_comunidade', async ( req, resp ) => {
+    try {
+        
+        let usu_comunidade = await db.infod_tif_usuario_comunidade.findAll()
+
+        resp.send(usu_comunidade)
+
+    } catch (c) {
+        resp.send({ error: c.toString() })
+    }
+})
+
+
+
+
+app.delete('/usuario_comunidade', async (req, resp ) => {
+    try {
+        let { id } = req.params;
+        let c = await db.infod_tif_usuario_comunidade.destroy({ where: { id_usuario_comunidade: id } })
+        resp.sendStatus(200);
+    } catch (e) {
+        resp.send({ erro: e.toString() })        
     }
 })
 

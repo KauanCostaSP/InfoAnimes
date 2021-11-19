@@ -50,10 +50,10 @@ export default function Registrar() {
             }
         }
     }
-    
+
     return (
         <Container>
-            <ToastContainer backgrround-color="#000"/>
+            <ToastContainer background-color="#000"/>
             <LoadingBar color="#A245FF" ref={loading} />
         <div className="Container">
         <SetaVoltar/>
