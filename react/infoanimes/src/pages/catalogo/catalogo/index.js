@@ -1,4 +1,4 @@
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LoadingBar from 'react-top-loading-bar'
 
@@ -43,7 +43,7 @@ export default function Catalogo(props) {
         listarcomentarios();
     }
 
-    useEffect (()=>{listarcomentarios()},[])
+   
     
 
     return (
