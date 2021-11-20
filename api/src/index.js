@@ -93,7 +93,8 @@ app.post('/usuario', async (req, resp) => {
     let h = await db.infod_tif_usuario.create({
         nm_usuario: nome,
         ds_email: email,
-        ds_senha: senha
+        ds_senha: senha,
+        dt_criacao: new Date()
     })
 
     resp.send(h)

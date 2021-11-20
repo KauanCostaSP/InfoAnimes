@@ -1,8 +1,14 @@
 import { CabecalhoComp } from './styled';
 import { Link } from 'react-router-dom';
+import cookie from 'js-cookie';
+import { useState } from 'react';
 
 export default function index() {
-    return(
+    let logado = cookie.get('perfil-logado')
+    
+    
+
+    return (
         <CabecalhoComp>
             <div className="itens-start">
             <Link className="item-logo"to="/home"> <img src="/assets/images/logo.PNG" alt="" /> </Link>
