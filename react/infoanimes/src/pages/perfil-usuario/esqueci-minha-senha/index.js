@@ -8,7 +8,7 @@ export default function Registrar() {
         <Link className="voltar-home" to="/login"> <img className="img-voltar" src="../../../assets/images/seta-esquerda (1).png" alt="" /> </Link> 
         <div className="conteudo-esqueci-senha">   
         <div id="retangulo">
-                <div className="texto-esqueci-senha"> Insira seu email aqui em baixo, para nós recuperarmos <br/>  sua senha, e depois olhe sua caixa de entrada do email inserido! </div>
+                <div className="texto-esqueci-senha"> Para a recuperação da sua senha é necessario que insira o seu email</div>
                 <div className="campo-email"><input type="email" id="email" maxlength={32} placeholder="Email" size="40" /></div>
                 <div className="enviar"><button>Enviar</button></div>
                 

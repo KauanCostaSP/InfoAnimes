@@ -186,9 +186,10 @@ background-repeat: no-repeat;
 }
 
 .botao-criar-conta button{
-color: white;
+    color: white;
+    text-decoration: none;
 padding: 10px 60px;
-font: 20px fonte-300;
+font: 18px fonte-200;
 border-width: 2px;
 border-style: solid;
 background-color: #1f1f1f;
@@ -200,7 +201,10 @@ transition: 0.3s;
 .botao-criar-conta button:hover{
 cursor: pointer;
 padding: 13px 70px;
-transition: 0.3s;
+border: none;
+background: #FFFF;
+color: #561DFA;
+box-shadow: 0 0 50px #561DFA;
 }
 
 

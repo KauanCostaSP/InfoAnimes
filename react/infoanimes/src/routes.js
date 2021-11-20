@@ -20,6 +20,7 @@ import ConfigPerfilNaoLogado from  "./pages/perfil-usuario/configurar-perfil-nao
 import ConfigPerfilLogado from  "./pages/perfil-usuario/configurar-perfil-logado";
 import Contato from  "./pages/paginas-rodape/contato";
 
+
 export default function Routes() {
     return (
         <BrowserRouter>
