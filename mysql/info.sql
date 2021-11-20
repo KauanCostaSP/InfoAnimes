@@ -1,4 +1,4 @@
-CREATE TABLE infoD_tif_usuario_comunidade (
+  CREATE TABLE infoD_tif_usuario_comunidade (
     id_usuario_comunidade  int primary key auto_increment,
     id_usuario             int,
     id_comunidade          int,
