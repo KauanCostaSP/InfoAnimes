@@ -20,8 +20,8 @@ export default class Api {
 
     //perfil 
 
-    async alterarInformacoes(id, nome, email, senha, telefone, online, perfil) {
-        let r = await api.put(`/usuario/${id}`, {nome, email, senha, telefone, online, perfil})
+    async alterarInformacoes(id, nome, biografia, telefone, genero ) {
+        let r = await api.put(`/usuario/${id}`, {nome, biografia, telefone, genero })
         return r.data;
     }
 
