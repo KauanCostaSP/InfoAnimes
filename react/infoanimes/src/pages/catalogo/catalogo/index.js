@@ -74,16 +74,6 @@ export default function Catalogo(props) {
                         <div className="tit_gen">Genêros</div>
                         <div className="text_gen">{anime.ds_genero}</div>
                     </div>
-
-                    <div className="estrelando">
-                        <div className="tit_est">Estrelando</div>
-                        <div className="atores">
-                           <div className="est">
-                                {anime.ds_estrelando}
-                            </div>
-                        </div>
-                        
-                    </div>
                 </div>
 
                 <div className="sinopse">

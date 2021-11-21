@@ -213,14 +213,13 @@ app.get('/catalogo/:anime', async (req, resp) => {
 
 app.post('/catalogo', async (req, resp) => {
     try {
-        let { nome, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem } = req.body;
+        let { nome, classificacao, temporadas, genero, sinopse, sobre, enredo, capa, ano, video1, video2, imagem } = req.body;
 
     let a = await db.infod_tif_animes.create({
         nm_anime: nome,
         ds_classificação: classificacao,
         ds_temporadas: temporadas,
         ds_genero: genero,
-        ds_estrelando: estrelando,
         ds_sinopse: sinopse,
         ds_sobre: sobre,
         ds_enredo: enredo,
@@ -247,14 +246,13 @@ app.post('/catalogo', async (req, resp) => {
 app.put('/catalogo/:id', async (req, resp) => {
     try {
         
-        let { anime, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa,  ano, video1, video2 } = req.body;
+        let { anime, classificacao, temporadas, genero, sinopse, sobre, enredo, capa,  ano, video1, video2 } = req.body;
 
     let a = await db.infod_tif_animes.update({
         nm_anime: anime,
         ds_classificação: classificacao,
         ds_temporadas: temporadas,
         ds_genero: genero,
-        ds_estrelando: estrelando,
         ds_sinopse: sinopse,
         ds_sobre: sobre,
         ds_enredo: enredo,
