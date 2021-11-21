@@ -40,6 +40,8 @@ export default function Index() {
 
                 <div className="COMUNIDADES">
 
+                    <BoxComunidade />
+
                     <div class="comunidade">
                         <div className="titulo">Comunidade lgbtqia+</div>
                         <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
