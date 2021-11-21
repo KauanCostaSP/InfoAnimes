@@ -385,6 +385,10 @@ app.post('/comunidade', async (req, resp) => {
 
         let { capa, nome, id_usu, descricao } = req.body;
 
+        let s = await db.infod_tif_comunidade.findOne({ where: { nm_comunidade: nome } });
+        if (s != null)
+            return resp.send({ erro: 'Nome de Comunidade já usado!' });
+
         let r = await db.infod_tif_comunidade.create(
             {
                 ds_capa: capa,

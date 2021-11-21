@@ -40,6 +40,20 @@ export default function Index() {
 
                 <div className="COMUNIDADES">
 
+                <Link className="atalho_adm" to="/postagem-comunidade"> Provisório mas vai né </Link>
+                    <div> <button onClick={ListComun}> listar comunidades</button></div>
+
+                <div className="conteudo-comunidade">
+                    <div className="box1">
+
+                            {comunidades.map((i) => 
+                                <BoxComunidade comun={i}/>
+                    )}
+
+                   </div>
+
+                </div>
+
                     <div class="comunidade">
                         <div className="titulo">Comunidade lgbtqia+</div>
                         <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>

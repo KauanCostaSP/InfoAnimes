@@ -138,7 +138,7 @@ export default function Catalogo(props) {
 
                 </div>
             </div>
-        </div>
+            </div>
             <Rodape />
         </Container>
     )
