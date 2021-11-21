@@ -33,35 +33,148 @@ export default function Index() {
         <Container>
             <ToastContainer />
             <LoadingBar color="#A245FF" ref={loading} />
-        <Cabecalho />
+            <Cabecalho />
 
 
-        <div className="conteudo">
+             <div className="conteudo">
 
-            <div className="COMUNIDADES">
+                <div className="COMUNIDADES">
 
-                    <Link className="atalho_adm" to="/postagem-comunidade"> Provisório mas vai né </Link>
-                    <div> <button onClick={ListComun}> listar comunidades</button></div>
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
 
-                <div className="conteudo-comunidade">
-                    <div className="box1">
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
 
-                            {comunidades.map((i) => 
-                                <BoxComunidade comun={i}/>
-                    )}
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
 
-                 </div>
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
 
-    
-                   
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+
+                    <div class="comunidade">
+                        <div className="titulo">Comunidade lgbtqia+</div>
+                        <div className="imagem"><img src="../../../assets/videos/Evangelion.gif" /></div>
+                            <div className="acao">
+                                 <div className="entrar"> <button>Entrar</button></div>
+                            </div>
+                    </div>
+              
                 </div>
-            </div>
+                  
+             </div>
+             
+            
 
-        </div>
-        
-
-
-        <Rodape />
+             <Rodape />
     </Container>
     )
 }

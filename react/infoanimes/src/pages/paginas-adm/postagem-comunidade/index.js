@@ -44,7 +44,8 @@ export default function Postagem_comuni() {
             <ToastContainer />
             <LoadingBar color="#A245FF" ref={loading} />
     <div className="Container">
-        <Link className="voltar-home" to="/cadastrar"> <img className="img-voltar" src="../../../assets/images/seta-esquerda (1).png" alt="" /> </Link> 
+        
+        <Link className="voltar-home" to="/comunidades"> <img className="img-voltar" src="../../../assets/images/seta-esquerda (1).png" alt="" /> </Link> 
              <div className="conteudo-login">
                   <div id="retangulo">
                   <div className="add-capa"><input type="text" id="capa" size="40" placeholder="Capa (url)" value={capa} onChange={e => setCapa(e.target.value)} /></div>
@@ -53,6 +54,7 @@ export default function Postagem_comuni() {
                   <div className="botao"><button onClick={AdcComun}>Criar</button></div>
                   </div>
              </div>
+
     </div>
         </Container>
     )

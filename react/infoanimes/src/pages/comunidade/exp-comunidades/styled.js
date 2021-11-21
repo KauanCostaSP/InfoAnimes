@@ -2,7 +2,10 @@ import styled from "styled-components";
 
 const Container = styled.div`
     
-    background-color: #0d0d0d;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-image: url(../../../assets/images/back_favoritos.png);
+background-size: 1359px;
 
 
 
@@ -26,14 +29,16 @@ const Container = styled.div`
 
     .conteudo{
     display: flex;
+    background-image: linear-gradient(to bottom, #0e0e0ea8, #0d0d0d);
+    background-repeat: no-repeat;
    
 }
 
-.box1{
+.COMUNIDADES{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2.1em;
-    margin-top: 1em;
+    padding-left: .9em;
+    margin-top: 1.5em;
 }
 
 .entrar button{
@@ -101,18 +106,14 @@ const Container = styled.div`
      margin-left: 2em;
 }
 
-.COMUNIDADES{
-    margin-left: -30px;
-    padding-left: -10;
-}
-
 .capa{
     width: 120px;
 }
 
 
 .comunidade{
-    padding-left: 2.5em;
+    padding-left: 3em;
+    padding-top: 1em;
 }
 
 
