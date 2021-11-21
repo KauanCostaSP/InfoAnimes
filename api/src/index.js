@@ -14,7 +14,6 @@ const { Op, col, fn } = Sequelize;
 
 
 
-
 //Endpoints /login
 
 
@@ -94,7 +93,8 @@ app.post('/usuario', async (req, resp) => {
     let h = await db.infod_tif_usuario.create({
         nm_usuario: nome,
         ds_email: email,
-        ds_senha: senha
+        ds_senha: senha,
+        dt_criacao: new Date()
     })
 
     resp.send(h)
@@ -114,20 +114,18 @@ app.post('/usuario', async (req, resp) => {
 app.put('/usuario/:id', async (req, resp) => {
     try {
         
-        let idUsu = await db.infod_tif_usuario.findOne({where: {id_usuario: id}})
+        let id = req.params.id
 
-        let { nome, email, senha, telefone, perfil, biografia, fundo, genero } = req.body;
+        let { nome, telefone, biografia, genero } = req.body;
 
         let r = await db.infod_tif_usuario.update({
             nm_usuario: nome,
-            ds_email: email,
-            ds_senha: senha,
-            ds_telefone: telefone,
-            dt_criacao: new Date(),
-            ds_perfil: perfil,
             ds_biografia: biografia,
-            ds_fundo: fundo,
-            ds_genero: genero
+            ds_telefone: telefone,
+            ds_genero: genero,
+            dt_criacao: new Date() 
+        }, {
+            where: {id_usuario: id}
         })
         
         resp.send(r)

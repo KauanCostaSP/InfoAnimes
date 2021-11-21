@@ -23,7 +23,7 @@ const Catalogo = styled.div`
     }
 
     .capa :hover{
-        box-shadow: 0 0 .8em white;
+        box-shadow: 0 1em 10em #ffffff8c;
         border: none;
        
     }

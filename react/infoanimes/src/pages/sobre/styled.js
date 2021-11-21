@@ -140,13 +140,14 @@ a:hover{
     color: white;
     margin-right: 2em;
 }
-
 .informacoes{
     font-family: fonte-100;
     font-size: 18px;
     line-height: 22px;
     color: white;
+    width: 400px;
     text-align: center;
+    margin-left: 22em;
     margin-top: 3em;
     padding-bottom: 3em;
 }
@@ -154,7 +155,6 @@ a:hover{
 .informacoes b{
     text-decoration: underline;
     font-weight: lighter;
-    margin-left: 2em;
 }
 
 .informacoes span{

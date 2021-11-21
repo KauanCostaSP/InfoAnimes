@@ -1,4 +1,4 @@
-CREATE TABLE infoD_tif_usuario_comunidade (
+  CREATE TABLE infoD_tif_usuario_comunidade (
     id_usuario_comunidade  int primary key auto_increment,
     id_usuario             int,
     id_comunidade          int,
@@ -58,11 +58,12 @@ CREATE TABLE infoD_tif_usuario_comunidade (
 
   CREATE TABLE infoD_tif_comunidade (
   id_comunidade            int primary key auto_increment,
-  id_usuario               int,
+  id_usuario_comunidade    int,
   ds_capa                  varchar(1555),
   nm_comunidade            varchar(255),
   ds_descricao             varchar(2555),
   dt_criacao               datetime,
+  ds_comunidade_imagem     varchar(2555),
   foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE
   )ENGINE=InnoDB;
   

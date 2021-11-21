@@ -53,7 +53,7 @@ export default function Favoritos() {
             <div className="back">               
             <div className="user"> 
                 <span className="perfil"><a href="../../PERFIL-USUARIO/perfil/index.html"><img src="../../../assets/images/perfil_ket_otaku.png" alt="perfil"/></a></span>
-                <div className="nick"> value={usu.nm_usuario} </div>
+                <div className="nick"> {usu.nm_usuario} </div>
                 <div className="pontos">...</div>
             </div>
 

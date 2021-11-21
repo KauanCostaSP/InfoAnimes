@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Cabecalho = styled.div`
 
 display: flex;
-flex-direction: column
+flex-direction: column;
 padding: 0em 0em 0em 0em;
 justify-content: center;
 align-items: center;

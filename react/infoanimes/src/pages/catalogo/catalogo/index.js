@@ -1,4 +1,4 @@
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LoadingBar from 'react-top-loading-bar'
 
@@ -11,7 +11,7 @@ const Api = new api();
 
 
 export default function Catalogo(props) {
-    const [anime] = useState(props.location.state)
+    const [anime, setAnime] = useState(props.location.state)
     const [comentarios, setComentarios] = useState([]);
     const [idAnime, setIdAnime] = useState(Number(anime.id_anime))
     const [comentario, setComentario] = useState('')
@@ -20,7 +20,7 @@ export default function Catalogo(props) {
     const loading = useRef(null);
 
 
-   /* async function listarcomentarios() {
+    async function listarcomentarios() {
         loading.current.continuousStart()
        
         let resp = await Api.listarcoment(idAnime);
@@ -43,8 +43,7 @@ export default function Catalogo(props) {
         listarcomentarios();
     }
 
-    useEffect (()=>{listarcomentarios()},[])
-    */
+    
 
     return (
         <Container>
