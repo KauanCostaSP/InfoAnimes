@@ -25,10 +25,10 @@
   nm_usuario               varchar(19),
   ds_email                 varchar(255),
   ds_senha                 varchar(32),
-  ds_telefone              varchar(19),
+  ds_telefone              varchar(11),
   dt_criacao               datetime,
   bt_adm                   boolean,
-  ds_perfil                varchar(255)
+  ds_foto_perfil                varchar(1255)
   )ENGINE=InnoDB;
   
   
@@ -40,11 +40,10 @@
   ds_classificação         varchar(255),
   ds_temporadas            varchar(255),
   ds_genero                varchar(255),
-  ds_estrelando            varchar(255),
   ds_sinopse               varchar(5000),
   ds_sobre                 varchar(5000),
   ds_enredo                varchar(5000),
-  ds_capa                  varchar(155),
+  ds_capa                  varchar(1555),
   dt_postagem              datetime,
   dt_ano                   date,
   ds_video1                varchar(1555),
@@ -59,11 +58,10 @@
   CREATE TABLE infoD_tif_comunidade (
   id_comunidade            int primary key auto_increment,
   id_usuario_comunidade    int,
-  ds_capa                  varchar(1555),
+  ds_capa                  varchar(2555),
   nm_comunidade            varchar(255),
   ds_descricao             varchar(2555),
   dt_criacao               datetime,
-  ds_comunidade_imagem     varchar(2555),
   foreign key (id_usuario) references infoD_tif_usuario(id_usuario) ON DELETE CASCADE ON UPDATE CASCADE
   )ENGINE=InnoDB;
   
