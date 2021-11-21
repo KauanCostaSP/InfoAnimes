@@ -8,7 +8,7 @@ export default function EditarSenha() {
         <Link className="voltar-home" to="/perfil-nao-logado"> <img className="img-voltar" src="../../../assets/images/seta-esquerda (1).png" alt="" /> </Link> 
         <div className="conteudo-editar">
         <div id="retangulo">
-        <div className="usuario"> <img src="../../../assets/images/usuario-nao-logado.png" alt="Foto de Perfil"/> (Usuário) </div>
+        <div className="usuario"> <img src="../../../assets/images/usuario-nao-logado.png" alt="Foto de Perfil"/> </div>
                 <div className="campo-senha"><input type="password" id="senha" maxlength={32} placeholder="Senha" size="40" /></div>
                 <div className="campo-senha"><input type="password" id="senha" maxlength={32} placeholder="Nova Senha" size="40" /></div>
                 <div className="campo-senha"><input type="password" id="senha" maxlength={32} placeholder="Confirmação" size="40" /></div>

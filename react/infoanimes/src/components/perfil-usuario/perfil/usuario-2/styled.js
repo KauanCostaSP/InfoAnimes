@@ -20,6 +20,36 @@ background-color: #0d0d0d;
   
 }
 
+
+.add-bio{
+   font: 1em fonte-100;
+   color: #ffff;
+   text-decoration: underline;
+   text-align: right;
+   padding-top: 2em;
+}
+
+.add-bio:hover{
+   color: #1E1E1E;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+
+.ver-comuni{
+   font: 1em fonte-100;
+   color: #ffff;
+   text-decoration: underline;
+   margin-right: 1.6em;
+   padding-top: 2em;
+}
+
+.ver-comuni:hover{
+   color: #530194;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
 .cabecalho_box-1 {
    display: flex;
    flex-direction: row;
@@ -65,23 +95,23 @@ background-color: #0d0d0d;
 
    text-align: center;
    
-   margin-left: 18em;
+   margin-left: 26em;
    margin-top: 2em;
 }
 
-.botao_editar button{
+.botao_editar{
    color: #ffffff;
-   font-size: 15px;
-   font-family: Montserrat-Regular;
-   font-weight: bold;
-   background-color: #7E00FC;
-
-   border-radius: 30px;
-   border: 1px solid #7E00FC;
-
-   padding: 5px 30px 5px 30px;
-   margin-right: 3em;
+   font: 1em fonte-100;
+   text-decoration: underline;
 }
+
+.botao_editar:hover{
+   color: #530194;
+   transition: 0.3s;
+   cursor: pointer;
+}
+
+
 
 .botao_chat img{
    padding-top: px;
@@ -160,20 +190,20 @@ background-color: #0d0d0d;
 .descricao textarea{
    color: #ffffff;
    font: 16px Montserrat-Regular;
-   background: transparent;
    outline: none;
    resize: none;
    border-radius: 5px;
    border: 0px transparent;
-
-   width: 600px;
 }
+
+
 
 .chats{
    color: white;
    opacity: 0.7;
    text-align: left;
-   padding-left: 6em;
+   padding-left: 7.5em;
+   padding-top: 1em;
 }
 
 .img_chats img{
@@ -240,21 +270,27 @@ background-color: #0d0d0d;
 
 
 .entrar button{
-   font-family: fonte-100;
+   font-family: Montserrat-Regular;
    font-size: 15px;
-   color: white;
+   color: #ffffff;
    position: relative;
-   background-color: #373737;
-   opacity: 0.9;
-   border: none;
-   width: 30em;
+   background-color: transparent;
+   text-decoration: none;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   border: 0px transparent;
+   width: 31em;
    height: 3em;
    margin-top: 2.5em;
-   border: none;
+   margin-bottom: 1em;
 }
 
 .entrar button:hover{
    cursor: pointer;
+   box-shadow: 0 0 10em #ffffff8c;
+   background: #ffffff;
+   color: #111;
+   transition-delay: 0.5s;
 }
 
 .entrar button::before{
