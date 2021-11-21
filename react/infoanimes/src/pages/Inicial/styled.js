@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 const Container = styled.div`
-    background-image: linear-gradient(#0E0E0E 70%, #1A1A1A);
+    background-color: #0d0d0d;
 
     a{
     color: #ffffff;
@@ -188,7 +188,7 @@ a:hover{
     width: 710px;
     height: 80px;
 
-    margin-top: 2em;
+    margin-top: 2.6em;
     text-align: center;
     padding-top: 13px;
 }
@@ -217,7 +217,7 @@ span{
     background-color: #7E00FC;
     width: 140px;
     height: 80px;  
-    margin-top: 4.7em;
+    margin-top: 5.8em;
 }
 
 .t1{
@@ -226,8 +226,8 @@ span{
     font: 36px fonte-300;
     font-family: 'Montserrat Subrayada', sans-serif;
     position: absolute;
-    padding-top: 1.1em;
-    margin-right: 20em;
+    padding-top: 1.6em;
+    margin-right: 18em;
     text-transform: uppercase;
     letter-spacing: 0.225em;
 }
@@ -378,8 +378,9 @@ span{
 
 .card::before{
     display: block;
-    width: auto;
-    height: auto;
+    width: 154%;
+    height: 100%;
+    max-width: 155%;
     content: "";
     position: absolute;
     background: rgba(0, 0, 0, 0.63);
