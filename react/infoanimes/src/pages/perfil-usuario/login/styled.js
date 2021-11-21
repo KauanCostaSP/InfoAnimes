@@ -49,20 +49,21 @@ const Container = styled.div`
 
 .voltar-home{
     position: absolute;
-   padding-left: 2em;
-   padding-top: 2em;
+   padding-left: 1em;
+   padding-top: 1em;
 }
 
 .voltar-home img{
-    height: 3em;
+    height: 1.5em;
     filter: invert(100%) sepia(13%) saturate(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
     transition: 0.3s;
 }
 
 .voltar-home img:hover{
-    height: 3.5em;
+    height: 2em;
     transition: 0.3s;
 }
+
 #retangulo{
     padding: 8em;
     border-radius: 25px;
@@ -122,20 +123,27 @@ background-repeat: no-repeat;
 }
 
 .entrar button{
-    font-family: fonte-100;
+    font-family: Montserrat-Regular;
     font-size: 15px;
-    color: white;
+    color: #ffffff;
     position: relative;
     background-color: #373737;
-    border: none;
-    width: 30em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 0px transparent;
+    width: 31em;
     height: 3em;
     margin-top: 2.5em;
-    border: none;
+    margin-bottom: 1em;
 }
 
 .entrar button:hover{
     cursor: pointer;
+    box-shadow: 0 0 10em #ffffff8c;
+    background: #ffffff;
+    color: #111;
+    transition-delay: 0.5s;
 }
 
 .entrar button::before{
@@ -143,8 +151,8 @@ background-repeat: no-repeat;
     position: absolute;
     top: 0;
     left: 0;
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
     overflow: hidden;
     border-top: 2px solid white;
     border-left: 2px solid white;
@@ -186,6 +194,23 @@ background-repeat: no-repeat;
     transition: 0.3s;
     cursor: pointer;
 }
+
+
+.conta-adm{
+    color: white;
+    font: 1em fonte-100;
+    text-decoration: underline;
+    text-align: right;
+    padding-top: 5em;
+}
+
+.conta-adm:hover{
+    color: #530194;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
 
 
 @media screen and (max-width: 768px) {

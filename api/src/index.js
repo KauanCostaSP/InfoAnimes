@@ -114,7 +114,7 @@ app.post('/usuario', async (req, resp) => {
 app.put('/usuario/:id', async (req, resp) => {
     try {
         
-        let idUsu = await db.infod_tif_usuario.findOne({where: {id_usuario: id}})
+        let id = req.params.id
 
         let { nome, telefone, biografia, genero } = req.body;
 
@@ -124,6 +124,8 @@ app.put('/usuario/:id', async (req, resp) => {
             ds_telefone: telefone,
             ds_genero: genero,
             dt_criacao: new Date() 
+        }, {
+            where: {id_usuario: id}
         })
         
         resp.send(r)
