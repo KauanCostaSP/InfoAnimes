@@ -158,6 +158,8 @@ app.put('/usuario/:id', async (req, resp) => {
 app.delete('/usuario/:id', async (req, resp) => {
     try {
 
+        let idanime = req.params.id
+
         let r = await db.infod_tif_usuario.destroy({ where: {id_usuario: req.params.id } })
 
         resp.sendStatus(200)
@@ -449,6 +451,19 @@ app.post('/comunidade', async (req, resp) => {
 
 
 
+app.delete('/comunidade/:id', async (req, resp) => {
+    try {
+
+        let id = req.params.id
+        
+        let idAnime = await db.infod_tif_comunidade.destroy({ where: { id_comunidade: id } })
+        
+        resp.sendStatus(200)
+
+    } catch (e) {
+        resp.send({error: e.tostring()})
+    }
+})
 
 
 
@@ -513,14 +528,14 @@ app.post('/chat', async (req, resp) => {
          if (!chat.mensagem || chat.mensagem.replace(/\n/g, '') == '')
             return resp.send({ erro: 'Mensagem é obrigatória!' });
 
-        let mensagem = {
+        let novamensagem = {
                 id_comunidade: comunidade,
                 id_usuario: usuario,
                 ds_mensagem:  mensagem,
                 dt_mensagem: new Date()
         }
         
-        let r = await db.infod_tif_chat.create(mensagem);
+        let r = await db.infod_tif_chat.create(novamensagem);
         resp.send(r)
 
     } catch (e) {

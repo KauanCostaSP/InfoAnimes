@@ -9,7 +9,7 @@ import Cabecalho from '../../../components/cabecalho'
 import Rodape from '../../../components/rodapé'
 import { Link } from 'react-router-dom';
 import api from '../../../service/api'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 const Api = new api();
 
 
@@ -29,6 +29,10 @@ export default function Index() {
         loading.current.complete();
     }
 
+
+    useEffect (()=>{ListComun()},[])
+
+
     return (
         <Container>
             <ToastContainer />
@@ -41,18 +45,10 @@ export default function Index() {
                 <div className="COMUNIDADES">
 
                 <Link className="atalho_adm" to="/postagem-comunidade"> Provisório mas vai né </Link>
-                    <div> <button onClick={ListComun}> listar comunidades</button></div>
 
-                <div className="conteudo-comunidade">
-                    <div className="box1">
-
-                            {comunidades.map((i) => 
+                    {comunidades.map((i) => 
                                 <BoxComunidade comun={i}/>
                     )}
-
-                   </div>
-
-                </div>
 
                     <div class="comunidade">
                         <div className="titulo">Comunidade lgbtqia+</div>

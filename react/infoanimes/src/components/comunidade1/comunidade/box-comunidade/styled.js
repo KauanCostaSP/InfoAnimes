@@ -9,8 +9,8 @@ const Comunidade = styled.div`
 
 
 
-.titulo{
-    margin-left: 5px;
+    .titulo{
+    margin-left: .2em;
     font-family: fonte-200;
     font-size: small;
     color: #7E00FC;
@@ -34,10 +34,9 @@ const Comunidade = styled.div`
 }
 
 .imagem img{
-    
+    width: 270px;
     border-radius: 5px;
-    margin-top: .7em;
-    margin-bottom: 6px;
+    margin-top: 1em;
   }
 
   .comunidade .acao{

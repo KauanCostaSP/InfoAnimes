@@ -12,9 +12,11 @@ const Api = new api();
 
 
 export default function Postagem_comuni() {
+   let logado = cookie.get('perfil-logado')
+   
     const [capa, setCapa] = useState('')
     const [nome, setNome] =useState('')
-    const [idusu, ] = useState(0)
+    const [idusu, ] = useState(logado.id_usuario)
     const [descricao, setDescricao] = useState('')
  
     
@@ -23,7 +25,7 @@ export default function Postagem_comuni() {
     const AdcComun = async () =>  {
         loading.current.continuousStart();
 
-        let resp = await Api.adicionarcomunidade(capa, nome, idusu, descricao)
+        let resp = await Api.adicionarcomunidade(capa, nome, Number(idusu), descricao)
 
         console.log(resp)
         if(resp.erro) {

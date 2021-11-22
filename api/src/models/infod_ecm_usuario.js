@@ -1,42 +1,38 @@
 import _sequelize from 'sequelize';
 const { Model, Sequelize } = _sequelize;
 
-export default class infob_hdm_usuario extends Model {
+export default class infod_ecm_usuario extends Model {
   static init(sequelize, DataTypes) {
   super.init({
-    id_HDM_usuario: {
+    id_usuario: {
       autoIncrement: true,
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true
     },
-    nm_HDM_nome: {
-      type: DataTypes.STRING(100),
+    nm_usuario: {
+      type: DataTypes.STRING(255),
       allowNull: true
     },
-    nm_HDM_sobrenome: {
-      type: DataTypes.STRING(100),
+    ds_email: {
+      type: DataTypes.STRING(255),
       allowNull: true
     },
-    nm_HDM_email: {
-      type: DataTypes.STRING(100),
+    ds_telefone_cel: {
+      type: DataTypes.STRING(20),
       allowNull: true
     },
-    ds_HDM_senha: {
-      type: DataTypes.STRING(100),
+    ds_cpf: {
+      type: DataTypes.STRING(15),
       allowNull: true
     },
-    ds_HDM_cogidoRec: {
-      type: DataTypes.STRING(100),
+    ds_senha: {
+      type: DataTypes.STRING(128),
       allowNull: true
-    },
-    ds_codigo: {
-      type: DataTypes.STRING(100),
-      allowNull: false
     }
   }, {
     sequelize,
-    tableName: 'infob_hdm_usuario',
+    tableName: 'infod_ecm_usuario',
     timestamps: false,
     indexes: [
       {
@@ -44,11 +40,11 @@ export default class infob_hdm_usuario extends Model {
         unique: true,
         using: "BTREE",
         fields: [
-          { name: "id_HDM_usuario" },
+          { name: "id_usuario" },
         ]
       },
     ]
   });
-  return infob_hdm_usuario;
+  return infod_ecm_usuario;
   }
 }
