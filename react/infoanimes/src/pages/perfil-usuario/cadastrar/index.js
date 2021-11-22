@@ -31,17 +31,17 @@ export default function Registrar() {
       
       
         if(resp.error) {
-            toast.error(`${resp.error}`);
+            toast.dark.error(`${resp.error}`);
             loading.current.complete();
 
         } else {
             if (nome === "" || senha === "" || email === "" || confsenha === "") {
-                toast.error("Tem que preencher tudo, abestalhado.")
+                toast.dark.error("Tem que preencher tudo, abestalhado.")
                 loading.current.complete();
             } else {
 
                 if (confsenha !== senha) {
-                    toast.error("As senhas tem que ser iguais, burro.")
+                    toast.dark.error("As senhas tem que ser iguais, burro.")
                     loading.current.complete();
                 } else {
                     cookie.set('perfil-logado', JSON.stringify(resp));
@@ -53,7 +53,7 @@ export default function Registrar() {
 
     return (
         <Container>
-            <ToastContainer background-color="#000"/>
+            <ToastContainer/>
             <LoadingBar color="#A245FF" ref={loading} />
         <div className="Container">
         <SetaVoltar/>
