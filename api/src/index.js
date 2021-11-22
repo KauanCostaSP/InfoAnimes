@@ -481,7 +481,9 @@ app.delete('/comunidade/:id', async (req, resp) => {
 app.get('/chat/:id', async (req, resp) => {
     try {
         
-        let comunidade = await db.infod_tif_chat.findOne({where: {id_comunidade: id}})
+        let idComunidade = req.params.id
+
+        let comunidade = await db.infod_tif_chat.findOne({ where: { id_comunidade: idComunidade}})
         let r = await db.infod_tif_chat.findAll();
 
         resp.send(r)
@@ -749,4 +751,4 @@ app.delete('/usuario_comunidade', async (req, resp ) => {
 
 
 app.listen(process.env.PORT,
-    x => console.log(`>> Subiu esse caralho na porta ${process.env.PORT}`))
+    x => console.log(`>> Subiu na porta ${process.env.PORT}`))

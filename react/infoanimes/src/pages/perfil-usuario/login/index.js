@@ -60,6 +60,7 @@ export default function Login() {
 
                 
                 <Link className="esqueci-senha" to="/esqueci-senha"> <div ClassName="esqueci-botao">  Esqueci minha senha </div> </Link>
+                <Link className="esqueci-senha" to="/esqueci-senha"> <div ClassName="esqueci-botao">  Entrar como conta administrativa </div> </Link>
 
         
         </div>
