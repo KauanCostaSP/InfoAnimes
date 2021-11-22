@@ -114,7 +114,7 @@ export default class Api {
 
 
     async listarmensagens(id) {
-        let r = await api.get(`/chat${id}`)
+        let r = await api.get(`/chat/${id}`)
         return r.data;
     }
 
