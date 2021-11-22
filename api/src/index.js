@@ -158,6 +158,8 @@ app.put('/usuario/:id', async (req, resp) => {
 app.delete('/usuario/:id', async (req, resp) => {
     try {
 
+        let idanime = req.params.id
+
         let r = await db.infod_tif_usuario.destroy({ where: {id_usuario: req.params.id } })
 
         resp.sendStatus(200)
@@ -449,6 +451,19 @@ app.post('/comunidade', async (req, resp) => {
 
 
 
+app.delete('/comunidade/:id', async (req, resp) => {
+    try {
+
+        let id = req.params.id
+        
+        let idAnime = await db.infod_tif_comunidade.destroy({ where: { id_comunidade: id } })
+        
+        resp.sendStatus(200)
+
+    } catch (e) {
+        resp.send({error: e.tostring()})
+    }
+})
 
 
 
