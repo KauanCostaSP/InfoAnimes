@@ -18,13 +18,15 @@ import Postagem_comuni from "./pages/paginas-adm/postagem-comunidade";
 import PerfilNaoLogado from     "./pages/perfil-usuario/pagina-perfil-nao-logado";
 import ConfigPerfilNaoLogado from  "./pages/perfil-usuario/configurar-perfil-nao-logado";
 import ConfigPerfilLogado from  "./pages/perfil-usuario/configurar-perfil-logado";
-import Contato from  "./pages/paginas-rodape/contato";
+import Contato from "./pages/paginas-rodape/contato";
+import BoxMsg from "./components/comunidade1/sala/box-mensagem";
 
 
 export default function Routes() {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path="/boxmsg" exact={true} component={BoxMsg} />
                 <Route path="/" exact={true} component={Inicial} />
                 <Route path="/home" exact={true} component={Inicial} />
                 <Route path="/login" exact={true} component={Login} />

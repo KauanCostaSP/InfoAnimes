@@ -14,10 +14,18 @@ const { Op, col, fn } = Sequelize;
 
 
 
+
+
+
+
+
+
 //Endpoints /login
 
 
- 
+
+
+
 
 
 app.post('/login', async (req, resp) => {
@@ -89,12 +97,20 @@ app.post('/usuario', async (req, resp) => {
     try {
         let { nome, email, senha } = req.body;
 
+        let u = await db.infod_tif_usuario.findOne({ where: { nm_usuario: nome } });
+        if( u != null)
+            return resp.send({ erro: 'Usuário já existe!'});
 
-    let h = await db.infod_tif_usuario.create({
-        nm_usuario: nome,
-        ds_email: email,
-        ds_senha: senha,
-        dt_criacao: new Date()
+        let em = await db.infod_tif_usuario.findOne({ where: { ds_email: email } });
+        if( em != null)
+            return resp.send({ erro: 'E-mail já usado!'});
+
+
+        let h = await db.infod_tif_usuario.create({
+            nm_usuario: nome,
+            ds_email: email,
+            ds_senha: senha,
+            dt_criacao: new Date()
     })
 
     resp.send(h)
@@ -142,6 +158,8 @@ app.put('/usuario/:id', async (req, resp) => {
 app.delete('/usuario/:id', async (req, resp) => {
     try {
 
+        let idanime = req.params.id
+
         let r = await db.infod_tif_usuario.destroy({ where: {id_usuario: req.params.id } })
 
         resp.sendStatus(200)
@@ -151,6 +169,8 @@ app.delete('/usuario/:id', async (req, resp) => {
     }
 
 })
+
+
 
 
 
@@ -293,7 +313,19 @@ app.delete('/catalogo/:id', async (req, resp) => {
 
 
 
+
+
+
+
+
 //endpoints /comentarios
+
+
+
+
+
+
+
 
 
 
@@ -360,7 +392,16 @@ app.post('/comentarios', async (req, resp) => {
 
 
 
+
+
+
+
 //endpoints / comunidade
+
+
+
+
+
 
 
 
@@ -410,8 +451,29 @@ app.post('/comunidade', async (req, resp) => {
 
 
 
+app.delete('/comunidade/:id', async (req, resp) => {
+    try {
+
+        let id = req.params.id
+        
+        let idAnime = await db.infod_tif_comunidade.destroy({ where: { id_comunidade: id } })
+        
+        resp.sendStatus(200)
+
+    } catch (e) {
+        resp.send({error: e.tostring()})
+    }
+})
+
+
+
+
 
 //endpoints / chat
+
+
+
+
 
 
 
@@ -419,7 +481,9 @@ app.post('/comunidade', async (req, resp) => {
 app.get('/chat/:id', async (req, resp) => {
     try {
         
-        let comunidade = await db.infod_tif_chat.findOne({where: {id_comunidade: id}})
+        let idComunidade = req.params.id
+
+        let comunidade = await db.infod_tif_chat.findOne({ where: { id_comunidade: idComunidade}})
         let r = await db.infod_tif_chat.findAll();
 
         resp.send(r)
@@ -430,21 +494,22 @@ app.get('/chat/:id', async (req, resp) => {
 })
 
 
-/* GET TESTE, FALTA FINALIZAR, APOSTO UM RIM QUE TÁ ERRADO
+/* GET TESTE, VAI SER USADO PRA CHAMAR O CHAT PELOS NOMES DAS COMUNIDADES NA TELA PRINCIPAL, 
+E A PARTIR DO CLICK EM ENTRAR A PESSOA DEVERÁ TER ACESSO AO CHAT SE JÁ LOGADA
 
 app.get('/chat/:comunidade', async (req, resp) => {
     try {
-        let sala = await db.tb_sala.findOne({ where: { nm_sala: req.params.sala } });
-        if (sala == null)
-            return resp.send({ erro: 'Sala não existe!' });
+        let comun = await db.infod_tif_comunidade.findOne({ where: { nm_comunidade: req.comunidade } });
+        if (comun == null)
+            return resp.send({ erro: 'Comunidade não encontrada!' });
         
         let mensagens = await
-            db.tb_chat.findAll({
+            db.infod_tif_comunidade.findAll({
                 where: {
-                    id_sala: sala.id_sala
+                    id_comunidade: comunidade
                 },
                 order: [['id_chat', 'desc']],
-                include: ['tb_usuario', 'tb_sala'],
+                include: ['tb_usuario', 'tb_comunidade'],
             });
     
         resp.send(mensagens);
@@ -465,24 +530,25 @@ app.post('/chat', async (req, resp) => {
          if (!chat.mensagem || chat.mensagem.replace(/\n/g, '') == '')
             return resp.send({ erro: 'Mensagem é obrigatória!' });
 
-        let r =  await db.infod_tif_chat.create(
-            {
+        let novamensagem = {
                 id_comunidade: comunidade,
                 id_usuario: usuario,
                 ds_mensagem:  mensagem,
                 dt_mensagem: new Date()
-            }
-        )
+        }
+        
+        let r = await db.infod_tif_chat.create(novamensagem);
         resp.send(r)
 
     } catch (e) {
-        resp.send({error: e.toString()})
+        resp.send( '☠️ Deu erro, por Deus' );
+        console.log(e.tostring());
     }
 })
 
 
 
-
+/* No presente momento sem opção de editar a mensagem 
 
 app.put('/chat/:id', async (req, resp) => {
     
@@ -502,7 +568,7 @@ app.put('/chat/:id', async (req, resp) => {
         resp.send({error: e.toString()})
     }
     
-})
+})*/
 
 
 
@@ -525,7 +591,13 @@ app.delete('/chat/:id', async (req, resp) => {
 
 
 
+
+
+
 //Endpoints /favoritos 
+
+
+
 
 
 
@@ -638,7 +710,13 @@ app.delete('/favorito/:id' , async ( req, resp ) => {
 
 
 
+
+
 //Endpoints /usuario_comunidade
+
+
+
+
 
 
 
