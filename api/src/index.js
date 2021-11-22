@@ -751,4 +751,4 @@ app.delete('/usuario_comunidade', async (req, resp ) => {
 
 
 app.listen(process.env.PORT,
-    x => console.log(`>> Subiu esse caralho na porta ${process.env.PORT}`))
+    x => console.log(`>> Subiu na porta ${process.env.PORT}`))
