@@ -513,14 +513,14 @@ app.post('/chat', async (req, resp) => {
          if (!chat.mensagem || chat.mensagem.replace(/\n/g, '') == '')
             return resp.send({ erro: 'Mensagem é obrigatória!' });
 
-        let mensagem = {
+        let novamensagem = {
                 id_comunidade: comunidade,
                 id_usuario: usuario,
                 ds_mensagem:  mensagem,
                 dt_mensagem: new Date()
         }
         
-        let r = await db.infod_tif_chat.create(mensagem);
+        let r = await db.infod_tif_chat.create(novamensagem);
         resp.send(r)
 
     } catch (e) {

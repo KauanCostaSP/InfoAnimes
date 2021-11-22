@@ -53,8 +53,8 @@ export default class Api {
 
 
 
-    async adicionarcatalogo( nome, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem) {
-        let r = await api.post(`/catalogo`, { nome, classificacao, temporadas, genero, estrelando, sinopse, sobre, enredo, capa, ano, video1, video2, imagem })
+    async adicionarcatalogo( nome, classificacao, temporadas, genero, sinopse, sobre, enredo, capa, ano, video1, video2, imagem) {
+        let r = await api.post(`/catalogo`, { nome, classificacao, temporadas, genero, sinopse, sobre, enredo, capa, ano, video1, video2, imagem })
         return r.data;
     }
 
