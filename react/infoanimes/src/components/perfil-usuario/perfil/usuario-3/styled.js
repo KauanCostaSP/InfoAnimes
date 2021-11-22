@@ -16,12 +16,14 @@ background-color: #0d0d0d;
    margin-bottom: 5em;
    padding: 5em 7em 4em 7em;
    transition: 0.7s;
-   max-width: 100%;
+   width: 50em;
    height: auto;
 }
 
 .box-1:hover{
    box-shadow: 0px 4px 30px #A245FF;
+   width: 50em;
+   height: auto;
    transition: 0.7s;
 }
 
@@ -49,7 +51,7 @@ background-color: #0d0d0d;
 
 .perfil_box-1 img{
    text-align: center;
-   filter: invert(100%) sepia(13%) saturate(100%) hue-rotate(130deg) brightness(100%) contrast(100%);
+   filter: invert(100%) sepia(13%) saturate(100%) hue-rotate(130deg) brightness(100%) contrast(80%);
    height: 140px;
    width: 150px;
 
@@ -74,7 +76,7 @@ background-color: #0d0d0d;
    display: flex;
    flex-direction: row;
    text-align: center;
-   margin-left: 0em;
+   margin-left: 7em;
    margin-top: 2em;
 }
 
@@ -91,6 +93,12 @@ background-color: #0d0d0d;
    margin-right: 3em;
 }
 
+.botao_voltar button:hover{
+   background: #FFFF;
+   color: #561DFA;
+   box-shadow: 0 0 50px #561DFA;
+}
+
 .botao_desativar button{
    color: #ffffff;
    font-size: 15px;
@@ -99,6 +107,12 @@ background-color: #0d0d0d;
    border: 0;
    text-decoration: underline;
    padding-left: 9em;
+}
+
+.botao_desativar button:hover{
+   color: #BF85FA;
+   transition: 0.3s;
+   cursor: pointer;
 }
 
 
@@ -234,21 +248,27 @@ background-color: #0d0d0d;
 
 
 .alterar button{
-   font-family: fonte-100;
-   font-size: 15px;
-   color: white;
-   position: relative;
-   background-color: #373737;
-   opacity: 0.9;
-   border: none;
-   width: 30em;
-   height: 3em;
-   margin-top: 2.5em;
-   border: none;
+   font-family: Montserrat-Regular;
+    font-size: 15px;
+    color: #ffffff;
+    position: relative;
+    background-color: #373737;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 0px transparent;
+    width: 31em;
+    height: 3em;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
 }
 
 .alterar button:hover{
    cursor: pointer;
+    box-shadow: 0 0 10em #ffffff8c;
+    background: #ffffff;
+    color: #111;
+    transition-delay: 0.5s;
 }
 
 .alterar button::before{

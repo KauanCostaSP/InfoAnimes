@@ -20,8 +20,7 @@ export default function Index () {
             </div>
 
             <div className="botoes_box-1">
-                <Link className="botao_editar" to="/config-perfil-nao-logado"><a href="../../PERFIL-USUARIO/config-editar-perfil/index.html"><button>Editar Perfil</button></a></Link>
-                <Link className="botao_chat" to="/sala"><button> <img src="../../../assets/images/chat_icon.png" alt="Icon Chat"/>Chat</button></Link>
+                <Link className="botao_editar" to="/config-perfil-nao-logado"> <div className="botao-editar">Editar Perfil</div> </Link>
             </div>
 
             <div className="box-2"> 
@@ -30,7 +29,8 @@ export default function Index () {
                     <div className="retangulo-branco"></div>
                     <div className="text-retangulo-branco">Biografia</div> 
                     <div className="info_biografia">
-                        <div className="descricao">Para que possam conhecer um pouco mais sobre <br/> adicione aqui a sua biográfia, seja livre e criativo . . .</div>
+                        <div className="descricao">Para que possam conhecer um pouco mais sobre você <br/> adicione aqui a sua biográfia, seja livre e criativo . . .</div>
+                        <Link className="add-bio" to="/config-perfil-nao-logado"> <div className="add-bio"> Adicionar Biografia </div> </Link>
                     </div>
                 </div>
             </div>
@@ -39,10 +39,10 @@ export default function Index () {
                 <div className="titulo-box-2"> 
                     <div className="retangulo-branco"></div>
                     <div className="text-retangulo-branco">Minhas comunidades | Chats online</div>
-                    
                 </div>
-                <div className="chats"> Conecte-se com amigos , faça parte de uma comunidade
-                </div>
+
+                <div className="chats"> Conecte-se com amigos , faça parte de uma comunidade</div>
+                <Link className="ver-comuni" to="/comunidades"> <div className="ver-comuni"> Veja nossas comunidades </div> </Link>
             </div>
         </div>
 
