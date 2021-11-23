@@ -26,7 +26,7 @@ export default function Salas(props) {
 
     const listar = async () => {
         let r = await Api.listarmensagens(idComun)
-        console.log(r)
+        setComunidades(r)
     }
 
 

@@ -403,6 +403,20 @@ app.post('/comentarios', async (req, resp) => {
 
 
 
+app.get('/comunidade-home', async (req, resp) => {
+    try {
+        let comunidade = await db.infod_tif_comunidade.findAll({
+            limit: 5
+        })
+    } catch (e) {
+        resp.send(comunidade)
+    }
+})
+
+
+
+
+
 
 
 
