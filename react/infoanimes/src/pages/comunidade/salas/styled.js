@@ -208,6 +208,30 @@ input{
     height: 35px;
     border-radius: 20px;
 }
+
+.input-botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-botao button{
+    border: none;
+    background-color: #7E00FC;
+    color: #ffffff;
+    margin-left: 30px;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font: 20px fonte-200 ;
+}
+
+.boxmsg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 `
 
 export {Container}

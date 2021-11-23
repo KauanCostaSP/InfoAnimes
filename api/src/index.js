@@ -183,7 +183,17 @@ app.delete('/usuario/:id', async (req, resp) => {
 
 
 
+app.get('/catalogo-home', async (req, resp) => {
+    try {
+        
+        let r = await db.infod_tif_animes.findAll({ limit: 16 })
+        
+        resp.send(r)
 
+    } catch (e) {
+        resp.send({error: e.toString()})
+    }
+})
 
 
 
@@ -408,8 +418,10 @@ app.get('/comunidade-home', async (req, resp) => {
         let comunidade = await db.infod_tif_comunidade.findAll({
             limit: 5
         })
-    } catch (e) {
         resp.send(comunidade)
+
+    } catch (e) {
+        
     }
 })
 
@@ -497,10 +509,10 @@ app.get('/chat/:id', async (req, resp) => {
         
         let idComunidade = req.params.id
 
-        let comunidade = await db.infod_tif_chat.findOne({ where: { id_comunidade: idComunidade}})
-        let r = await db.infod_tif_chat.findAll();
+        let comunidade = await db.infod_tif_chat.findAll({ where: { id_comunidade: idComunidade}})
+      
 
-        resp.send(r)
+        resp.send(comunidade)
 
     } catch (e) {
         resp.send({error: e.toString()})

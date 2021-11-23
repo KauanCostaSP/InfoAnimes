@@ -46,6 +46,12 @@ export default class Api {
     }
 
 
+    async listaranimeshome() {
+        let r = await api.get(`/catalogo-home`)
+        return r.data;
+    }
+
+
     async catalogoanime(idAnime) {
         let r = await api.get(`/catalogo/${idAnime}`)
         return r.data;
@@ -92,6 +98,12 @@ export default class Api {
 
     async listarcomunidades() {
         let r = await api.get(`/comunidade`)
+        return r.data;
+    }
+
+
+    async listarcomunidadeshome() {
+        let r = await api.get(`/comunidade-home`)
         return r.data;
     }
 

@@ -92,7 +92,7 @@ export default function Catalogo(props) {
                 </div>
             </div>
 
-            <div className="videos">
+            {/* <div className="videos">
                 <div className="titulo_v">Vídeos | <span className="nome_anime_v">{anime.nm_anime}</span></div>
                 
                 <div className="trailers">
@@ -137,7 +137,7 @@ export default function Catalogo(props) {
                     )}
 
                 </div>
-            </div>
+                        </div> */}
             </div>
             <Rodape />
         </Container>

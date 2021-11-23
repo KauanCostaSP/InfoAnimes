@@ -40,7 +40,6 @@ export default function index() {
             <Link className="item-1" to="/home" >Home</Link>
             <Link className="item-2" to="/sobre" >Sobre</Link>
             <Link className="item-3" to="/comunidades">Comunidade</Link>
-            <Link className="item-4" to="/favoritos">Favoritos</Link>
             <Link className="item-5" to="/catalogos">Catalogos</Link>
             </div>
                  

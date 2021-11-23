@@ -19,7 +19,8 @@ const Catalogo = styled.div`
     }
 
     img{
-        width:120px;
+        width: 120px;
+        height: 190px;
     }
 
     .capa :hover{

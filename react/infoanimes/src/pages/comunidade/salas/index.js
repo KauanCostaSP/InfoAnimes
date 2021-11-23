@@ -22,11 +22,10 @@ export default function Salas(props) {
     const [idComun, setIdComun] = useState(comunidade.id_comunidade)
     const [mensagem, setMensagem] = useState('')
 
-    console.log(idComun)
 
     const listar = async () => {
         let r = await Api.listarmensagens(idComun)
-        setComunidades(r)
+      
     }
 
 
@@ -57,28 +56,28 @@ export default function Salas(props) {
 
 
         <div className="conteudo">
-                <UserOn
-                    imagem="/assets/images/imagem akali.jpg"
-                    nome="@comp sala"
-                />
+                
            
            <div className="boxmsg">
                 <div className="mensagens">
                     <div className="mensagem">
                         
-                    {comunidades.map(x =>
-                       <Mensagem
-                            user={usuariologado.nm_usuario}
-                            msg={comunidade.ds_mensagem}
-                   />
+                     {comunidades.map(x =>
+                       
+                        <Mensagem
+                                user={usuariologado.nm_usuario}
+                                msg="oi"
+                            />
+                  
                        )}
                     
                     
                     </div> 
                 </div>
-                
+                <div className="input-botao">
                     <div className="digite-mensagem"><input type="text" placeholder=" Digite uma mensagem" value={mensagem} onChange={e => setMensagem(e.target.value)} />  </div>
                     <div><button onClick={inserirmsg}> enviar </button></div>
+                </div>
             </div>
             
         </div>

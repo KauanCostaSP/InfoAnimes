@@ -2,10 +2,31 @@ import { Container } from './styled'
 import Cabecalho from '../../components/cabecalho'
 import { Link } from 'react-router-dom'
 import Rodape from '../../components/rodapé'
-
 import CardCatalogo from '../../components/inicial/card-catalogo'
+import CardComunidade from '../../components/inicial/card-comunidade'
+import api from '../../service/api'
+import { useEffect, useState } from 'react'
 
-export default function inicio() {
+const Api = new api();
+
+
+export default function Inicio() {
+    
+    const [comunidades, setComunidades] = useState([])
+    const [animes, setAnimes] = useState([])
+    
+   async function listarComunidadaes() {
+        let r = await Api.listarcomunidadeshome();
+        setComunidades(r)
+    }
+
+    async function listarCatalogo() {
+        let r = await Api.listaranimeshome();
+        setAnimes(r)
+    }
+
+    useEffect(() => { listarComunidadaes() }, [])
+    useEffect (()=>{listarCatalogo()},[])
     return (
         <Container> 
             <Cabecalho />
@@ -18,63 +39,16 @@ export default function inicio() {
                 <div className="t2-texto">Crie a sua própria comunidade ou faça parte de uma<br/> Compartilhe seu conhecimento </div>
             </div>
             <div className="comunidades">
-                <div className="card">
-                    <img className="img-card" src="../../../assets/images/Nf-Naruto.jpeg" alt=""/>
-                    <div className="info">
-                        <a href="/home" className="bt">Mangás</a>
-                        <a href="/home" className="bt">Tradução</a>
-                        <h1>Mangá</h1>
-                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a href="/home" className="btn">Entrar</a>
+               
+                    
+                    {comunidades.map((i) => 
+                    
+                    <CardComunidade comun={i} />
                         
-                    </div>
-                </div>
+                    )}
+                    
 
-                <div className="card">
-                    <img className="img-card" src="../../../assets/images/lol.jpeg" alt=""/>
-                    <div className="info">
-                        <a href="/home" className="bt">Mangás</a>
-                        <a href="/home" className="bt">Tradução</a>
-                        <h1>Mangá</h1>
-                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a href="/home" className="btn">Entrar</a>
-                    </div>
-                </div>
-
-
-                <div className="card">
-                    <img className="img-card" src="../../../assets/images/Darlin.jpeg" alt="" style={{zIndex: 2}} />
-                    <div className="info">
-                        <a href="/home" className="bt">Mangás</a>
-                        <a href="/home" className="bt">Tradução</a>
-                        <h1>Mangá</h1>
-                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a href="/home" className="btn">Entrar</a>
-                    </div>
-                </div>
-
-
-                <div className="card">
-                    <img className="img-card" src="../../../assets/images/Nf-Kakegurui.jpeg" alt="" style={{zIndex: 1}} />
-                    <div className="info">
-                        <a href="/home" className="bt">Mangás</a>
-                        <a href="/home" className="bt">Traduçaõ</a>
-                        <h1>Mangá</h1>
-                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a href="/home" className="btn">Entrar</a>
-                    </div>
-                </div>
-
-                <div className="card">
-                    <img classNameName="img-card" src="../../../assets/images/OnePeace.jpeg" alt=""/>
-                    <div className="info">
-                        <a href="/home" className="bt">Mangás</a>
-                        <a href="/home" className="bt">Traduçaõ</a>
-                        <h1>Mangá</h1>
-                        <p>scan aberta de tradução de mangas, indicamos sites de tradução e traduzimos, pedimos direitos autorais embora não sejamos profissionais...</p>
-                        <a href="/home" className="btn">Entrar</a>
-                    </div>
-                </div>
+                
             </div>
             <Link className="cadastrar" to="/cadastrar"><button>cadastrar-se</button></Link>
 
@@ -102,87 +76,10 @@ export default function inicio() {
 
             <div className="catalogos">
                     
-                    <CardCatalogo
-                        img="/assets/images/Darlin.jpeg"
-                        desc="comp "
-                    />
-
-                    <CardCatalogo
-                        img="/assets/images/Darlin.jpeg"
-                        desc="comp "
-                    />
-
-                    <CardCatalogo
-                        img="/assets/images/Darlin.jpeg"
-                        desc="comp "
-                    />
-
-                    <CardCatalogo
-                        img="/assets/images/Darlin.jpeg"
-                        desc="comp "
-                    />
-
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
+                    {animes.map((x) =>
+                    <CardCatalogo info={x} /> 
+                    )}
                     
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
-                    
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
-                    
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
-                    
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
-                    
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
-                    
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
-                    
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
-                    
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
-
-                
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp"
-                    />
-                    
-                
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
-                    
-                    <CardCatalogo
-                            img="/assets/images/Darlin.jpeg"
-                            desc="comp "
-                    />
                 
                 </div>
 
